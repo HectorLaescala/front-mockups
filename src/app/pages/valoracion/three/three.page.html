@@ -1,0 +1,119 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        icon="chevron-back-outline"
+        mode="md"
+        defaultHref="login"
+      ></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid fixed
+    ><ion-row>
+      <ion-col
+        size="12"
+        class="ion-text-center style-text-title ion-no-padding"
+      >
+        <p>Basado en la conducta y puntualidad</p>
+      </ion-col>
+      <ion-col
+        size="12"
+        class="ion-text-center style-text-subtitle ion-margin-bottom"
+      >
+        <p>¿Recomendarias a estos</p>
+        <p>jugadores?</p>
+      </ion-col>
+      <ion-col size="12" class="ion-padding-top ion-margin-top">
+        <ion-card>
+          <ion-card-header class="ion-text-end">
+            <ion-icon name="close-outline"></ion-icon>
+            <ion-item lines="none">
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/list/avatar-luke.png"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <p>JUGADOR</p>
+                <h3>Claudio Ortega</h3>
+              </ion-label>
+            </ion-item>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+              <ion-col size="4">
+                <ion-button class="style-button-maybe">TAL VEZ</ion-button>
+              </ion-col>
+              <ion-col size="4">
+                <ion-button class="style-button-options">SI</ion-button>
+              </ion-col>
+              <ion-col size="4">
+                <ion-button class="style-button-options">NO</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-card-content> </ion-card
+        ><ion-card>
+          <ion-card-header class="ion-text-end">
+            <ion-icon name="close-outline"></ion-icon>
+            <ion-item lines="none">
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/list/avatar-rey.png"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <p>JUGADOR</p>
+                <h3>Mauricio Cornejo</h3>
+              </ion-label>
+            </ion-item>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+              <ion-col size="4">
+                <ion-button class="style-button-maybe">TAL VEZ</ion-button>
+              </ion-col>
+              <ion-col size="4">
+                <ion-button class="style-button-options">SI</ion-button>
+              </ion-col>
+              <ion-col size="4">
+                <ion-button class="style-button-options">NO</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card></ion-col
+      >
+    </ion-row></ion-grid
+  >
+</ion-content>
+
+<ion-footer>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="4">
+        <ion-button class="style-buttom-skip-footer" expand="full" shape="round"
+          >OMITIR
+        </ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <div class="style-vertical-center">
+          <div class="swiper-pagination swiper-pagination-bullets">
+            <span class="swiper-pagination-bullet"></span
+            ><span class="swiper-pagination-bullet"></span
+            ><span
+              class="swiper-pagination-bullet swiper-pagination-bullet-active"
+            ></span
+            ><span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button
+          class="style-buttom-continue-footer"
+          expand="full"
+          shape="round"
+          >SIGUIENTE
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

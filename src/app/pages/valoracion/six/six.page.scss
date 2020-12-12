@@ -1,0 +1,105 @@
+ion-avatar > ion-img {
+  border-radius: 5px;
+  margin-top: 0px;
+  height: 50px;
+  width: 50px;
+}
+
+ion-item {
+  --border-width: 0px 0px 1px 0px !important;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+ion-avatar,
+ion-label {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+ion-label > p {
+  color: #707070;
+  font-family: Montserrat-Regular;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 10px;
+  padding-top: 10px;
+}
+
+ion-label > h3 {
+  color: #333333;
+  font-family: Montserrat-SemiBold;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+ion-radio {
+  height: 28px;
+  width: 28px;
+  margin-top: 0px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #cccccc;
+  margin: 18px 4px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #c90949;
+}
+
+.style-vertical-center {
+  display: flex;
+  justify-content: center;
+}
+
+.style-text-title > p {
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  font-family: Montserrat-Regular;
+  margin: 0px 0px;
+}
+
+.style-text-subtitle > p {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-family: Montserrat-SemiBold;
+  margin: 0px 0px;
+}
+
+.style-buttom-skip-footer,
+.style-buttom-continue-footer {
+  height: 32px;
+  border: 1px solid #ebebeb;
+  border-radius: 41.5px;
+  --color: #707070;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+  --background: #ffffff;
+  line-height: 13px;
+  font-family: Montserrat-SemiBold;
+  --box-shadow: none;
+}
+
+.style-buttom-skip-footer {
+  margin-left: 15px;
+}
+.style-buttom-continue-footer {
+  margin-right: 15px;
+}
+
+.footer-md::before {
+  height: 1px;
+  background-color: #ebebeb;
+}

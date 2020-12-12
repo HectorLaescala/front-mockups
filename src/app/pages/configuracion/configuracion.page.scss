@@ -1,0 +1,94 @@
+
+*{
+    font-family: Montserrat-Light;
+ color: black;
+  }
+  
+  
+
+  ion-content.background{
+    --background: #ffffff
+   // url('../../../assets/background2_.png') no-repeat center center / cover;
+}
+
+
+.publicidad{
+    height: 100px;
+    width: 100%;
+   
+   }
+   
+
+.chica{
+    font-size: 12px;
+}
+
+.Mediano{
+
+    font-size: 15px;
+}
+
+h5{
+    color: black;
+}
+.SubCat{
+
+    color: black;
+    font-family: Montserrat-Bold;
+    
+    
+   }
+
+   .eliminar{
+    color: black;
+  }
+ 
+
+  .pequenoformulario{
+
+        font-size: 10px;
+  }
+
+
+  ion-badge{
+    font-size: 15px;
+    width: 35px;
+  }
+
+  .fondoitem{
+    --ion-background-color:#ca094a;
+    --border-radius: 10px;
+    opacity: 0.7;
+   
+  }
+  .botones{
+    --border-color:#ca094a;
+    --border-radius: 5px;
+    font-family: Montserrat-Bold;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    --background: #ca094a;
+}
+
+
+img{
+    height: 70vh;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block;
+    border-radius: 50px;
+   
+  }
+
+  #imgwrap {
+
+    text-align: center!important;
+      img {
+      border:0;
+      max-width:100px;
+      border-radius:50%;
+      }  
+    }

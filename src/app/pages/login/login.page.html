@@ -1,0 +1,64 @@
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <div class="style-vertical-center">
+          <img src="../../../assets/Logotipo-EQ.png" />
+        </div>
+      </ion-col>
+      <ion-col size="12" class="ion-margin-top ion-margin-bottom">
+        <ion-item>
+          <ion-icon name="person" slot="start"></ion-icon>
+          <ion-input
+            type="email"
+            [(ngModel)]="email"
+            name="email"
+            placeholder="Ingresa tu correo"
+            required="required"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="lock-closed" slot="start"></ion-icon>
+          <ion-input
+            type="password"
+            [(ngModel)]="password"
+            name="password"
+            placeholder="Contraseña"
+            required="required"
+          ></ion-input>
+          <ion-icon slot="end" name="eye-off"></ion-icon>
+        </ion-item>
+
+        <ion-text class="ion-text-left" color="danger"
+          >Contraseña incorrecta</ion-text
+        >
+      </ion-col>
+      <ion-col class="ion-text-center ion-padding-top" size="12">
+        <ion-button
+          class="style-user-button"
+          fill="outline"
+          (click)="login()"
+          expand="block"
+          size="large"
+          >INGRESAR</ion-button
+        >
+      </ion-col>
+      <ion-col class="ion-text-center ion-padding-top ion-margin-top" size="12">
+        <ion-label class="style-user-password" routerLink="/recuperarclave"
+          >RECUPERAR CONTRASEÑA</ion-label
+        >
+      </ion-col>
+      <ion-col class="ion-text-center ion-padding-bottom" size="12">
+        <ion-label class="style-user-account" routerLink="/registro"
+          >CREAR CUENTA</ion-label
+        >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <img src="../../../assets/Groups.png" />
+  </ion-toolbar>
+</ion-footer>

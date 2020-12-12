@@ -1,0 +1,286 @@
+<app-header></app-header>
+
+
+<ion-content class="background ion-padding">
+
+
+
+  <div padding class="myphoto">
+
+    <img src="https://i0.pngocean.com/files/340/946/334/avatar-user-computer-icons-software-developer-avatar-thumb.jpg">
+    
+    </div>
+    <div id="imgwrap">
+      <label class="nombre">{{NombreUsuario}}</label>
+     
+    </div>
+
+
+<ion-list>
+  <ion-item  lines="none">
+   
+    <ion-label> &nbsp;&nbsp;&nbsp;notificaciones Push</ion-label>
+    <ion-toggle checked></ion-toggle>
+  </ion-item>
+
+  <ion-item lines="none"   >
+    
+    <ion-label>&nbsp;&nbsp;&nbsp;Mostrar Numero de contacto</ion-label>
+    <ion-toggle checked></ion-toggle>
+  </ion-item>
+</ion-list>
+
+<ion-list >
+
+</ion-list>
+
+<ion-chip (click)="MuestraDatos()">
+  <ion-label>Datos</ion-label>
+</ion-chip>
+<ion-chip (click)="MuestraDeportes()">
+  <ion-label>Deportes</ion-label>
+</ion-chip>
+<ion-chip (click)="MuestraEstadisticas()">
+  <ion-label>Estadisticas</ion-label>
+</ion-chip>
+
+<div *ngIf="Datos == 1">
+
+<ion-list>
+  
+<ion-item lines="none"    >
+  <ion-icon  slot="start"  name="person-circle-outline"></ion-icon>
+
+  <ion-input  type="ApellidoMaterno"
+  [(ngModel)]="NombreUsuario"
+  name="NombreUsuario"
+  required="required"></ion-input>
+</ion-item>
+
+<ion-item  lines="none"   >
+  <ion-icon slot="start" name="mail-open-outline"></ion-icon>
+
+  <ion-input  type="Email"
+  [(ngModel)]="Email"
+  name="Email"
+  required="required"></ion-input>
+</ion-item>
+
+<ion-item lines="none"    >
+  <ion-icon slot="start" name="call-outline"></ion-icon>
+
+  <ion-input  type="Email"
+  [(ngModel)]="Telefono"
+  name="Telefono"
+  required="required"></ion-input>
+</ion-item>
+<ion-item lines="none"    >
+ 
+  <ion-select interface="action-sheet" [(ngModel)]="Idregion" okText="ok" cancelText="Cancelar">
+    <ion-select-option value="0">Sin Region</ion-select-option>
+    <ion-select-option value="1">ARICA Y PARINACOTA  </ion-select-option>
+    <ion-select-option value="2">TARAPACÁ  </ion-select-option>
+    <ion-select-option value="3">ANTOFAGASTA  </ion-select-option>
+    <ion-select-option value="4">COQUIMBO  </ion-select-option>
+    <ion-select-option value="5">VALPARAÍSO  </ion-select-option>
+    <ion-select-option value="6">DEL LIBERTADOR GRAL. BERNARDO O'HIGGINS </ion-select-option>
+    <ion-select-option value="7">DEL MAULE </ion-select-option>
+    <ion-select-option value="8">DEL BIOBÍO </ion-select-option>
+    <ion-select-option value="9">DE LA ARAUCANÍA </ion-select-option>
+    <ion-select-option value="10">DE LOS RÍOS </ion-select-option>
+    <ion-select-option value="11">DE LOS LAGOS  </ion-select-option>
+    <ion-select-option value="12">AISÉN DEL GRAL.CARLOS IBÁÑEZDEL CAMPO </ion-select-option>
+    <ion-select-option value="13">MAGALLANESY DE LA ANTÁRTICACHILENA </ion-select-option>
+    <ion-select-option value="14">METROPOLITANA DE SANTIAGO </ion-select-option>
+    <ion-select-option value="15">ATACAMA </ion-select-option>
+    <ion-select-option value="16">ÑUBLE </ion-select-option>
+
+
+
+  </ion-select>
+</ion-item>
+
+<ion-item  lines="none"  color="none" >
+ 
+  <ion-select interface="action-sheet" [(ngModel)]="IdNacionalidad" okText="ok" cancelText="Cancelar">
+    <ion-select-option *ngFor="let p of Paises" value="{{p.IdPais}}">{{p.Nombre}}</ion-select-option>
+    
+  </ion-select>
+</ion-item>
+  
+<ion-item lines="none"  color="none"  >
+  
+  <ion-select interface="action-sheet" [(ngModel)]="IdGenero" okText="ok" cancelText="Cancelar">
+    <ion-select-option value="1">NO RESPONDE</ion-select-option>
+    <ion-select-option value="2">MASCULINO  </ion-select-option>
+    <ion-select-option value="3">FEMENINO </ion-select-option>
+    
+
+
+
+  </ion-select>
+</ion-item>
+
+<ion-item lines="none"  color="none" >
+ 
+  <ion-input type="password"
+    [(ngModel)]="Password"
+  name="Password"
+  required="required"  ></ion-input>
+</ion-item>
+
+<label class="chica">Datos Opcionales</label>
+<br><br>
+<ion-item lines="none"  color="none" > 
+  <ion-icon slot="start" name="person-outline"></ion-icon>
+
+  <ion-input  type="Nombre"
+  [(ngModel)]="Nombre"
+  name="Nombre"
+  placeholder= "Nombre"
+  required="required"></ion-input>
+</ion-item>
+
+
+<ion-item  lines="none"  color="none" >
+  <ion-icon slot="start" name="person-outline"></ion-icon>
+ 
+  <ion-input  type="ApellidoPaterno"
+  [(ngModel)]="ApellidoPaterno"
+  placeholder= "Apellidos"
+  name="ApellidoPaterno"
+  required="required"></ion-input>
+</ion-item>
+</ion-list>
+
+
+
+   
+
+
+
+
+
+
+
+
+
+<ion-button class="botones"  fill="outline" (click)="ActualizaPerfil()"  expand="block">Guardar Cambios</ion-button>
+</div>
+
+<div *ngIf="Deportes == 1">
+<h5>Deportes Favoritos</h5>
+  
+  
+
+  
+  <ion-item lines="none"  color="none"  >
+    <ion-label>Categoria</ion-label>
+    <ion-select interface="action-sheet" [(ngModel)]="IdCategoria" (ionChange)="CargaSub()" okText="ok" cancelText="Cancelar">
+      <ion-select-option *ngFor="let p of Categorias" value="{{p.IdCategoria}}">{{p.Decripcion}}</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+
+  <ion-item lines="none"  color="none" >
+    <ion-label>Sub Categoria</ion-label>
+    <ion-select interface="action-sheet"  [(ngModel)]="IdSubCategoria" okText="ok" (ionChange)="AgregarDatos()" cancelText="Cancelar">
+      <ion-select-option *ngFor="let p of SubCategorias" value="{{p.IdSubCategoria}}">{{p.Descripcion}}</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+
+
+
+  
+
+  <br><br>
+<div *ngFor="let t of NombreCategorias">
+  <ion-item class="fondoitem"lines="none"   > 
+  <Label class="SubCat">{{t}}</Label>
+  <ion-icon class="eliminar" (click) = "EliminarCategoriaUsuario(t)" slot="end" name="trash-outline"></ion-icon>
+</ion-item>
+<br>
+</div>
+<ion-button class="botones"  fill="outline" (click)="ActualizaPerfil()"  expand="block">Guardar Cambios</ion-button>
+</div>
+
+
+
+<div *ngIf="Estadisticas == 1" >
+  
+
+  <ion-item lines="none" color="none">
+    <ion-label>Categoria</ion-label>
+    <ion-select interface="action-sheet" [(ngModel)]="IdCategoria" (ionChange)="CargaSub()" okText="ok" cancelText="Cancelar">
+      <ion-select-option *ngFor="let p of Categorias" value="{{p.IdCategoria}}">{{p.Decripcion}}</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+  <ion-item lines="none" color="none" >
+    <ion-label>Sub Categoria</ion-label>
+    <ion-select interface="action-sheet" [(ngModel)]="IdSubCategoria" okText="ok" (ionChange)="ListaEstadisticasSub()" cancelText="Cancelar">
+      <ion-select-option *ngFor="let p of SubCategorias" value="{{p.IdSubCategoria}}">{{p.Descripcion}}</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+
+  <div *ngFor="let c of estadisticas">
+
+    <ion-item lines="none"  color="none"> 
+    
+    <ion-label>Jugados</ion-label>
+    
+    <ion-badge slot="end" color="primary">{{c.partidosJugados}}</ion-badge>
+  </ion-item>
+  
+  <ion-item lines="none"  color="none"> 
+    
+    <ion-label>Ganados </ion-label>
+  
+    <ion-badge slot="end" color="success">{{c.partidosGanados}}</ion-badge>
+    
+  </ion-item>
+  
+  
+  <ion-item lines="none"  color="none"> 
+    <ion-label>Perdidos </ion-label>
+      <ion-badge slot="end" color="danger">{{c.partidosPerdidos}}</ion-badge>
+    
+  </ion-item>
+  
+  
+  <ion-item lines="none"  color="none"> 
+    <ion-label>Empatados </ion-label>
+    <ion-badge slot="end" color="warning">{{c.partidosEmpatados}}</ion-badge>
+    
+  </ion-item>
+  
+  <ion-item lines="none"  color="none"> 
+    <ion-label>No Registrados </ion-label>
+    <ion-badge slot="end" color="primary">{{c.partidosNoRegistrados}}</ion-badge>
+    
+  </ion-item>
+  
+  
+  </div>
+  
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>

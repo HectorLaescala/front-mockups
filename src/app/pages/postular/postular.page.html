@@ -1,0 +1,97 @@
+<app-header></app-header>
+
+<ion-content class="background ion-padding">
+
+  <ion-button class="botonesChicos"  expand="block" fill="outline" (click)="Buscar()">Filtrar <ion-icon slot="end" name="search-outline"></ion-icon></ion-button>
+
+  <ion-item color="none">
+    <ion-label>Categoria</ion-label>
+    <ion-select interface="action-sheet" [(ngModel)]="IdCategoria" (ionChange)="CargaSub()" okText="ok" cancelText="Cancelar">
+      <ion-select-option *ngFor="let p of Categorias" value="{{p.IdCategoria}}">{{p.Decripcion}}</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+
+  <ion-item color="none" >
+    <ion-label>Sub Categoria</ion-label>
+    <ion-select interface="action-sheet" [(ngModel)]="IdSubCategoria"  okText="ok" cancelText="Cancelar">
+      <ion-select-option *ngFor="let p of SubCategorias" value="{{p.IdSubCategoria}}">{{p.Descripcion}}</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+
+
+  <ion-item color="none" lines="none" >
+    <ion-label class="Letrachica">Mas opciones</ion-label>
+    <ion-checkbox class="checkchico"  [(ngModel)]="Opaciones" (ionChange)="MasOpciones()" ></ion-checkbox>
+  </ion-item>
+
+  <div class="divnuevo" *ngIf="Mas == 'SI'">    
+    <ion-item color="none" >
+      <ion-label>Region</ion-label>
+      <ion-select interface="action-sheet" [(ngModel)]="Idregion" (ionChange)="SeleccionRegion()" okText="ok" cancelText="Cancelar">
+        <ion-select-option *ngFor="let p of Region" value="{{p.IdRegion}}">{{p.Descripcion}}</ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+
+    <ion-item color="none"   >
+      <ion-label>Comuna</ion-label>
+      <ion-select interface="action-sheet" [(ngModel)]="IdComuna"  okText="ok" cancelText="Cancelar">
+        <ion-select-option *ngFor="let c of Comuna" value="{{c.IdComuna}}">{{c.Descripcion}}</ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+
+
+    
+    <ion-item color="none" >
+      <ion-label>Fecha Evento</ion-label>
+    
+      <ion-datetime
+      interface="action-sheet"
+      [(ngModel)]="FechaEvento"
+      name="FechaEvento"
+      cancelText="Cancelar"
+      doneText= "Ok"
+      id="dynamicDisabled" displayFormat="MM/DD/YYYY"  value="2020-12-15"></ion-datetime>
+    </ion-item>
+  </div>
+
+
+  <br>
+
+<div *ngFor="let p of PostulacionesDisponibles">
+
+
+  <ion-card  >
+   
+     
+    <ion-card-content class="background"> 
+
+      <ion-item >
+        <ion-avatar slot="end">
+          <img src="../../../assets/logo.png">
+        </ion-avatar>
+        <h4 class="titulo"> Evento:  &nbsp;&nbsp;</h4> <h4 class="titulochico">{{ p.evento}}</h4>
+      </ion-item>
+      <br>
+     <h2 class="titulo">Nombre Equipo: &nbsp;&nbsp;</h2> <h4> {{ p.Equipo}}</h4>
+     <h2 class="titulo">Tipo Postulacion: &nbsp;&nbsp; </h2> <h4>{{ p.Tipo}}</h4>
+     <h2 class="titulo">Fecha: &nbsp;&nbsp;</h2> <h4> {{ p.ano}}&nbsp;/&nbsp;{{ p.mes}}&nbsp;/&nbsp;{{ p.dia}}</h4>
+     <h2 class="titulo">Hora: &nbsp;&nbsp; </h2> <h4>{{ p.hora}}&nbsp;:&nbsp;{{p.minutos}}</h4>
+    <br>
+    <ion-button class="botones" (click)="Postula(p.IdEvento,p.IdTipoPostulacion)" size="small" expand="block" fill="outline" >Postular</ion-button>
+  
+      
+    </ion-card-content>
+  </ion-card>
+
+
+</div>
+
+
+
+
+
+</ion-content>

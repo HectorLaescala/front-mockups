@@ -1,0 +1,26 @@
+*{
+    color: black;
+    font-family: Montserrat-Light;
+}
+
+ion-content.background{
+    --background: #000
+    url('../../../assets/background2_.png') no-repeat center center / cover;
+}
+
+
+.Titulos{
+    color: black;
+    font-family: Montserrat-Bold;
+  
+}
+.publicidad{
+    height: 100px;
+    width: 100%;
+   
+   }
+
+   .Textchip{
+    font-family: Montserrat-Light;
+    font-size: 12px;
+  }

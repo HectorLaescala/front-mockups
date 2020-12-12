@@ -1,0 +1,60 @@
+%!Adobe-FontList 1.14
+%Locale:0xc0a
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Montserrat-Black
+FamilyName:Montserrat
+StyleName:Black
+FullName:Montserrat Black
+MenuName:Montserrat Black
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\El_fa\Desktop\ionic\APDeportes\src\assets\Font\Montserrat-Black.ttf
+DataFormat:sfntData
+FileLength:257552
+FileModTime:1323741600
+WeightClass:900
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Montserrat-Bold
+FamilyName:Montserrat
+StyleName:Bold
+FullName:Montserrat Bold
+MenuName:Montserrat
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\El_fa\Desktop\ionic\APDeportes\src\assets\Font\Montserrat-Bold.ttf
+DataFormat:sfntData
+FileLength:244468
+FileModTime:1323741600
+WeightClass:700
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Montserrat-Light
+FamilyName:Montserrat
+StyleName:Light
+FullName:Montserrat Light
+MenuName:Montserrat Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\El_fa\Desktop\ionic\APDeportes\src\assets\Font\Montserrat-Light.ttf
+DataFormat:sfntData
+FileLength:242068
+FileModTime:1323741600
+WeightClass:300
+WidthClass:5
+AngleClass:0
+%EndFont
+

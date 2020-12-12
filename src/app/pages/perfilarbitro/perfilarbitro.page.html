@@ -1,0 +1,147 @@
+<app-header></app-header>
+
+<ion-content class="background ion-padding">
+
+
+
+
+  <div class="espacioboton">
+
+    
+    <ion-button class="botones"  fill="outline" (click)="dejar()"  expand="block">Dejar de ser Arbitro</ion-button>
+  </div>
+
+  <ion-chip (click)="MuestraDeportes()">
+    <ion-label>Deportes</ion-label>
+  </ion-chip>
+  <ion-chip (click)="MuestraEstadisticas()">
+    <ion-label>Estadisticas</ion-label>
+  </ion-chip>
+
+  <div *ngIf="DeportesMostrar == 1">
+          <div class="contenedor">
+
+            <ion-item color="none">
+              <ion-label>Categoria</ion-label>
+              <ion-select interface="action-sheet" [(ngModel)]="IdCategoria" (ionChange)="CargaSub()" okText="ok" cancelText="Cancelar">
+                <ion-select-option *ngFor="let p of Categorias" value="{{p.IdCategoria}}">{{p.Decripcion}}</ion-select-option>
+                
+              </ion-select>
+            </ion-item>
+
+            <ion-item color="none" >
+              <ion-label>Sub Categoria</ion-label>
+              <ion-select interface="action-sheet" [(ngModel)]="IdSubCategoria" okText="ok" cancelText="Cancelar">
+                <ion-select-option *ngFor="let p of SubCategorias" value="{{p.IdSubCategoria}}">{{p.Descripcion}}</ion-select-option>
+                
+              </ion-select>
+            </ion-item>
+
+            <ion-item  color="none" >
+          
+              <ion-label class="textos-ligth" center position="floating">Tarifa a cobrar</ion-label>
+              <ion-input class="input2"  type="number"
+              [(ngModel)]="Valor"
+              name="Valor"
+              required="required"></ion-input>
+            </ion-item>
+
+            <ion-item color="none" class="input">
+              <ion-textarea [(ngModel)]="Observacion" placeholder="Observacion..."></ion-textarea>
+            </ion-item>
+
+        </div>
+        <br>
+        <div class="espacioboton">
+        
+          <ion-button class="botones"  fill="outline" (click)="Guardar()"  expand="block">Agregar</ion-button>
+        <br><br>
+        </div>
+
+
+        <div *ngFor="let c of arbitro">
+
+
+          <ion-card class="background" color="none">
+          
+            
+            <ion-card-content class="background"> 
+
+              <ion-item color="none">
+                <ion-avatar slot="end">
+                  <img src="../../../assets/logo.png">
+                      <img slot="start" (click)="Actualizar(c.IdArbitro,c.Valor)"class="iconoimagen" src="../../../assets/iconoActualizar.png">
+                </ion-avatar>
+                <h4 class="titulo"> Deporte:  &nbsp;&nbsp;</h4> <h4 class="titulochico">{{ c.Descripcion}}</h4>
+              </ion-item>
+              <br>
+            <h2 class="titulo">Tarifa: &nbsp;&nbsp;</h2>  
+                    <ion-input class="inputColor" type="number"   [(ngModel)]="c.Valor"
+                    name="Valor"
+                    required="required"></ion-input>
+            <h2 class="titulo">Observacion: &nbsp;&nbsp; </h2> 
+            <ion-input  type="text" class="inputColor"  [(ngModel)]="c.Observacion"
+            name="Valor"
+            required="required"></ion-input>
+
+            <br>
+            
+            
+
+            <ion-icon slot="start" class="btnactualizar tamanoIcono" (click)="Actualizar(c.IdArbitro,c.Valor,c.Observacion)"name="cloud-upload-sharp"></ion-icon>
+            <ion-icon slot="start" class="tamanoIcono"  (click)="Eliminar(c.IdArbitro)" name="trash-sharp"></ion-icon>
+            </ion-card-content>
+          
+          </ion-card>
+
+
+        </div>
+
+</div>
+
+<div *ngIf="EstadisticasMostrar == 1">
+
+
+  <ion-item lines="none" color="none">
+    <ion-label>Categoria</ion-label>
+    <ion-select interface="action-sheet" [(ngModel)]="IdCategoria" (ionChange)="CargaSubEst()" okText="ok" cancelText="Cancelar">
+      <ion-select-option *ngFor="let p of Categorias" value="{{p.IdCategoria}}">{{p.Decripcion}}</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+  <ion-item lines="none" color="none" >
+    <ion-label>Sub Categoria</ion-label>
+    <ion-select interface="action-sheet" [(ngModel)]="IdSubCategoria" okText="ok" (ionChange)="ListaEstadisticasSub()" cancelText="Cancelar">
+      <ion-select-option *ngFor="let p of SubCategorias" value="{{p.IdSubCategoria}}">{{p.Descripcion}}</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+
+  <div *ngFor="let c of estadisticas">
+
+    <ion-item lines="none"  color="none"> 
+    
+    <ion-label>Arbitrados</ion-label>
+   
+    <ion-badge slot="end" color="success">{{c.PartidosArbitrados}}</ion-badge>
+  </ion-item>
+  
+  <ion-item lines="none"  color="none"> 
+    
+    <ion-label>ganancias </ion-label>
+    
+    <ion-badge slot="end" color="success">{{c.ganancia}}</ion-badge>
+  </ion-item>
+  
+  
+ 
+  
+  
+  </div>
+  
+</div>
+
+
+
+
+</ion-content>

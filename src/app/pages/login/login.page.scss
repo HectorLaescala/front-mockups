@@ -1,0 +1,68 @@
+ion-icon[name="lock-closed"],
+ion-icon[name="person"] {
+  color: #333333;
+}
+
+//:host {
+  ion-item {
+      --highlight-color-invalid: #F43C4B;
+      --highlight-height: 1px;
+      margin-bottom: 3px;
+      //--border-color: transparent!important;
+  }
+//}
+ion-input{
+  font-family: Montserrat-Regular;
+}
+
+ion-icon[name="eye-off"] {
+    color: #B9B8B9;
+  }
+
+.style-vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.style-user-account {
+  color: #c90949;
+}
+.style-user-password {
+  color: #626262;
+}
+
+.style-user-account,
+.style-user-password {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.83px;
+  line-height: 13px;
+  font-family: Montserrat-SemiBold;
+}
+
+.style-user-button {
+  --border-color: #c90949;
+  --border-radius: 41.5px;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 56px;
+  --background: #c90949;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 18px;
+  font-family: Montserrat-SemiBold;
+}
+
+img {max-width: none !important;}
+
+ion-text{
+  color: #D0021B;
+  font-family: Montserrat-Regular;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 13px;
+}

@@ -1,0 +1,59 @@
+
+<app-header></app-header>
+<ion-content class="ion-padding">
+
+
+ 
+
+
+    <ion-label class="Titulos">EQUIPOS QUE ADMINISTRO</ion-label>
+    <br><br><br>
+      <div *ngFor="let t of MisEquipos">
+
+
+        <ion-item lines="none"  color="none"> 
+        <div>
+          <Label class="SubCat">{{t.Nombre}}</Label>
+          <br>
+          <Label class="SubCat">Miembros: {{t.CantidadMiembros}}</Label>
+
+        </div>
+         
+        
+          <ion-icon (click) = "Navegar(t.IdEquipo,3)"  slot="end"  name="ellipsis-vertical-outline"></ion-icon>
+      </ion-item>
+
+      </div>
+
+      <br>
+      <ion-label class="Titulos">EQUIPOS QUE SOY MIEMBRO</ion-label>
+      <br><br><br>
+        <div *ngFor="let t of Pertenezco">
+  
+  
+          <ion-item lines="none"  color="none"> 
+            <div>
+              <Label class="SubCat">{{t.Nombre}}</Label>
+              <br>
+              <Label class="SubCat">Miembros: {{t.CantidadMiembros}}</Label>
+    
+            </div>
+          
+            <ion-icon (click) = "Navegar(t.IdEquipo,3)"  slot="end"  name="ellipsis-vertical-outline"></ion-icon>
+        </ion-item>
+  
+        </div>
+      
+
+
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <img class="publicidad" src="https://www.roastbrief.com.mx/wp-content/uploads/2016/08/just-do-it-nike.jpg">
+  
+
+  </ion-toolbar>
+</ion-footer>

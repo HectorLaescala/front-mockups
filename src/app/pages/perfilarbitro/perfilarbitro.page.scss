@@ -1,0 +1,70 @@
+
+*{
+    font-family: Montserrat-Light;
+    color: black;
+  }
+  
+  p{
+    font-family: Montserrat-Bold;
+  }
+  ion-content.background{
+    --background: #fff
+    //url('../../../assets/background2_.png') no-repeat center center / cover;
+  }
+
+  ion-card-content.background{
+    --ion-background-color:#000;
+  }
+
+  .titulo{
+    font-family: Montserrat-Bold;
+}
+.Contenedor{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+
+.ContenedorGrande{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10%;
+}
+.botones{
+  --border-color:#ca094a;
+  --border-radius: 5px;
+  font-family: Montserrat-Bold;
+  color: #fff;
+  font-size: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  --background: #ca094a;
+}
+
+ion-card-content {
+  padding-top: 1px;
+}
+
+ion-card {
+  border:3px solid #ca094a;
+  
+}
+
+
+
+.btnactualizar{
+  padding-right: 80%;
+}
+
+
+.inputColor{
+  background-color: #fff;
+ 
+  
+}
+
+ion-badge{
+  font-size: 15px;
+  width: 35px;
+}

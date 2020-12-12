@@ -1,0 +1,41 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="closeModalPlayerPostulation()">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="style-fullheight style-fullheightRow">
+    <ion-card>
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12">
+              <ion-item lines="none" class="ion-no-padding">
+                <ion-avatar slot="start">
+                  <!--<ion-img src="../../assets/list/avatar-ben.png"></ion-img>-->
+                </ion-avatar>
+                <ion-label>
+                  <p>EQUIPO</p>
+                  <h3>Renca juniors</h3>
+                </ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12" class="ion-text-center style-col-first">
+              <p>El 75% de usuarios volvería a</p>
+              <p>invitar a este jugador.</p>
+            </ion-col>
+            <ion-col size="12" class="ion-text-center style-col-last">
+              <p>No cancelado partidos ni ha tenido</p>
+              <p>inasistencias en los ultimos 6 meses.</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

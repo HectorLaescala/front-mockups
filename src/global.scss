@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,42 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.custom-modal-search-filter .modal-wrapper {
+  --height: 78%;
+  margin-top: 50%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.custom-modal-vacant-home-postulation .modal-wrapper {
+  background: transparent !important;
+}
+
+.custom-modal-referee-acepted .modal-wrapper {
+  background: transparent !important;
+}
+
+.custom-modal-player-acepted .modal-wrapper {
+  background: transparent !important;
+}
+
+.custom-modal-team-postulation .modal-wrapper {
+  background: transparent !important;
+}
+
+.custom-modal-referee-postulation .modal-wrapper {
+  background: transparent !important;
+}
+
+.custom-modal-player-postulation .modal-wrapper {
+  // padding: 30vh 30px 20vh 30px;
+  background: transparent !important;
+}
+
+.custom-modal-team-all .modal-wrapper {
+  background: transparent !important;
+}
+
+.custom-modal-add-enclosure .modal-wrapper {
+  background: transparent !important;
+}

@@ -1,0 +1,123 @@
+ion-icon[name="chevron-back-outline"] {
+  color: #333333;
+}
+
+ion-card-header + .card-content-md {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+ion-card-title,
+ion-card-subtitle {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 13px;
+  font-family: Montserrat-Bold;
+}
+
+ion-card {
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 22px 4px rgba(51, 51, 51, 0.05),
+    0 7px 8px -4px rgba(51, 51, 51, 0.1);
+}
+
+ion-card-title {
+  --color: #333333;
+}
+
+ion-card-subtitle {
+  margin-top: 5px;
+  --color: #3c8af4;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #cccccc;
+  margin: 18px 4px;
+}
+
+.style-card-row-sport {
+  background-color: #ebebeb;
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid#FFFFFF;
+  padding: 5px;
+}
+
+.text-first {
+  color: #707070;
+}
+
+.text-last {
+  color: #333333;
+}
+
+.text-first,
+.text-last {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 13px;
+  font-family: Montserrat-Bold;
+}
+
+.style-card-row-enclosure {
+  background-color: #ebebeb;
+  border-radius: 0px 0px 5px 5px;
+  padding: 5px;
+  margin: 0px 1px;
+}
+
+.style-card-row-date {
+  padding: 5px;
+}
+
+.style-vertical-center {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet-active {
+  background: #c90949;
+}
+
+.footer-md::before {
+  height: 1px;
+  background-color: #ebebeb;
+}
+
+.style-text-title > p {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-family: Montserrat-SemiBold;
+  margin: 0px 0px;
+}
+
+.style-buttom-skip-footer,
+.style-buttom-continue-footer {
+  height: 32px;
+  border: 1px solid #ebebeb;
+  border-radius: 41.5px;
+  --color: #707070;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+  --background: #ffffff;
+  line-height: 13px;
+  font-family: Montserrat-SemiBold;
+  --box-shadow: none;
+}
+
+.style-buttom-skip-footer {
+  margin-left: 15px;
+}
+.style-buttom-continue-footer {
+  margin-right: 15px;
+}

@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<ion-content class="background ion-padding">
+
+<ion-label class="titulo">PARTIDOS INDIVIDUAL</ion-label>
+  <div class="division" *ngFor="let c of PartidosIndividual">
+    <ion-item lines="none"  color="none">
+     
+      <ion-label>      
+        <h4>Nombre Partido: {{ c.NombreEvento}}</h4>  
+        <p>Tipo Evento: {{c.Descripcion}}</p>
+        <p>Fecha {{c.ano}} / {{c.mes}} / {{c.dia}} &nbsp;&nbsp; Hora: {{c.hora}}:{{c.minuto}}  
+          
+        </p>
+      </ion-label>
+      <ion-icon slot="end" (click)=VerEvento(c.IdEvento)  name="caret-forward-outline"></ion-icon>
+ 
+      
+    </ion-item>
+  </div>
+<br><br>
+  <ion-label class="titulo">PARTIDOS ADMINISTRADOS</ion-label>
+  <div class="division" *ngFor="let c of PartidosAdmin">
+    <ion-item lines="none"  color="none">
+     
+      <ion-label>      
+        <h4>Nombre Partido: {{ c.NombreEvento}}</h4>  
+        <p>Tipo Evento: {{c.Descripcion}}</p>
+        <p>Fecha {{c.ano}} / {{c.mes}} / {{c.dia}} &nbsp;&nbsp; Hora: {{c.hora}}:{{c.minuto}}  
+          
+        </p>
+      </ion-label>
+      <ion-icon slot="end" (click)=VerEvento(c.IdEvento)  name="caret-forward-outline"></ion-icon>
+
+     
+      
+      
+    </ion-item>
+  </div>
+
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <img class="publicidad" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_KHyrrH18r7sxr_G-4eNmCfB3WKxm_MKAlw3df36vlTibIKBR&usqp=CAU">
+  
+
+  </ion-toolbar>
+</ion-footer>

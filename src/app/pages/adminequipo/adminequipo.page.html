@@ -1,0 +1,176 @@
+ <ion-header>
+  <ion-toolbar class="background" mode="md">
+
+    <ion-icon  style="zoom:2.0;" (click)="Salir()" slot="end" name="close-outline"></ion-icon>
+    <ion-title>Administrador de Equipo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  
+  
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-col>
+      <ion-col size="10">
+        <h5> {{NombreEquipo}}</h5>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col (click)="MuestraMiembros()">
+        Miembros
+      </ion-col>
+      <ion-col (click)="MuestraDeportes()">
+        Datos
+      </ion-col>
+      <ion-col (click)="MuestraPostulaciones()">
+        Estadisticas
+      </ion-col>
+     
+    </ion-row>
+  </ion-grid>
+
+
+ 
+    
+   
+
+  <div *ngIf="estadisticas == 1">
+    <h5>Estadisticas</h5>
+    
+ 
+    
+
+
+
+</div>
+
+
+  
+  <div *ngIf="deportes == 1">
+              <h5>Agregar Deportes</h5>
+              
+              <ion-item lines="none"  color="none">
+                <ion-label>Categoria</ion-label>
+                <ion-select interface="action-sheet"  [(ngModel)]="IdCategoria" (ionChange)="CargaSub()" okText="ok" cancelText="Cancelar">
+                  <ion-select-option *ngFor="let p of Categorias" value="{{p.IdCategoria}}">{{p.Decripcion}}</ion-select-option>
+                  
+                </ion-select>
+              </ion-item>
+
+              <ion-item lines="none"  color="none">
+                <ion-label>Sub Categoria</ion-label>
+                <ion-select interface="action-sheet"  [(ngModel)]="IdSubCategoria" okText="ok" (ionChange)="AgregarDatos()" cancelText="Cancelar">
+                  <ion-select-option *ngFor="let p of SubCategorias" value="{{p.IdSubCategoria}}">{{p.Descripcion}}</ion-select-option>
+                  
+                </ion-select>
+              </ion-item>
+            
+            <br>
+              
+
+              
+            <h5>Deportes del Equipo</h5>
+            <div *ngFor="let t of NombreCategorias">
+              <ion-item lines="none"  color="none"> 
+              <Label class="SubCat">{{t}}</Label>
+              <ion-icon class="borrar" *ngIf="Admin == 'SI'" (click) = "EliminarCategoriaEquipo(t)" slot="end" name="trash-outline"></ion-icon>
+            </ion-item>
+            </div>
+  
+</div>
+
+<div *ngIf="miembros == 1">
+       <ion-label class="titulo">LISTA DE MIEMBROS</ion-label>
+        <div *ngFor="let m of Miembros">
+          <ion-item lines="none"  color="none"> 
+          <Label class="SubCat">{{m.NombreUsuario}}</Label>
+          <ion-icon class="agregar" *ngIf="Admin == 'SI' && (m.IdRolJugadorEquipo != 3 && m.IdRolJugadorEquipo != 1)" (click) = "ActualizaMiembro(m.IdUsuarioEquipo)" slot="end" name="color-wand-outline"></ion-icon>
+          <ion-icon class="borrar" *ngIf="Admin == 'SI' && (m.IdRolJugadorEquipo == 1)" (click) = "QuitarAdmin(m.IdUsuarioEquipo)" slot="end" name="alert-outline"></ion-icon>
+        
+          <ion-icon class="borrar"*ngIf="(m.IdRolJugadorEquipo == 1 || m.IdRolJugadorEquipo == 2) && Admin == 'SI'" (click) = "EliminarMiembro(m.IdUsuarioEquipo)" slot="end" name="trash-outline"></ion-icon>
+          
+
+        </ion-item>
+        </div>
+
+        <br><br>
+        <ion-label class="titulo">POSTULANTES</ion-label>
+        <br><br>
+        <ion-label class="titulo">INVITACIONES ENVIADAS</ion-label>
+</div>
+
+
+<div *ngIf="postulaciones == 1">
+        <h5>Postulaciones al Equipo</h5>
+        <div *ngFor="let m of Postulaciones">
+          <ion-item lines="none"  color="none"> 
+          <Label class="SubCat">{{m.NombreUsuario}}</Label>
+          <ion-icon class="agregar"*ngIf="Admin == 'SI'" (click) = "Aceptar(m.IdPostulacionEquipo)" slot="end" name="checkmark-outline"></ion-icon>
+        
+          <ion-icon class="borrar"*ngIf="Admin == 'SI'" (click) = "EliminarPostulacion(m.IdPostulacionEquipo)" slot="end" name="trash-outline"></ion-icon>
+          
+
+        </ion-item>
+
+        </div>
+
+
+        <h5>invitaciones Enviadas</h5>
+        <div *ngFor="let m of Pendiente">
+          <ion-item lines="none"  color="none"> 
+          <Label class="SubCat">{{m.NombreUsuario}}</Label>
+          
+          <ion-icon class="borrar"*ngIf="Admin == 'SI'" (click) = "EliminarPendiente(m.IdInvitacionEquipo)" slot="end" name="trash-outline"></ion-icon>
+          
+
+        </ion-item>
+
+        </div>
+
+          <br><br><br>
+          <ion-searchbar (ionChange)="BuscaUsuario($event)" animated placeholder="Buscar Jugadores"></ion-searchbar>
+
+
+          <ion-list *ngFor="let m of Usuarios">
+          
+          <ion-item lines="none"  color="none">
+            <ion-icon class="verde" (click) = "AgregaMiembro(m.IdUsuario)" slot="end" name="add-outline"></ion-icon>
+            <h6 class="verde">{{m.NombreUsuario}}</h6>
+          </ion-item>
+
+          </ion-list>
+
+</div>
+
+
+<br>
+<br>
+<ion-button *ngIf="Admin == 'SI'" class="botones"  fill="outline" (click)="ActualizaEquipo()"  expand="block">Actualiza Equipo</ion-button>
+<ion-button class="botones"  fill="outline" (click)="AbandonarEquipo()"  expand="block">Abandonar Equipo</ion-button>
+
+
+
+
+
+  
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <img class="publicidad" src="https://www.marketingsgm.es/wp-content/uploads/Go-Run-it-1024x287.jpg">
+    
+  
+    </ion-toolbar>
+  </ion-footer>
+  
+  
+

@@ -1,0 +1,110 @@
+ion-title {
+  color: #ffffff;
+  font-family: Montserrat-SemiBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+ion-label {
+  margin-top: 15px;
+}
+
+p {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-left: 14px;
+  font-family: Montserrat-SemiBold;
+}
+
+h3 {
+  color: #707070;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 13px;
+  font-family: Montserrat-Regular;
+  margin-left: 14px;
+  padding-bottom: 10px;
+}
+
+ion-item {
+  --padding-end: 0px;
+  --inner-padding-end: 0px;
+}
+
+.style-inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.style-row-aling-request > ion-badge {
+  height: 16px;
+  width: 24px;
+  --background: #cee1fc;
+  border-radius: 41.5px;
+  color: #3c8af4;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 10px;
+  font-family: Montserrat-Bold;
+  margin-bottom: 10px;
+  margin-left: 8px;
+}
+
+.style-row-aling-request > p {
+  color: #333333;
+  font-family: Montserrat-Bold;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: 1px;
+  margin-left: 19px;
+  margin-bottom: 10px;
+}
+
+.style-item-div {
+  border-radius: 10px;
+  --background: #fff;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 6px 30px 5px rgba(51, 51, 51, 0.05),
+    0 8px 10px -5px rgba(51, 51, 51, 0.1);
+  margin: 0px 10px 15px 10px;
+}
+
+.style-item-img-first {
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 56px;
+  background-color: #3c8af4;
+  height: 56px;
+  margin-left: 7px;
+  margin-right: 0px;
+}
+
+.style-item-img-last {
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 56px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  height: 56px;
+  margin-left: 7px;
+  margin-right: 0px;
+}
+
+.style-item-button-icon {
+  --border-color: none;
+  --background: #ffffff;
+  --border-radius: 50px;
+  --border-width: 0px;
+  --color: #333333;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 4px;
+}

@@ -1,0 +1,144 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        icon="chevron-back-outline"
+        mode="md"
+        defaultHref="login"
+      ></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-padding-start ion-padding-end ion-padding-bottom">
+    <ion-row>
+      <ion-col size="12">
+        <div class="style-vertical-center">
+          <img src="../../../assets/Big-Isotipo.png" />
+        </div>
+      </ion-col>
+      <ion-col size="12" class="ion-text-center">
+        <p>CREAR MI CUENTA</p>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item>
+          <ion-icon name="person" slot="start"></ion-icon>
+          <ion-input
+            type="text"
+            [(ngModel)]="NombreUsuario"
+            name="NombreUsuario"
+            placeholder="Nombre de usuario"
+            required="required"
+          ></ion-input>
+          <ion-icon name="pencil-sharp" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="mail" slot="start"></ion-icon>
+          <ion-input
+            type="email"
+            [(ngModel)]="Email"
+            name="Email"
+            placeholder="Email"
+            required="required"
+          ></ion-input>
+          <ion-icon name="pencil-sharp" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="transgender" slot="start" mode="ios"></ion-icon>
+          <ion-label>Género</ion-label>
+          <ion-select value="IdGenero" interface="popover">
+            <ion-select-option value="1">MASCULINO</ion-select-option>
+            <ion-select-option value="2">FEMENINO</ion-select-option>
+            <ion-select-option value="3">NO RESPONDE</ion-select-option>
+          </ion-select>
+          <ion-icon name="pencil-sharp" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="location-sharp" slot="start" mode="ios"></ion-icon>
+          <ion-label>Región</ion-label>
+          <ion-select value="Idregion" interface="popover">
+            <ion-select-option value="0">Sin Region</ion-select-option>
+            <ion-select-option value="1">ARICA Y PARINACOTA </ion-select-option>
+            <ion-select-option value="2">TARAPACÁ </ion-select-option>
+            <ion-select-option value="3">ANTOFAGASTA </ion-select-option>
+            <ion-select-option value="4">COQUIMBO </ion-select-option>
+            <ion-select-option value="5">VALPARAÍSO </ion-select-option>
+            <ion-select-option value="6"
+              >DEL LIBERTADOR GRAL. BERNARDO O'HIGGINS
+            </ion-select-option>
+            <ion-select-option value="7">DEL MAULE </ion-select-option>
+            <ion-select-option value="8">DEL BIOBÍO </ion-select-option>
+            <ion-select-option value="9">DE LA ARAUCANÍA </ion-select-option>
+            <ion-select-option value="10">DE LOS RÍOS </ion-select-option>
+            <ion-select-option value="11">DE LOS LAGOS </ion-select-option>
+            <ion-select-option value="12"
+              >AISÉN DEL GRAL.CARLOS IBÁÑEZDEL CAMPO
+            </ion-select-option>
+            <ion-select-option value="13"
+              >MAGALLANESY DE LA ANTÁRTICACHILENA
+            </ion-select-option>
+            <ion-select-option value="14"
+              >METROPOLITANA DE SANTIAGO
+            </ion-select-option>
+            <ion-select-option value="15">ATACAMA </ion-select-option>
+            <ion-select-option value="16">ÑUBLE </ion-select-option>
+          </ion-select>
+          <ion-icon name="pencil-sharp" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="phone-portrait-outline" slot="start"></ion-icon>
+          <ion-input
+            class
+            type="tel"
+            class="codigoLargo"
+            maxlength="8"
+            [(ngModel)]="codigo"
+            name="codigo"
+            placeholder="+56"
+            required="required"
+          ></ion-input>
+
+          <ion-input
+            type="tel"
+            maxlength="8"
+            [(ngModel)]="Telefono"
+            name="Telefono"
+            placeholder="Teléfono"
+            required="required"
+          ></ion-input>
+          <ion-icon name="pencil-sharp" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="lock-closed" slot="start"></ion-icon>
+          <ion-input
+            type="password"
+            [(ngModel)]="Password"
+            name="Password"
+            placeholder="Contraseña"
+            required="required"
+          ></ion-input>
+          <ion-icon name="pencil-sharp" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="lock-closed" slot="start"></ion-icon>
+          <ion-input
+            type="password"
+            [(ngModel)]="ConfirmePassword"
+            name="Password"
+            placeholder="Confirmar contraseña"
+            required="required"
+          ></ion-input>
+          <ion-icon name="pencil-sharp" slot="end"></ion-icon>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="style-vertical-center">
+    <ion-button class="style-user-button" (click)="Crear()" expand="block"
+      >Crear Cuenta
+    </ion-button>
+  </div>
+  <img class="style-img-footer" src="../../../assets/Groups.png" />
+</ion-content>

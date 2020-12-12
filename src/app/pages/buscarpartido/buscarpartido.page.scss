@@ -1,0 +1,43 @@
+*{
+    color: white;
+    font-family: Montserrat-Light;
+}
+
+ion-content.background{
+    --background: #000
+    url('../../../assets/background2_.png') no-repeat center center / cover;
+}
+
+.publicidad{
+ height: 100px;
+ width: 100%;
+
+}
+h4{
+    color: white;
+}
+p{
+    color: white;
+}
+
+.contenedores{
+    padding-left: 10%;
+}
+
+.uno{
+    color:red;
+}
+.dos{
+   font-size: 15px;
+}
+.tres{
+    color:red;
+}
+
+.titulo{
+    font-family: Montserrat-Bold;
+}
+
+.titulochico{
+    font-family: Montserrat-Light;
+}

@@ -1,0 +1,56 @@
+<app-header></app-header>
+
+<ion-content class="ion-padding">
+
+
+<ion-list *ngFor="let c of estadisticas">
+
+  <ion-item > 
+  
+  <ion-label>Jugados</ion-label>
+  <ion-label slot="end">{{c.partidosJugados}}</ion-label>
+  
+</ion-item>
+
+<ion-item > 
+  
+  <ion-label>Ganados </ion-label>
+  <ion-label slot="end"> {{c.partidosGanados}}</ion-label>
+  
+</ion-item>
+
+
+<ion-item > 
+  <ion-label>Perdidos </ion-label>
+  <ion-label slot="end"> {{c.partidosPerdidos}}</ion-label>
+  
+</ion-item>
+
+
+<ion-item > 
+  <ion-label>Empatados </ion-label>
+  <ion-label slot="end"> {{c.partidosEmpatados}}</ion-label>
+  
+</ion-item>
+
+<ion-item > 
+  <ion-label>No Registrados </ion-label>
+  <ion-label slot="end"> {{c.partidosNoRegistrados}}</ion-label>
+  
+</ion-item>
+
+
+</ion-list>
+
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <img class="publicidad" src="https://micocacola.vteximg.com.br/arquivos/micoca-cola-logo-color.png?v=637166891443670000">
+  
+
+  </ion-toolbar>
+</ion-footer>
+

@@ -1,0 +1,82 @@
+<app-header></app-header>
+
+<ion-content class="background ion-padding">
+
+  <div class="ion-padding logo">
+    <img src="../../../assets/logomenu.png">
+  </div>
+
+
+<div class="contenedor">
+
+      <ion-item color="none">
+        <ion-label>Categoria</ion-label>
+        <ion-select interface="action-sheet" [(ngModel)]="IdCategoria" (ionChange)="CargaSub()" okText="ok" cancelText="Cancelar">
+          <ion-select-option *ngFor="let p of Categorias" value="{{p.IdCategoria}}">{{p.Decripcion}}</ion-select-option>
+          
+        </ion-select>
+      </ion-item>
+
+      
+      <ion-item color="none">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="8">
+            <ion-input class="input2"  type="number"
+            [(ngModel)]="Rut"
+            name="Rut"
+            placeholder="Rut"
+            required="required"></ion-input>
+          </ion-col>
+          <ion-col size="1">
+            
+          </ion-col>
+          <ion-col size="3">
+            <ion-input class="input2"  type="number"
+            [(ngModel)]="DV"
+            name="DV"
+            placeholder="DV"
+            required="required"></ion-input>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </ion-item>
+
+      <ion-item color="none" >
+        <ion-label>Sub Categoria</ion-label>
+        <ion-select interface="action-sheet" [(ngModel)]="IdSubCategoria" okText="ok" cancelText="Cancelar">
+          <ion-select-option *ngFor="let p of SubCategorias" value="{{p.IdSubCategoria}}">{{p.Descripcion}}</ion-select-option>
+          
+        </ion-select>
+      </ion-item>
+
+      <ion-item  color="none" class="input">
+        
+        
+        <ion-input class="input2"  type="number"
+        [(ngModel)]="Valor"
+        placeholder="Tarifa a cobrar"
+        name="Valor"
+        required="required"></ion-input>
+      </ion-item>
+
+
+      <ion-item color="none" class="input">
+        <ion-textarea [(ngModel)]="Observacion" placeholder="Observacion..."></ion-textarea>
+      </ion-item>
+
+</div>
+<div class="espacioboton">
+  <ion-button class="botones"  (click)="Guardar()" expand="full">Agregar</ion-button>
+  <ion-button class="botones"  (click)="finalizar()" expand="full">Guardar</ion-button>
+</div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <img class="publicidad" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJBgMPbkrAwReUzncHz-5w5JQoo2v-qkTBag&usqp=CAU">
+  
+
+  </ion-toolbar>
+</ion-footer>

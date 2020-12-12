@@ -1,0 +1,283 @@
+.style-grid-principal {
+  background: #f9f9f9;
+}
+
+ion-title {
+  color: #ffffff;
+  font-family: Montserrat-SemiBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+ion-card-header {
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+ion-card {
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 22px 4px rgba(51, 51, 51, 0.05),
+    0 7px 8px -4px rgba(51, 51, 51, 0.1);
+}
+
+ion-card-title {
+  font-size: 10px;
+  --color: #333333;
+  font-weight: 600;
+  font-family: Montserrat-SemiBold;
+  letter-spacing: 0;
+  line-height: 13px;
+}
+
+ion-card-subtitle {
+  font-size: 8px;
+  margin-top: 2px;
+  --color: #62e041;
+  font-family: Montserrat-Regular;
+  letter-spacing: 0;
+  line-height: 13px;
+}
+
+ion-content ion-segment ion-label {
+  font-size: 10.5px;
+  letter-spacing: 0;
+  line-height: 13px;
+  font-family: Montserrat-Regular;
+}
+
+.segment-button-checked {
+  ion-label {
+    color: #333333 !important;
+    font-weight: 600 !important;
+  }
+}
+
+ion-segment-button {
+  --indicator-height: 1px !important;
+  --padding-top: 0px;
+  --padding-bottom: 13px;
+  --padding-start: 0px;
+  --padding-end: 0px;
+  --background: #f9f9f9;
+  --background-checked: #f9f9f9;
+  --color-checked: #c90949;
+}
+
+ion-item {
+  --border-width: 0px 0px 0px 0px !important;
+  margin-left: 5px;
+}
+
+ion-item:last-child {
+  --border-width: 0px 0px 0px 0px !important;
+}
+
+h3 {
+  color: #333333;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 13px;
+  font-family: Montserrat-Bold;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.style-card-row-vacant {
+  background-color: #f9f9f9;
+  border-radius: 5px 5px 0px 0px;
+  padding: 5px 5px 2px 5px;
+  margin: 0px 1px;
+}
+
+.text-first,
+.text-last {
+  color: #333333;
+  font-family: Montserrat-SemiBold;
+  font-weight: 600;
+}
+
+.text-date {
+  color: #b9b8b9;
+  font-family: Montserrat-SemiBold;
+}
+
+.text-date > span {
+  padding-left: 5px;
+  font-family: Montserrat-SemiBold;
+}
+
+.text-first,
+.text-last,
+.text-date {
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 13px;
+}
+
+.style-grid {
+  background: #ffffff;
+  border-top: 1px solid #ebebeb;
+}
+
+.style-card-row-sport {
+  background-color: #f9f9f9;
+  border-radius: 0px;
+  padding: 5px 5px 2px 5px;
+  border: 1px solid#FFFFFF;
+}
+
+.style-card-row-enclosure {
+  background-color: #f9f9f9;
+  border-radius: 0px 0px 5px 5px;
+  padding: 5px 5px 2px 5px;
+  margin: 0px 1px;
+}
+
+.style-card-row-date {
+  padding: 10px 0px 0px 0px;
+}
+
+.style-item-div {
+  border-radius: 10px;
+  --background: #ffffff;
+  border: 1px solid #ebebeb;
+  margin: 0px 10px;
+}
+
+.style-item-div ion-label > p {
+  color: #707070;
+  font-family: Montserrat-Medium;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-left: 15px;
+}
+
+.style-item-div > ion-badge {
+  height: 24px;
+  width: 40px;
+  border: 1px solid #ebebeb;
+  border-radius: 41.5px;
+  color: #333333;
+  --background: #ffffff;
+  font-family: Montserrat-SemiBold;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+.style-row-align {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.style-row-aling-request > ion-badge {
+  height: 16px;
+  width: 24px;
+  --background: #cee1fc;
+  border-radius: 41.5px;
+  color: #3c8af4;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 10px;
+  font-family: Montserrat-Bold;
+  margin-left: 10px;
+}
+
+.style-row-aling-request > p {
+  color: #333333;
+  font-family: Montserrat-Bold;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 13px;
+  margin-top: 1px;
+  margin-left: 15px;
+}
+
+.style-row-button-vacant {
+  height: 32px;
+  width: 144px;
+  border-radius: 41.5px;
+  --background: #c90949;
+  --box-shadow: none;
+  background-color: #c90949;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  line-height: 13px;
+  font-family: Montserrat-Regular;
+}
+
+.style-row-align-list ion-avatar > ion-img {
+  border-radius: 5px;
+  margin-top: 0px;
+  height: 40px;
+  width: 40px;
+}
+
+.style-row-align-list ion-avatar,
+.style-row-align-list ion-label {
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.style-row-align-list ion-item {
+  --inner-padding-top: 10px;
+  --inner-padding-bottom: 10px;
+  border-top: 1px solid #ebebeb;
+}
+
+.style-row-align-list ion-item:last-child {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.style-row-align-list ion-item ion-label > p {
+  color: #707070;
+  font-family: Montserrat-Regular;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.style-row-align-list ion-item ion-label > h4 {
+  color: #333333;
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.style-button-icon {
+  --border-color: #F43C4B;
+  --background: #ffffff;
+  --border-radius: 50px;
+  --border-width: 1px;
+  --color: #F43C4B;
+  height: 33px;
+  width: 33px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.style-button-view{
+  height: 32px;
+  width: 72px;
+  --border-radius: 41.5px;
+  --border-color: #ebebeb;
+  --border-width: 1px;
+  --color: #707070;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+  --background: #ffffff;
+  line-height: 13px;
+  font-family: Montserrat-SemiBold;
+  --box-shadow: none;
+}

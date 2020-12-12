@@ -1,0 +1,109 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button
+        icon="chevron-back-outline"
+        mode="md"
+        defaultHref="login"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title mode="ios">MIS EQUIPOS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col
+        size="12"
+        class="style-row-aling-request ion-margin-top ion-padding-top"
+      >
+        <p class="style-inline">EQUIPOS QUE ADMINISTRO</p>
+        <ion-badge class="style-inline">2</ion-badge>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item lines="none" class="ion-no-padding style-item-div">
+          <ion-avatar slot="start" class="style-item-img-first">
+            <!--<ion-img src="../../assets/list/avatar-ben.png"></ion-img>-->
+          </ion-avatar>
+          <ion-label>
+            <p>Renca juniors</p>
+            <h3>50 MIEMBROS</h3>
+          </ion-label>
+          <ion-button
+            slot="end"
+            expand="block"
+            fill="outline"
+            class="style-item-button-icon"
+            (click)="presentModalOptions()"
+          >
+            <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <ion-item lines="none" class="ion-no-padding style-item-div">
+          <ion-avatar slot="start" class="style-item-img-last">
+            <!--<ion-img src="../../assets/list/avatar-ben.png"></ion-img>-->
+          </ion-avatar>
+          <ion-label>
+            <p>Tercer tiempo F.C.</p>
+            <h3>20 MIEMBROS</h3>
+          </ion-label>
+          <ion-button
+            slot="end"
+            expand="block"
+            fill="outline"
+            class="style-item-button-icon"
+            (click)="presentModalOptions()"
+          >
+            <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-col>
+      <ion-col
+        size="12"
+        class="style-row-aling-request ion-margin-top ion-padding-top"
+      >
+        <p class="style-inline">EQUIPOS QUE SOY MIEMRBO</p>
+        <ion-badge class="style-inline">2</ion-badge>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item lines="none" class="ion-no-padding style-item-div">
+          <ion-avatar slot="start" class="style-item-img-first">
+            <!--<ion-img src="../../assets/list/avatar-ben.png"></ion-img>-->
+          </ion-avatar>
+          <ion-label>
+            <p>Renca juniors</p>
+            <h3>50 MIEMBROS</h3>
+          </ion-label>
+          <ion-button
+            slot="end"
+            expand="block"
+            fill="outline"
+            class="style-item-button-icon"
+            (click)="presentModalOptions()"
+          >
+            <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <ion-item lines="none" class="ion-no-padding style-item-div">
+          <ion-avatar slot="start" class="style-item-img-last">
+            <!--<ion-img src="../../assets/list/avatar-ben.png"></ion-img>-->
+          </ion-avatar>
+          <ion-label>
+            <p>Tercer tiempo F.C.</p>
+            <h3>20 MIEMBROS</h3>
+          </ion-label>
+          <ion-button
+            slot="end"
+            expand="block"
+            fill="outline"
+            class="style-item-button-icon"
+            (click)="presentModalOptions()"
+          >
+            <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

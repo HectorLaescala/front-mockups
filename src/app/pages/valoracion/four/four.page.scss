@@ -1,0 +1,141 @@
+ion-icon[name="close-outline"] {
+  color: #333333;
+  font-size: 20px;
+}
+
+ion-card {
+  border-radius: 10px;
+  box-shadow: 0 5px 22px 4px rgba(51, 51, 51, 0.05),
+    0 7px 8px -4px rgba(51, 51, 51, 0.1);
+}
+
+ion-card-header {
+  padding: 5px 8px 5px 2px;
+}
+
+ion-card-header + .card-content-md {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+}
+
+ion-avatar > ion-img {
+  border-radius: 5px;
+  margin-top: 0px;
+  height: 48px;
+  width: 48px;
+}
+
+ion-avatar,
+ion-label {
+  margin-top: 0px;
+}
+
+ion-label > p {
+  color: #707070;
+  font-family: Montserrat-Regular;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 10px;
+  margin-left: 5px;
+  padding-top: 10px;
+}
+
+ion-label > h3 {
+  color: #333333;
+  font-family: Montserrat-SemiBold;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-left: 5px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #cccccc;
+  margin: 18px 4px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #c90949;
+}
+
+.style-vertical-center {
+  display: flex;
+  justify-content: center;
+}
+
+.style-text-title > p {
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  font-family: Montserrat-Regular;
+  margin: 25px 0px 5px 0px;
+}
+
+.style-text-subtitle > p {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-family: Montserrat-SemiBold;
+  margin: 0px 0px;
+}
+
+.style-button-maybe {
+  height: 41px;
+  width: 89px;
+  font-size: 10px;
+  --background: #ffffff;
+  --color: #f43c4b;
+  font-family: Montserrat-SemiBold;
+  --box-shadow: none;
+  border: 1px solid #f88a93;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.style-button-options {
+  height: 40px;
+  width: 88px;
+  border: 1px solid #b9b8b9;
+  font-size: 10px;
+  --background: #ffffff;
+  --color: #333333;
+  font-family: Montserrat-SemiBold;
+  --box-shadow: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.style-buttom-skip-footer,
+.style-buttom-continue-footer {
+  height: 32px;
+  border: 1px solid #ebebeb;
+  border-radius: 41.5px;
+  --color: #707070;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+  --background: #ffffff;
+  line-height: 13px;
+  font-family: Montserrat-SemiBold;
+  --box-shadow: none;
+}
+
+.style-buttom-skip-footer {
+  margin-left: 15px;
+}
+.style-buttom-continue-footer {
+  margin-right: 15px;
+}
+
+.footer-md::before {
+  height: 1px;
+  background-color: #ebebeb;
+}

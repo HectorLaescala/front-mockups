@@ -1,0 +1,160 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button
+        icon="chevron-back-outline"
+        mode="md"
+        defaultHref="login"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title mode="ios">Administrar equipos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <ion-avatar>
+      <ion-img src="./../assets/list/avatar-finn.png"></ion-img>
+    </ion-avatar>
+    <p>Renca juniors</p>
+    <span>10 miembros</span>
+  </div>
+
+  <div class="style-segment">
+    <ion-segment [(ngModel)]="type">
+      <ion-segment-button value="members">
+        <ion-label class="ion-text-start">MIEMBROS</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="data">
+        <ion-label class="ion-text-start">DATOS</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="statistics">
+        <ion-label class="ion-text-start">ESTADÍSTICAS</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="type">
+    <ion-grid fixed>
+      <ion-row *ngSwitchCase="'members'">
+        <ion-col size="12">
+          <ion-list class="ion-no-padding">
+            <ion-item lines="none" class="style-invite-player">
+              <p slot="start">Invitar jugadores</p>
+              <ion-button slot="end" expand="block" fill="outline">
+                <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+        <ion-col size="12">
+          <ion-list class="ion-no-padding style-row-align-list">
+            <ion-list-header class="style-list-header-members">
+              LISTA DE MIEMBROS</ion-list-header
+            >
+            <ion-item lines="none" class="ion-no-padding">
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/list/avatar-ben.png"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <p>Alonso San Martín</p>
+              </ion-label>
+              <ion-button slot="end" expand="block" fill="outline">
+                <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+              </ion-button>
+            </ion-item>
+            <ion-item lines="none" class="ion-no-padding">
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/list/avatar-han.png"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <span>MIEMBRO</span>
+                <p>Gabriel Suárez</p>
+                <span>MIEMBRO</span>
+              </ion-label>
+              <ion-button slot="end" expand="block" fill="outline">
+                <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+              </ion-button>
+            </ion-item>
+            <ion-item lines="none" class="ion-no-padding">
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/list/avatar-poe.png"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <span>MIEMBRO</span>
+                <p>Marcos Garrido</p>
+              </ion-label>
+              <ion-button slot="end" expand="block" fill="outline">
+                <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+              </ion-button>
+            </ion-item>
+            <ion-item lines="none" class="ion-no-padding">
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/list/avatar-leia.png"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <span>MIEMBRO</span>
+                <p>Víctor Arce</p>
+              </ion-label>
+              <ion-button slot="end" expand="block" fill="outline">
+                <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+        <ion-col size="12">
+          <ion-list class="ion-no-padding style-row-align-list">
+            <ion-list-header class="style-list-header-postulant">
+              NUEVOS POSTULANTES</ion-list-header
+            >
+            <ion-item lines="none" class="ion-no-padding">
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/list/avatar-poe.png"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <span>POSTULANTE</span>
+                <p>Oscar Salazar</p>
+              </ion-label>
+              <ion-button slot="end" expand="block" fill="outline">
+                <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+              </ion-button>
+            </ion-item>
+            <ion-item lines="none" class="ion-no-padding">
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/list/avatar-leia.png"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <span>POSTULANTE</span>
+                <p>Manuel Dominguez</p>
+              </ion-label>
+              <ion-button slot="end" expand="block" fill="outline">
+                <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+              </ion-button>
+            </ion-item>
+            <ion-item lines="none" class="ion-no-padding">
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/list/avatar-leia.png"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <span>POSTULANTES</span>
+                <p>Renato Contreras</p>
+              </ion-label>
+              <ion-button slot="end" expand="block" fill="outline">
+                <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+        <ion-col size="12">
+          <ion-button class="style-button" expand="block"
+            >ACTUALIZAR EQUIPO
+          </ion-button>
+
+          <ion-button class="style-outline-button" fill="outline" expand="block"
+            >ABANDONAR EQUIPO
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

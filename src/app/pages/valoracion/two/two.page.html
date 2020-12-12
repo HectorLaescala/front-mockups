@@ -1,0 +1,76 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        icon="chevron-back-outline"
+        mode="md"
+        defaultHref="login"
+      ></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed
+    ><ion-row>
+      <ion-col size="12" class="ion-text-center style-text-title">
+        <p>¿Cual fue el resultado</p>
+        <p>del partido?</p>
+      </ion-col>
+      <ion-col size="12">
+        <ion-list class="ion-padding">
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-checkbox mode="ios" slot="end"></ion-checkbox>
+            <ion-label>Perdido</ion-label>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-checkbox mode="ios" slot="end"></ion-checkbox>
+            <ion-label>Empatado</ion-label>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-checkbox mode="ios" slot="end" checked="true"></ion-checkbox>
+            <ion-label>Ganado</ion-label>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-checkbox mode="ios" slot="end"></ion-checkbox>
+            <ion-label>Omitir resultado</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row></ion-grid
+  >
+</ion-content>
+
+<ion-footer>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="4">
+        <ion-button class="style-buttom-skip-footer" expand="full" shape="round"
+          >OMITIR
+        </ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <div class="style-vertical-center">
+          <div class="swiper-pagination swiper-pagination-bullets">
+            <span class="swiper-pagination-bullet"></span
+            ><span
+              class="swiper-pagination-bullet swiper-pagination-bullet-active"
+            ></span
+            ><span class="swiper-pagination-bullet"></span
+            ><span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button
+          class="style-buttom-continue-footer"
+          expand="full"
+          shape="round"
+          >SIGUIENTE
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

@@ -1,0 +1,41 @@
+<br>
+
+
+<ion-item-divider>
+  <div  style="width: 90%; text-align: center;">
+    <ion-label class="ion-padding">  Postulaciones  </ion-label> 
+   </div>
+
+
+
+    <div style="width: 40%; text-align: center;">
+       <ion-icon  class="ColorVerde"slot="start" name="add-circle-outline"></ion-icon>
+     </div>
+     
+</ion-item-divider>
+
+
+<br>
+<ion-list  *ngFor="let c of Postulaciones">
+  <ion-item>
+    <ion-icon slot="end" (click) = "Eliminar(c.IdPostulacion)" class="ColorRojo" name="close-circle-outline"></ion-icon>
+    <ion-icon slot="end"  (click) = "Aceptar(c.IdPostulacion)" class="ColorVerde" name="checkmark-outline"></ion-icon>
+    <ion-label>      
+      <h4>Usuario: {{ c.NombreUsuario}}</h4>  
+      <p>Estado: {{c.Descripcion}}</p>
+      <p>Tipo: {{c.Tipo}}</p>
+       
+      
+    </ion-label>
+    
+    
+  </ion-item>
+</ion-list>
+
+
+
+   
+    
+    
+    
+ 

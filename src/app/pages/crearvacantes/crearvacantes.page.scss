@@ -1,0 +1,31 @@
+
+*{
+    font-family: Montserrat-Light;
+    color: white;
+  }
+  
+  p{
+    font-family: Montserrat-Bold;
+  }
+  ion-content.background{
+    --background: #000
+    url('../../../assets/background2_.png') no-repeat center center / cover;
+  }
+
+  .botones{
+    --border-color:#fff;
+    --border-radius: 5px;
+    font-family: Montserrat-Bold;
+    color: #ca094a;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    --background: white;
+  }
+
+  
+  ion-toolbar.background{
+    --background: #000
+    url('../../../assets/background3.png') no-repeat center center / cover;
+  }
+

@@ -1,0 +1,123 @@
+<app-headerback></app-headerback>
+<ion-content class="ion-padding">
+
+
+
+
+
+    <ion-list>
+      
+      <h5>Preferencias</h5>
+      <label class="chica">Modifica las preferencias</label>
+    <ion-item>
+      <ion-checkbox slot="start" checked="true"></ion-checkbox>
+      <ion-label>Activar notificaciones Push</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox slot="start" checked="false"></ion-checkbox>
+      <ion-label>Mostrar Numero de contacto</ion-label>
+    </ion-item>
+    
+    
+    <h5>Datos Personales</h5>
+    <label class="chica">Ingresa los siguientes datos para poder conocerte</label>
+    
+    <ion-item >
+      <ion-label center position="floating">Nombre del Equipo</ion-label>
+      <ion-input  ></ion-input>
+    </ion-item>
+
+       
+    <ion-item>
+      <ion-label>Region Sede</ion-label>
+      <ion-select value="IdTipoConsulta" okText="ok" cancelText="Cancelar">
+        <ion-select-option value="R">Region 1</ion-select-option>
+        <ion-select-option value="C">Region 2</ion-select-option>
+        <ion-select-option value="C">Region 3</ion-select-option>
+        <ion-select-option value="C">Region 4</ion-select-option>
+        <ion-select-option value="C">Region 5</ion-select-option>
+    
+      </ion-select>
+    </ion-item>
+    <ion-item >
+        <ion-label center position="floating">Descripción</ion-label>
+        <ion-input  ></ion-input>
+      </ion-item>
+    
+    <h5>Deportes Favoritos</h5>
+      <ion-label class="subtitulo">Selecciona los deportes que partiques, recuerda que puedes cambiarlos mas adelante en la seccion perfil</ion-label>
+      
+      
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-avatar>
+              <img src="https://png.pngtree.com/png-vector/20190912/ourlarge/pngtree-soccer-ball-icon-png-image_1726856.jpg">
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <ion-avatar>
+              <img src="https://w7.pngwing.com/pngs/508/131/png-transparent-computer-icons-tennis-centre-racket-sport-tennis-text-sport-hand.png">
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <ion-avatar>
+              <img src="https://i0.pngocean.com/files/121/51/628/basketball-backboard-rebound-computer-icons-clip-art-basketball-icon.jpg">
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <ion-avatar>
+              <img src="https://i0.pngocean.com/files/268/796/845/computer-icons-skateboarding-roller-skates-roller-skating-skateboard.jpg">
+            </ion-avatar>
+          </ion-col>
+        </ion-row>
+        
+      </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-avatar>
+              <img src="data:image/png;base64,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">
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <ion-avatar>
+              <img src="https://w7.pngwing.com/pngs/259/743/png-transparent-water-volleyball-sport-computer-icons-volleyball-white-sport-symmetry.png">
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <ion-avatar>
+              <img src="https://image.flaticon.com/icons/svg/37/37542.svg">
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <ion-avatar>
+              <img src="https://static.vecteezy.com/system/resources/previews/000/550/376/non_2x/american-football-vector-icon.jpg">
+            </ion-avatar>
+          </ion-col>
+        </ion-row>
+        
+      </ion-grid>
+    
+    
+      <h5>Personalización</h5>
+      <label class="chica">Completa tu perfil y ayudanos a mejorar tu experiencia</label>
+    
+     
+    
+      
+    
+    
+      <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <img src="https://as00.epimg.net/img/comunes/fotos/fichas/equipos/large/4155.png">
+          </ion-col>
+          <ion-col>
+           Esta foto sera visible para todos los jugadores, la podras cambiar o seleccionar mas adelante en la seccion de ajustes de perfil
+          </ion-col>
+          
+        </ion-row>
+      </ion-grid>
+    </ion-item>

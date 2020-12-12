@@ -1,0 +1,17 @@
+
+*{
+    font-family: Montserrat-Light;
+    color: white;
+  }
+  
+  
+  ion-content.background{
+    --background: #000
+    url('../../../assets/background2_.png') no-repeat center center / cover;
+  }
+  
+
+  ion-toolbar.background{
+    --background: #000
+    url('../../../assets/background3.png') no-repeat center center / cover;
+  }

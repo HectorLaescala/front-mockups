@@ -1,0 +1,122 @@
+
+
+*{
+    color: white;
+}
+
+ion-toolbar{
+    color: #000;
+}
+
+ion-toolbar.background{
+    --background: #000
+    url('../../../assets/background3.png') no-repeat center center / cover;
+  }
+
+ion-content.background{
+    --background: #000
+    url('../../../assets/background2.png') no-repeat center center / cover;
+  }
+
+.publicidad{
+    height: 100px;
+    width: 100%;
+   
+   }
+   
+
+.chica{
+    font-size: 12px;
+}
+
+.Mediano{
+
+    font-size: 15px;
+}
+
+h5{
+    color: blue;
+}
+
+.textoBoton{
+    font-size: 10px;
+}
+
+
+.botones{
+    --border-color:#fff;
+    --border-radius: 5px;
+    font-family: Montserrat-Bold;
+    color: #ca094a;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    --background: white;
+
+}
+
+.botones2{
+    --border-color:#fff;
+    --border-radius: 5px;
+    font-family: Montserrat-Bold;
+    color: #ca094a;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    --background: white;
+
+}
+.ColorRojo {
+    width: 25px;
+    height: 25px;
+    color: red;
+}
+
+.TextoNegro{
+    color: black;
+}
+
+.ColorVerde {
+    width: 20px;
+    height: 20px;
+    color: green;
+}
+
+.botonesChicos{
+    --border-color:#fff;
+    --border-radius: 5px;
+    font-family: Montserrat-Bold;
+    color: #ca094a;
+    font-size: 10px;
+
+    --background: white;
+
+}
+
+.datos{
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+.Chico{
+    font-size: 15px;
+}
+
+.boton
+{
+  color: white;
+}
+.paddingtotal{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+ion-select{
+    width: 200%;
+}
+
+ion-icon{
+    font-size: 20px;
+}
+p{
+    color: white;
+}

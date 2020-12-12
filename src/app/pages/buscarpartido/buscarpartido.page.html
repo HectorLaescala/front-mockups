@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+
+<ion-content class="background ion-padding">
+
+
+ <div class="contenedores">
+
+    <ion-row  *ngFor="let c of convocatorias">
+  
+      <ion-col class="ion-padding" size="12">
+        <ion-label>      
+          <h4>Equipo: {{ c.Descripcion}}</h4>  
+          <p class="titulo">Nombre Evento: </p><p class="titulochico"> {{ c.NombreEvento}}</p>
+          <p class="titulo">Fecha: </p><p class="titulochico">{{ c.Ano}}/{{ c.mes}}/{{ c.dia}}</p>
+          <p class="titulo"> Hora: </p><p class="titulochico">{{ c.Hora}}:{{ c.minutos}}</p>
+          <p (click)="MostrarPostulacion(c.IdConvocatoria,c.IdEstadoConvocatoria)">Estado: {{c.Estado}}</p>
+        
+          
+          
+        </ion-label>
+      </ion-col>
+      
+</ion-row>
+
+</div>
+    
+   
+  
+
+
+
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <img class="publicidad" src="https://marcadegol.com/fotos//2015/02/Gatorade-Argentina-Pretemporada.jpg">
+   
+  </ion-toolbar>
+</ion-footer>

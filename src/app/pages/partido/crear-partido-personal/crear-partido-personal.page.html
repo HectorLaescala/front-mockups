@@ -1,0 +1,206 @@
+<ion-content>
+  <ion-grid class="ion-padding-start ion-padding-end ion-padding-bottom">
+    <ion-row>
+      <ion-col
+        size="12"
+        class="ion-margin-top ion-padding-start"
+      >
+        <p class="style-data-text">DATOS DEL PARTIDO</p>
+      </ion-col>
+    </ion-row>
+    <ion-col size="12">
+      <ion-item class="style-item-input">
+        <ion-input
+          type="text"
+          [(ngModel)]="NombreEvento"
+          name="NombreEvento"
+          placeholder="Nombre del partido"
+          required="required"
+        ></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="12">
+      <ion-item class="style-item-input">
+        <ion-input
+          type="text"
+          [(ngModel)]="NumeroCancha"
+          name="NumeroCancha"
+          placeholder="Número de cancha"
+          required="required"
+        ></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-row>
+      <ion-col size="6" class="ion-padding-top">
+        <div>
+          <ion-item lines="none" class="style-line-item-select">
+            <ion-label class="style-text-theme">CATEGORIA</ion-label>
+            <ion-select [(ngModel)]="IdCategoria" (ionChange)="CargaSub()">
+              <ion-select-option
+                *ngFor="let p of Categorias"
+                value="{{p.IdCategoria}}"
+                >{{p.Decripcion}}</ion-select-option
+              >
+            </ion-select>
+            <ion-icon name="caret-up-outline" slot="end"></ion-icon>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col size="6" class="ion-padding-top">
+        <div>
+          <ion-item lines="none" class="style-line-item-select">
+            <ion-label class="style-text-theme">DEPORTE</ion-label>
+            <ion-select [(ngModel)]="IdSubCategoria">
+              <ion-select-option
+                *ngFor="let p of SubCategorias"
+                value="{{p.IdSubCategoria}}"
+                >{{p.Descripcion}}</ion-select-option
+              >
+            </ion-select>
+            <ion-icon name="caret-up-outline" slot="end"></ion-icon>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col size="6" class="ion-padding-top ion-margin-top">
+        <div>
+          <ion-item lines="none" class="style-line-item-select">
+            <ion-label class="style-text-theme">FECHA</ion-label>
+            <ion-datetime
+              [(ngModel)]="FechaEvento"
+              class="bordes"
+              value="2019-10-01"
+              display-timezone="utc"
+            ></ion-datetime>
+            <ion-icon name="caret-up-outline" slot="end"></ion-icon>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col size="6" class="ion-padding-top ion-margin-top">
+        <div>
+          <ion-item lines="none" class="style-line-item-select">
+            <ion-label class="style-text-theme">HORA</ion-label>
+            <ion-datetime
+              [(ngModel)]="Hora"
+              class="bordes"
+              displayFormat="HH:mm"
+              pickerFormat="HH:mm"
+              minuteValues="0,15,30,45"
+              values="Hora"
+            ></ion-datetime>
+            <ion-icon name="caret-up-outline" slot="end"></ion-icon>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col
+        size="12"
+        class="ion-padding-top ion-margin-top ion-margin-bottom"
+      >
+        <div>
+          <ion-item lines="none" class="style-line-item-select">
+            <ion-label class="style-text-theme">REGIÓN METROPOLITANA</ion-label>
+            <ion-select [(ngModel)]="Idregion" (ionChange)="ListaRecintos()">
+              <ion-select-option value="1"
+                >ARICA Y PARINACOTA
+              </ion-select-option>
+              <ion-select-option value="2">TARAPACÁ </ion-select-option>
+              <ion-select-option value="3">ANTOFAGASTA </ion-select-option>
+              <ion-select-option value="4">COQUIMBO </ion-select-option>
+              <ion-select-option value="5">VALPARAÍSO </ion-select-option>
+              <ion-select-option value="6"
+                >DEL LIBERTADOR GRAL. BERNARDO O'HIGGINS
+              </ion-select-option>
+              <ion-select-option value="7">DEL MAULE </ion-select-option>
+              <ion-select-option value="8">DEL BIOBÍO </ion-select-option>
+              <ion-select-option value="9">DE LA ARAUCANÍA </ion-select-option>
+              <ion-select-option value="10">DE LOS RÍOS </ion-select-option>
+              <ion-select-option value="11">DE LOS LAGOS </ion-select-option>
+              <ion-select-option value="12"
+                >AISÉN DEL GRAL.CARLOS IBÁÑEZDEL CAMPO
+              </ion-select-option>
+              <ion-select-option value="13"
+                >MAGALLANESY DE LA ANTÁRTICACHILENA
+              </ion-select-option>
+              <ion-select-option value="14"
+                >METROPOLITANA DE SANTIAGO
+              </ion-select-option>
+              <ion-select-option value="15">ATACAMA </ion-select-option>
+              <ion-select-option value="16">ÑUBLE </ion-select-option>
+            </ion-select>
+            <ion-icon name="caret-up-outline" slot="end"></ion-icon>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-col size="12" class="ion-padding-top ion-margin-top">
+      <ion-item class="style-item-input">
+        <ion-input
+          type="email"
+          [(ngModel)]="NombreEvento"
+          name="email"
+          placeholder="Ingresa el nombre del recinto"
+          required="required"
+        ></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="12">
+      <p class="style-text-enclosure ion-text-end">
+        ¿No encuentras el recinto?
+      </p>
+    </ion-col>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item lines="none" class="ion-no-padding style-item-div-number">
+          <ion-label>
+            <p>Número de cancha</p>
+          </ion-label>
+
+          <ion-button (click)="masCancha()">
+            <ion-icon name="add-outline"></ion-icon
+          ></ion-button>
+          <ion-input type="number" pattern="[0-9]*" value="15"> </ion-input>
+          <ion-button (click)="menosCancha()">
+            <ion-icon name="remove-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" class="ion-margin-top">
+        <p class="style-text-coupon ion-text-start">
+          Tu partido permitirá tantos jugadores como cupos tenga. Podras agregar
+          cupos cuando quieras
+        </p>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item lines="none" class="ion-no-padding style-item-div-number">
+          <ion-label>
+            <p>Cantidad de cupos</p>
+          </ion-label>
+
+          <ion-button (click)="masCupo()">
+            <ion-icon name="add-outline"></ion-icon
+          ></ion-button>
+          <ion-input type="number" pattern="[0-9]*" value="30"> </ion-input>
+          <ion-button (click)="menosCupo()">
+            <ion-icon name="remove-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <p class="style-item-textarea">COMENTARIOS</p>
+        <ion-textarea
+          rows="6"
+          cols="20"
+          value="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+        ></ion-textarea>
+        <h6 class="ion-text-end">-30 CARACTERES</h6>
+      </ion-col>
+    </ion-row>
+    <ion-col size="12">
+      <ion-button
+        class="style-user-button"
+        (click)="presentModalAddEnclosure()"
+        expand="block"
+        >CREAR PARTIDO
+      </ion-button>
+    </ion-col>
+  </ion-grid>
+</ion-content>

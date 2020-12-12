@@ -1,0 +1,218 @@
+.style-grid-principal {
+    background: #f9f9f9;
+  }
+  
+  ion-title {
+    color: #ffffff;
+    font-family: Montserrat-SemiBold;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+  
+  ion-card-header {
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 12px;
+  }
+  
+  ion-card-title,
+  ion-card-subtitle {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 13px;
+    font-family: Montserrat-SemiBold;
+  }
+  
+  ion-card {
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 1px -2px rgba(51,51,51,0.05), 0 1px 5px 0 rgba(51,51,51,0.1);
+  }
+  
+  ion-card-title {
+    --color: #333333;
+  }
+  
+  ion-card-subtitle {
+    margin-top: 5px;
+    --color: #3c8af4;
+  }
+  
+  ion-content ion-segment ion-label {
+    font-size: 10.5px;
+    letter-spacing: 0;
+    line-height: 13px;
+    font-family: Montserrat-SemiBold;
+  }
+  
+  ion-segment {
+    max-width: 35% !important;
+  }
+  
+  .segment-button-checked {
+    ion-label {
+      color: #333333 !important;
+      font-weight: 600 !important;
+    }
+  }
+  
+  ion-segment-button {
+    --indicator-height: 1px !important;
+    --padding-top: 0px;
+    --padding-bottom: 13px;
+    --padding-start: 0px;
+    --padding-end: 0px;
+    --background: #f9f9f9;
+    --background-checked: #f9f9f9;
+    --color-checked: #c90949;
+  }
+  
+  h3 {
+    color: #333333;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 13px;
+    font-family: Montserrat-Bold;
+    margin-left: 20px;
+    margin-bottom: 0px;
+  }
+  
+  h4 {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-left: 14px;
+    font-family: Montserrat-SemiBold;
+  }
+  
+  h5 {
+    color: #707070;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: 13px;
+    font-family: Montserrat-Regular;
+    margin-left: 14px;
+    padding-bottom: 10px;
+  }
+  
+  .style-card-row-vacant {
+    background-color: #f9f9f9;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 5px 2px 5px;
+    margin: 0px 1px;
+  }
+  
+  .text-first,
+  .text-last {
+    color: #333333;
+    font-family: Montserrat-Bold;
+    font-weight: 600;
+  }
+  
+  .text-date {
+    color: #b9b8b9;
+    font-family: Montserrat-Regular;
+  }
+  
+  .text-date > span {
+    padding-left: 5px;
+    font-family: Montserrat-SemiBold;
+  }
+  
+  .text-first,
+  .text-last,
+  .text-date {
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: 13px;
+  }
+  
+  .style-grid {
+    background: #ffffff;
+    border-top: 1px solid #ebebeb;
+  }
+  
+  .style-grid-border ion-row > ion-col{
+      border-bottom: 1px solid #EBEBEB;
+  }
+  
+  .ion-text-col-first > p{
+      color: #333333; 
+  }
+  
+  .ion-text-col-last > p{
+      color: #707070; 
+  }
+  
+  .ion-text-col-first > p, .ion-text-col-last > p{
+      font-size: 14px;
+      font-family: Montserrat-Regular;
+      letter-spacing: 0;
+      line-height: 22px;
+  }
+  
+  .style-card-row-sport {
+    background-color: #f9f9f9;
+    border-radius: 0px;
+    padding: 5px 5px 2px 5px;
+    border: 1px solid#FFFFFF;
+  }
+  
+  .style-card-row-enclosure {
+    background-color: #f9f9f9;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px 5px 2px 5px;
+    margin: 0px 1px;
+  }
+  
+  .style-card-row-date {
+    padding: 10px 0px 0px 0px;
+  }
+  
+  .style-item-div {
+    border-radius: 10px;
+    --background: #fff;
+    box-shadow: 0 3px 1px -2px rgba(51, 51, 51, 0.05),
+      0 1px 5px 0 rgba(51, 51, 51, 0.1);
+    margin: 0px 10px;
+  }
+  
+  .style-item-div ion-icon:first-of-type {
+    background: #3c8af4;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 8px 0px 8px 8px;
+  }
+  
+  .style-text-col-title {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-family: Montserrat-SemiBold;
+    margin-left: 20px;
+    margin-bottom: 0px;
+  }
+  
+  .style-user-button {
+      --border-color: #c90949;
+      --border-radius: 41.5px;
+      color: #fff;
+      font-size: 14px;
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 56px;
+      --background: #c90949;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 18px;
+      font-family: Montserrat-SemiBold;
+    }
