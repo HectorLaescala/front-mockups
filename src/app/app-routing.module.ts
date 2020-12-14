@@ -214,6 +214,10 @@ const routes: Routes = [
   {
     path: 'perfil-simple-modal',
     loadChildren: () => import('./pages/equipo/perfil-simple-modal/perfil-simple-modal.module').then( m => m.PerfilSimpleModalPageModule)
+  },
+  {
+    path: 'invitar-jugadores-modal',
+    loadChildren: () => import('./pages/equipo/invitar-jugadores-modal/invitar-jugadores-modal.module').then( m => m.InvitarJugadoresModalPageModule)
   }
 ];
 
