@@ -210,6 +210,10 @@ const routes: Routes = [
   {
     path: 'equipo/administrar-equipos',
     loadChildren: () => import('./pages/equipo/administrar-equipos/administrar-equipos.module').then( m => m.AdministrarEquiposPageModule)
+  },
+  {
+    path: 'perfil-simple-modal',
+    loadChildren: () => import('./pages/equipo/perfil-simple-modal/perfil-simple-modal.module').then( m => m.PerfilSimpleModalPageModule)
   }
 ];
 

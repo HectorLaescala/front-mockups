@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Keyboard } from '@ionic-native/keyboard/ngx';
 import { ModalController } from '@ionic/angular';
 import { FiltroBuscadorPage } from '../filtro-buscador/filtro-buscador.page';
+import { PerfilSimpleModalPage } from '../perfil-simple-modal/perfil-simple-modal.page';
 
 @Component({
   selector: 'app-buscador-equipos',
@@ -24,6 +25,14 @@ export class BuscadorEquiposPage implements OnInit {
     const modal = await this.modalController.create({
       component: FiltroBuscadorPage,
       cssClass: 'custom-modal-search-filter'
+    });
+    return await modal.present();
+  }
+
+  async presentModalSimple() {
+    const modal = await this.modalController.create({
+      component: PerfilSimpleModalPage,
+      cssClass: 'custom-modal-perfil-simple'
     });
     return await modal.present();
   }

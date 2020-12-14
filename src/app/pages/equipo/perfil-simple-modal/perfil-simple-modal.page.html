@@ -1,0 +1,75 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="closePresentModalSimple()">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="style-fullheight style-fullheightRow">
+    <ion-card>
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12" class="style-col-item">
+              <ion-item lines="none" class="ion-no-padding">
+                <ion-avatar slot="start"> </ion-avatar>
+                <ion-label>
+                  <h3>Mirmidones F.C</h3>
+                  <p>ACEPTA MIEMBROS</p>
+                </ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12" class="ion-text-center">
+              <div class="style-col-div-first">
+                <p>En este contenedor tiene que ir una pequeña</p>
+                <p>descripción del equipo</p>
+              </div>
+            </ion-col>
+            <ion-col
+              size="6"
+              class="ion-text-center"
+              class="style-col-div-middle"
+            >
+              <ion-item lines="none">
+                <p slot="start">MIEMBROS</p>
+                <span slot="end">18</span>
+              </ion-item>
+            </ion-col>
+            <ion-col
+              size="6"
+              class="ion-text-center"
+              class="style-col-div-middle"
+            >
+              <ion-item lines="none">
+                <p slot="start">GÉNERO</p>
+                <span slot="end">HOMBRES</span>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12" class="ion-no-padding style-col-div-card">
+              <ion-card>
+                <ion-card-header class="ion-text-center">
+                  <ion-card-title>DEPORTES DEL EQUIPO</ion-card-title>
+                </ion-card-header>
+                <ion-card-content class="ion-text-center">
+                  <p>FUTBOL 11 | FUTBOLITO | FUTSAL | BABY FUTBOL</p>
+                  <span>5 MÁS</span>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size="12">
+              <div class="style-row-align">
+                <ion-button expand="full" shape="round"
+                  >QUIERO UNIRME
+                </ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
