@@ -22,7 +22,7 @@
         <p>CREAR MI CUENTA</p>
       </ion-col>
       <ion-col size="12">
-        <ion-item>
+        <ion-item mode="md"> 
           <ion-icon name="person" slot="start"></ion-icon>
           <ion-input
             type="text"
@@ -33,7 +33,7 @@
           ></ion-input>
           <ion-icon name="pencil-sharp" slot="end"></ion-icon>
         </ion-item>
-        <ion-item>
+        <ion-item mode="md">
           <ion-icon name="mail" slot="start"></ion-icon>
           <ion-input
             type="email"
@@ -44,7 +44,7 @@
           ></ion-input>
           <ion-icon name="pencil-sharp" slot="end"></ion-icon>
         </ion-item>
-        <ion-item>
+        <ion-item mode="md">
           <ion-icon name="transgender" slot="start" mode="ios"></ion-icon>
           <ion-label>Género</ion-label>
           <ion-select value="IdGenero" interface="popover">
@@ -54,7 +54,7 @@
           </ion-select>
           <ion-icon name="pencil-sharp" slot="end"></ion-icon>
         </ion-item>
-        <ion-item>
+        <ion-item mode="md">
           <ion-icon name="location-sharp" slot="start" mode="ios"></ion-icon>
           <ion-label>Región</ion-label>
           <ion-select value="Idregion" interface="popover">
@@ -86,7 +86,7 @@
           </ion-select>
           <ion-icon name="pencil-sharp" slot="end"></ion-icon>
         </ion-item>
-        <ion-item>
+        <ion-item mode="md">
           <ion-icon name="phone-portrait-outline" slot="start"></ion-icon>
           <ion-input
             class
@@ -109,7 +109,7 @@
           ></ion-input>
           <ion-icon name="pencil-sharp" slot="end"></ion-icon>
         </ion-item>
-        <ion-item>
+        <ion-item mode="md">
           <ion-icon name="lock-closed" slot="start"></ion-icon>
           <ion-input
             type="password"
@@ -120,7 +120,7 @@
           ></ion-input>
           <ion-icon name="pencil-sharp" slot="end"></ion-icon>
         </ion-item>
-        <ion-item>
+        <ion-item mode="md">
           <ion-icon name="lock-closed" slot="start"></ion-icon>
           <ion-input
             type="password"
@@ -134,11 +134,15 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
-  <div class="style-vertical-center">
-    <ion-button class="style-user-button" (click)="Crear()" expand="block"
-      >Crear Cuenta
-    </ion-button>
-  </div>
-  <img class="style-img-footer" src="../../../assets/Groups.png" />
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="style-vertical-center">
+      <ion-button class="style-user-button" (click)="Crear()" expand="block"
+        >Crear Cuenta
+      </ion-button>
+    </div>
+    <img class="style-img-footer" src="../../../assets/Groups.png" />
+  </ion-toolbar>
+</ion-footer>

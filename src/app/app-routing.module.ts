@@ -218,6 +218,34 @@ const routes: Routes = [
   {
     path: 'invitar-jugadores-modal',
     loadChildren: () => import('./pages/equipo/invitar-jugadores-modal/invitar-jugadores-modal.module').then( m => m.InvitarJugadoresModalPageModule)
+  },
+  {
+    path: 'administrar-equipos-modal',
+    loadChildren: () => import('./pages/equipo/administrar-equipos-modal/administrar-equipos-modal.module').then( m => m.AdministrarEquiposModalPageModule)
+  },
+  {
+    path: 'administrar-equipos-postulantes-modal',
+    loadChildren: () => import('./pages/equipo/administrar-equipos-postulantes-modal/administrar-equipos-postulantes-modal.module').then( m => m.AdministrarEquiposPostulantesModalPageModule)
+  },
+  {
+    path: 'equipo/edita-datos-equipo',
+    loadChildren: () => import('./pages/equipo/edita-datos-equipo/edita-datos-equipo.module').then( m => m.EditaDatosEquipoPageModule)
+  },
+  {
+    path: 'equipo/perfil-equipo',
+    loadChildren: () => import('./pages/equipo/perfil-equipo/perfil-equipo.module').then( m => m.PerfilEquipoPageModule)
+  },
+  {
+    path: 'agenda-detalle-jugador-modal',
+    loadChildren: () => import('./pages/partido/agenda-detalle-jugador-modal/agenda-detalle-jugador-modal.module').then( m => m.AgendaDetalleJugadorModalPageModule)
+  },
+  {
+    path: 'agenda-detalle-jugador-two-modal',
+    loadChildren: () => import('./pages/partido/agenda-detalle-jugador-two-modal/agenda-detalle-jugador-two-modal.module').then( m => m.AgendaDetalleJugadorTwoModalPageModule)
+  },
+  {
+    path: 'agenda-detalle-jugador-three-modal',
+    loadChildren: () => import('./pages/partido/agenda-detalle-jugador-three-modal/agenda-detalle-jugador-three-modal.module').then( m => m.AgendaDetalleJugadorThreeModalPageModule)
   }
 ];
 

@@ -30,13 +30,8 @@ ion-checkbox {
   --size: 25px;
 }
 
-ion-grid {
-  height: 100%;
-}
-ion-row {
-  display: flex;
-  justify-content: center;
-  height: 100%;
+.style-text-title{
+  margin-bottom: 80px;
 }
 
 .style-text-title > p {
@@ -92,4 +87,14 @@ ion-row {
 .footer-md::before {
   height: 1px;
   background-color: #ebebeb;
+}
+
+.style-fullheight {
+  height: 100%;
+}
+
+.style-fullheightRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

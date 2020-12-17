@@ -1,0 +1,124 @@
+<ion-content>
+  <ion-grid class="ion-padding-start ion-padding-end ion-padding-bottom" fixed>
+    <ion-row>
+      <ion-col size="12" class="ion-text-start ion-padding-top">
+        <p>LLENAR ESTOS DATOS PARA CREAR TU EQUIPO</p>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item mode="md">
+          <ion-input
+            type="text"
+            name="email"
+            placeholder="Ej : Equipo Completo F.C"
+          ></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" class="ion-text-start ion-padding-top">
+        <p>¿QUE TIPO DE EQUIPO TIENES?</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4" size-sm="4">
+        <ion-card mode="md">
+          <ion-card-title class="ion-text-center style-space-card"
+            ><ion-label>CLUB</ion-label></ion-card-title
+          >
+          <ion-card-content>
+            <ion-radio-group value="team-amateur">
+              <ion-radio value="club" mode="md"></ion-radio>
+            </ion-radio-group>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4" size-sm="4">
+        <ion-card mode="md">
+          <ion-card-title class="ion-text-center">EQUIPO</ion-card-title>
+          <ion-card-subtitle class="ion-text-center">AMATEUR</ion-card-subtitle>
+          <ion-card-content>
+            <ion-radio-group value="team-amateur">
+              <ion-radio value="team-amateur" mode="md"></ion-radio>
+            </ion-radio-group>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4" size-sm="4">
+        <ion-card mode="md">
+          <ion-card-title class="ion-text-center style-space-card"
+            ><ion-label>OTROS</ion-label></ion-card-title
+          >
+          <ion-card-content>
+            <ion-radio-group value="club">
+              <ion-radio value="other" mode="md"></ion-radio>
+            </ion-radio-group>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" lines="none">
+        <ion-item lines="none" class="style-line-item-select" mode="md">
+          <ion-label>EDAD PROMEDIO DEL EQUIPO</ion-label>
+          <ion-select>
+            <ion-select-option>15</ion-select-option>
+            <ion-select-option>16</ion-select-option>
+          </ion-select>
+          <ion-icon name="caret-up-outline" slot="end"></ion-icon>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" lines="none">
+        <ion-item lines="none" class="style-line-item-select" mode="md">
+          <ion-label>DEPORTES FAVORITOS</ion-label>
+          <ion-select>
+            <ion-select-option>Futbol</ion-select-option>
+            <ion-select-option>Baloncesto</ion-select-option>
+            <ion-select-option>Tenis</ion-select-option>
+          </ion-select>
+          <ion-icon name="caret-up-outline" slot="end"></ion-icon>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" class="ion-margin-top">
+        <p class="style-textarea-inline">DESCRIPCIÓN</p>
+        <span class="style-textarea-inline"> (OPCIONAL)</span>
+      </ion-col>
+      <ion-col size="12">
+        <ion-textarea
+          rows="6"
+          cols="20"
+          value="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+        ></ion-textarea>
+        <span class="style-small-textarea"
+          >Esta informacion será visible cuando consulten el perfil de tu
+          equipo.</span
+        >
+      </ion-col>
+
+      <ion-col
+        size="9"
+        size-sm="10"
+        size-md="4"
+        size-lg="3"
+        class="ion-margin-top ion-padding-top"
+      >
+        <p class="style-textarea-inline">DESEAS RECIBIR NUEVOS MIEMBROS</p>
+      </ion-col>
+      <ion-col
+        size="3"
+        size-sm="2"
+        size-md="3"
+        size-lg="3"
+        class="ion-margin-top ion-padding-top"
+      >
+        <ion-toggle
+          class="style-textarea-inline"
+          color="success"
+          checked
+          mode="ios"
+        ></ion-toggle>
+      </ion-col>
+      <ion-col
+        size="12"
+        class="ion-margin-top ion-padding-top ion-margin-bottom"
+      >
+        <ion-button mode="md" expand="block">GUARDAR CAMBIOS </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

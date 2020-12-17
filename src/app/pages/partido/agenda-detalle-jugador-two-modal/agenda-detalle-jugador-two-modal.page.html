@@ -1,0 +1,47 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="closeModalReviewPlayer()">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="style-fullheight style-fullheightRow">
+    <ion-card mode="md">
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12">
+              <ion-item lines="none" class="ion-no-padding">
+                <ion-avatar slot="start">
+                  <ion-img src="../../assets/list/avatar-han.png"></ion-img>
+                </ion-avatar>
+                <ion-label>
+                  <p>JUGADOR</p>
+                  <h3>Silvio Ojeda</h3>
+                </ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12" class="ion-no-padding ion-text-center">
+              <div class="style-col-div">
+                <p>Este jugador no posee suficientes</p>
+                <p>valoraciones en su historial</p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+      <ion-row class="cardfooter ion-text-center">
+        <ion-col size="6" class="style-col-button-cancel">
+          <p>ACEPTAR</p>
+        </ion-col>
+        <ion-col size="6" class="style-col-button-delete">
+          <p>RECHAZAR</p>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+</ion-content>

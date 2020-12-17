@@ -9,7 +9,7 @@
       </ion-col>
     </ion-row>
     <ion-col size="12">
-      <ion-item class="style-item-input">
+      <ion-item class="style-item-input" mode="md">
         <ion-input
           type="text"
           [(ngModel)]="NombreEvento"
@@ -20,7 +20,7 @@
       </ion-item>
     </ion-col>
     <ion-col size="12">
-      <ion-item class="style-item-input">
+      <ion-item class="style-item-input" mode="md">
         <ion-input
           type="text"
           [(ngModel)]="NumeroCancha"
@@ -33,7 +33,7 @@
     <ion-row>
       <ion-col size="6" class="ion-padding-top">
         <div>
-          <ion-item lines="none" class="style-line-item-select">
+          <ion-item lines="none" class="style-line-item-select" mode="md">
             <ion-label class="style-text-theme">CATEGORIA</ion-label>
             <ion-select [(ngModel)]="IdCategoria" (ionChange)="CargaSub()">
               <ion-select-option
@@ -48,7 +48,7 @@
       </ion-col>
       <ion-col size="6" class="ion-padding-top">
         <div>
-          <ion-item lines="none" class="style-line-item-select">
+          <ion-item lines="none" class="style-line-item-select" mode="md">
             <ion-label class="style-text-theme">DEPORTE</ion-label>
             <ion-select [(ngModel)]="IdSubCategoria">
               <ion-select-option
@@ -63,7 +63,7 @@
       </ion-col>
       <ion-col size="6" class="ion-padding-top ion-margin-top">
         <div>
-          <ion-item lines="none" class="style-line-item-select">
+          <ion-item lines="none" class="style-line-item-select" mode="md">
             <ion-label class="style-text-theme">FECHA</ion-label>
             <ion-datetime
               [(ngModel)]="FechaEvento"
@@ -77,7 +77,7 @@
       </ion-col>
       <ion-col size="6" class="ion-padding-top ion-margin-top">
         <div>
-          <ion-item lines="none" class="style-line-item-select">
+          <ion-item lines="none" class="style-line-item-select" mode="md">
             <ion-label class="style-text-theme">HORA</ion-label>
             <ion-datetime
               [(ngModel)]="Hora"
@@ -96,7 +96,7 @@
         class="ion-padding-top ion-margin-top ion-margin-bottom"
       >
         <div>
-          <ion-item lines="none" class="style-line-item-select">
+          <ion-item lines="none" class="style-line-item-select" mode="md">
             <ion-label class="style-text-theme">REGIÓN METROPOLITANA</ion-label>
             <ion-select [(ngModel)]="Idregion" (ionChange)="ListaRecintos()">
               <ion-select-option value="1"
@@ -132,7 +132,7 @@
       </ion-col>
     </ion-row>
     <ion-col size="12" class="ion-padding-top ion-margin-top">
-      <ion-item class="style-item-input">
+      <ion-item class="style-item-input" mode="md">
         <ion-input
           type="email"
           [(ngModel)]="NombreEvento"
@@ -149,7 +149,7 @@
     </ion-col>
     <ion-row>
       <ion-col size="12">
-        <ion-item lines="none" class="ion-no-padding style-item-div-number">
+        <ion-item lines="none" class="ion-no-padding style-item-div-number" mode="md">
           <ion-label>
             <p>Número de cancha</p>
           </ion-label>
@@ -170,7 +170,7 @@
         </p>
       </ion-col>
       <ion-col size="12">
-        <ion-item lines="none" class="ion-no-padding style-item-div-number">
+        <ion-item lines="none" class="ion-no-padding style-item-div-number" mode="md">
           <ion-label>
             <p>Cantidad de cupos</p>
           </ion-label>
@@ -199,6 +199,7 @@
         class="style-user-button"
         (click)="presentModalAddEnclosure()"
         expand="block"
+        mode="md"
         >CREAR PARTIDO
       </ion-button>
     </ion-col>

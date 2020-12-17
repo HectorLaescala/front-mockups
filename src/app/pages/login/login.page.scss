@@ -3,6 +3,7 @@ ion-icon[name="person"] {
   color: #333333;
 }
 
+
 //:host {
   ion-item {
       --highlight-color-invalid: #F43C4B;
@@ -65,4 +66,14 @@ ion-text{
   font-size: 10px;
   letter-spacing: 0;
   line-height: 13px;
+}
+
+.style-fullheight {
+  height: 100%;
+}
+
+.style-fullheightRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

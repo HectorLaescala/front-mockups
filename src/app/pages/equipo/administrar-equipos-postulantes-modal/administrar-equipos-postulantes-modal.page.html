@@ -1,0 +1,42 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="closeModalPostulantTeam()">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="style-fullheight style-fullheightRow">
+    <ion-card mode="md">
+      <ion-card-content class="ion-no-padding">
+        <ion-grid class="ion-no-padding">
+          <ion-row>
+            <ion-col size="12">
+              <ion-item lines="none" class="ion-no-padding" mode="md">
+                <ion-avatar slot="start">
+                  <ion-img src="../../assets/list/avatar-leia.png"></ion-img>
+                </ion-avatar>
+                <ion-label>
+                  <p>POSTULANTE</p>
+                  <h3>Oscar Salazar</h3>
+                </ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12" class="ion-text-center style-col-first">
+              <p>VER PERFIL</p>
+            </ion-col>
+            <ion-col size="12" class="ion-text-center style-col-middle">
+              <p>ACEPTAR</p>
+            </ion-col>
+            <ion-col size="12" class="ion-text-center style-col-last">
+              <p>DESCARTAR</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

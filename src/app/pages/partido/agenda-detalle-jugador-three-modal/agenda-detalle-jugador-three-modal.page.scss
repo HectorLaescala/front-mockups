@@ -1,0 +1,116 @@
+ion-content,
+ion-toolbar {
+  --background: transparent;
+}
+
+ion-button {
+  color: #f9f9f9;
+}
+
+ion-card {
+  margin-left: 25px;
+  margin-right: 25px;
+  box-shadow: none;
+  border-radius: 10px;
+
+  ion-card-content {
+    padding-bottom: 0px;
+  }
+}
+
+ion-label {
+  margin-top: 5px;
+}
+
+ion-avatar {
+  border-radius: 5px;
+  margin-top: 1px;
+  margin-left: 2px;
+  width: 50px;
+  height: 50px;
+
+  ion-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+}
+
+p {
+  font-family: Montserrat-Regular;
+  color: #707070;
+  font-size: 10px;
+  letter-spacing: 0;
+}
+
+h3 {
+  color: #333333;
+  font-family: Montserrat-SemiBold;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.style-col-div-first {
+  border: 1px solid #a1ec8d;
+  border-radius: 5px;
+  background-color: #d8f7cf;
+  padding: 15px 40px 15px 40px;
+  margin-top: 5px;
+}
+
+.style-col-div-last {
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 8px 20px 5px 20px;
+  margin: 1px 5px 10px 6px;
+}
+
+.style-col-div-first > p,
+.style-col-div-last > p {
+  color: #333333;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 13px;
+  font-family: Montserrat-Regular;
+}
+
+.style-fullheight {
+  height: 100%;
+}
+
+.style-fullheightRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.style-col-button-cancel {
+  border-top: 1px solid #ebebeb;
+  padding: 5px 5px 5px 5px;
+
+  p {
+    color: #333333;
+    font-family: Montserrat-SemiBold;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+}
+
+.style-col-button-delete {
+  border-top: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+  padding: 5px 5px 5px 5px;
+
+  p {
+    color: #f43c4b;
+    font-family: Montserrat-SemiBold;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+}

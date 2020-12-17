@@ -28,7 +28,7 @@ export class LoginPage implements OnInit {
     //this.storage.get('IdUsuario').then((val) => {
       //if (val) {
        // this.IdUsuario = val;
-        this.navCtrl.navigateRoot('/invitar-jugadores-modal');
+        //this.navCtrl.navigateRoot('/equipo/administrar-equipos');
      // }
    // });
 
@@ -37,7 +37,7 @@ export class LoginPage implements OnInit {
 
   async login() {
 
-    this.navCtrl.navigateRoot('/invitar-jugadores-modal');
+    //this.navCtrl.navigateRoot('/equipo/administrar-equipos');
    
    /* const valido = await this.usuarioService.login(this.email, this.password);
 

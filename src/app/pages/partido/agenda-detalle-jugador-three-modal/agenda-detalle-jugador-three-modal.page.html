@@ -1,0 +1,53 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="closeModalAceptedPlayer()">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="style-fullheight style-fullheightRow">
+    <ion-card mode="md">
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12">
+              <ion-item lines="none" class="ion-no-padding">
+                <ion-avatar slot="start">
+                  <ion-img src="../../assets/list/avatar-han.png"></ion-img>
+                </ion-avatar>
+                <ion-label>
+                  <p>JUGADOR</p>
+                  <h3>Anibal Sanhueza</h3>
+                </ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12" class="ion-text-center">
+              <div class="style-col-div-first">
+                <p>El 75% de usuarios volvería a </p>
+                <p>invitar a este jugador.</p>
+              </div>
+            </ion-col>
+            <ion-col size="12" class="ion-no-padding ion-text-center">
+              <div class="style-col-div-last">
+                <p>Este jugador no posee suficientes</p>
+                <p>inasistencias en los ultimos 6 meses.</p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+      <ion-row class="cardfooter ion-text-center">
+        <ion-col size="6" class="style-col-button-cancel">
+          <p>ACEPTAR</p>
+        </ion-col>
+        <ion-col size="6" class="style-col-button-delete">
+          <p>RECHAZAR</p>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+</ion-content>

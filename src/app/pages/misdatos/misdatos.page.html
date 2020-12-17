@@ -51,7 +51,7 @@
   </ion-grid>
 
   <div class="style-grid-segment">
-    <ion-segment [(ngModel)]="type">
+    <ion-segment [(ngModel)]="type" mode="md">
       <ion-segment-button value="my-data">
         <ion-label class="ion-text-start">MIS DATOS</ion-label>
       </ion-segment-button>
@@ -64,22 +64,22 @@
     </ion-segment>
   </div>
 
-  <div [ngSwitch]="type">
+  <div [ngSwitch]="type" class="style-borde-switch">
     <ion-grid>
       <ion-row *ngSwitchCase="'my-data'">
         <ion-col size="12" class="style-col-item-list-data">
-          <ion-item>
+          <ion-item  mode="md">
             <ion-icon name="person-circle-outline" slot="start"></ion-icon>
             <ion-input type="text" placeholder="Claudio Bravo"></ion-input>
           </ion-item>
-          <ion-item>
+          <ion-item  mode="md">
             <ion-icon name="mail" slot="start"></ion-icon>
             <ion-input
               type="email"
               placeholder="Claudiobravo2@gmail.com"
             ></ion-input>
           </ion-item>
-          <ion-item>
+          <ion-item  mode="md">
             <ion-icon name="transgender" slot="start"></ion-icon>
             <ion-select value="1" interface="popover">
               <ion-select-option value="1">Masculino</ion-select-option>
@@ -87,7 +87,7 @@
               <ion-select-option value="3">No Responde</ion-select-option>
             </ion-select>
           </ion-item>
-          <ion-item>
+          <ion-item  mode="md">
             <ion-datetime
               value="1983-03-12"
               displayFormat="MM/ DD/ YYYY"
@@ -95,13 +95,13 @@
             ></ion-datetime>
             <ion-icon name="calendar-outline" slot="start"></ion-icon>
           </ion-item>
-          <ion-item>
+          <ion-item  mode="md">
             <ion-icon name="location-sharp" slot="start"></ion-icon>
             <ion-select value="0" interface="popover">
               <ion-select-option value="0">Chile</ion-select-option>
             </ion-select>
           </ion-item>
-          <ion-item>
+          <ion-item  mode="md">
             <ion-icon name="location-sharp" slot="start"></ion-icon>
             <ion-select value="0" interface="popover">
               <ion-select-option value="0"
@@ -109,7 +109,7 @@
               >
             </ion-select>
           </ion-item>
-          <ion-item>
+          <ion-item  mode="md">
             <ion-icon name="phone-portrait-outline" slot="start"></ion-icon>
             <ion-input
               type="tel"
@@ -117,82 +117,133 @@
               placeholder="+56 9 12345678"
             ></ion-input>
           </ion-item>
-          <ion-item>
+          <ion-item  mode="md">
             <ion-icon name="person-circle-outline" slot="start"></ion-icon>
             <ion-input type="password" placeholder="contraseña"></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
       <ion-row *ngSwitchCase="'deports'">
-        <ion-col size="12" class="ion-margin-start ion-margin-top style-col-list-data-deport">
-            <p>ACTUALIZA TUS DEPORTES FAVORITOS Y</p>
-            <p>AYUDANOS A MEJORAR TU EXPERIENCIA.</p>
+        <ion-col
+          size="12"
+          class="ion-margin-start ion-margin-top style-col-list-data-deport"
+        >
+          <p>ACTUALIZA TUS DEPORTES FAVORITOS Y</p>
+          <p>AYUDANOS A MEJORAR TU EXPERIENCIA.</p>
         </ion-col>
         <ion-col size="12" class="style-col-list-item-deport">
-          <ion-item  lines="none" >
+          <ion-item lines="none"  mode="md">
             <ion-avatar slot="start" class="style-col-item-avatar-first">
             </ion-avatar>
-            <ion-label>
-              Fútbol 11
-            </ion-label>
+            <ion-label> Fútbol 11 </ion-label>
             <ion-icon slot="end" name="close-outline"></ion-icon>
           </ion-item>
-          <ion-item  lines="none" >
+          <ion-item lines="none"  mode="md">
             <ion-avatar slot="start" class="style-col-item-avatar-middle">
               <!--<ion-img src="../../assets/list/avatar-ben.png"></ion-img>-->
             </ion-avatar>
-            <ion-label>
-              Fútbol sala
-            </ion-label>
+            <ion-label> Fútbol sala </ion-label>
             <ion-icon slot="end" name="close-outline"></ion-icon>
           </ion-item>
-          <ion-item  lines="none" >
+          <ion-item lines="none"  mode="md">
             <ion-avatar slot="start" class="style-col-item-avatar-last">
               <!--<ion-img src="../../assets/list/avatar-ben.png"></ion-img>-->
             </ion-avatar>
-            <ion-label>
-              Fútbol 7
-            </ion-label>
+            <ion-label> Fútbol 7 </ion-label>
             <ion-icon slot="end" name="close-outline"></ion-icon>
           </ion-item>
         </ion-col>
         <ion-col size="12" class="ion-margin-top ion-padding-top">
-        <ion-list class="ion-padding">
-          <ion-item lines="inset" class="style-col-item-select">
-            <ion-label>Categorías</ion-label>
+          <ion-list class="ion-padding">
+            <ion-item lines="inset" class="style-col-item-select">
+              <ion-label>Categorías</ion-label>
+              <ion-select>
+                <ion-select-option value="f">Female</ion-select-option>
+                <ion-select-option value="m">Male</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item lines="inset" class="style-col-item-select">
+              <ion-label>Sub categorías</ion-label>
+              <ion-select>
+                <ion-select-option value="f">Female</ion-select-option>
+                <ion-select-option value="m">Male</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngSwitchCase="'statistics'">
+        <ion-col size="6" class="style-col-border-select">
+          <ion-item lines="none" mode="md">
+            <ion-label>CATEGORIAS</ion-label>
             <ion-select>
-              <ion-select-option value="f">Female</ion-select-option>
-              <ion-select-option value="m">Male</ion-select-option>
+              <ion-select-option>15</ion-select-option>
+              <ion-select-option>16</ion-select-option>
             </ion-select>
+            <ion-icon name="caret-up-outline" slot="end"></ion-icon>
           </ion-item>
-          <ion-item lines="inset" class="style-col-item-select">
-            <ion-label>Sub categorías</ion-label>
+        </ion-col>
+        <ion-col size="6" class="style-col-border-select">
+          <ion-item lines="none" mode="md">
+            <ion-label>SUB-CATEGORIAS</ion-label>
             <ion-select>
-              <ion-select-option value="f">Female</ion-select-option>
-              <ion-select-option value="m">Male</ion-select-option>
+              <ion-select-option>15</ion-select-option>
+              <ion-select-option>16</ion-select-option>
             </ion-select>
+            <ion-icon name="caret-up-outline" slot="end"></ion-icon>
           </ion-item>
-        </ion-list>
+        </ion-col>
+        <ion-col size="12" class="ion-text-center">
+          <div class="style-col-div-content">
+            <p>El 75% de usuarios volvería a solicitar el</p>
+            <p>servicio.</p>
+          </div>
+        </ion-col>
+        <ion-col size="12" class="style-col-border-item">
+          <ion-item lines="none">
+            <ion-label>JUGADOS</ion-label>
+            <ion-badge slot="end">22</ion-badge>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label>RESULTADOS REGISTRADOS</ion-label>
+            <ion-badge slot="end">6</ion-badge>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label>GANADOS</ion-label>
+            <ion-badge slot="end">3</ion-badge>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label>EMPATADOS</ion-label>
+            <ion-badge slot="end">2</ion-badge>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label>PERDIDOS</ion-label>
+            <ion-badge slot="end">0</ion-badge>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding style-col-text-item">
+          <p>Considera partidos personales y jugados por tus equipos</p>
+          <span> HISTORIAL DE PARTIDOS JUGADOS </span>
         </ion-col>
       </ion-row>
     </ion-grid>
 
-
-    <div *ngSwitchCase="'my-data'" class="style-vertical-center ion-margin-top ion-padding-top ion-margin-bottom  ion-padding-bottom">
-      <ion-button
-        class="style-user-button "
-        expand="block"
+    <div
+      *ngSwitchCase="'my-data'"
+      class="style-vertical-center ion-margin-top ion-padding-top ion-margin-bottom ion-padding-bottom"
+    >
+      <ion-button class="style-user-button" expand="block"
         >EDITAR DATOS
       </ion-button>
     </div>
 
-    <div *ngSwitchCase="'deports'" class="style-vertical-center ion-padding-top ion-margin-bottom ion-padding-bottom">
-      <ion-button
-        class="style-user-button"
-        expand="block"
+    <div
+      *ngSwitchCase="'deports'"
+      class="style-vertical-center ion-padding-top ion-margin-bottom ion-padding-bottom"
+    >
+      <ion-button class="style-user-button" expand="block"
         >AGREGAR DEPORTES
       </ion-button>
     </div>
-
   </div>
 </ion-content>

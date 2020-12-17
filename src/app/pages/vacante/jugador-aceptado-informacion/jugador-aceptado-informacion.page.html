@@ -15,7 +15,7 @@
   <ion-grid fixed class="style-grid-principal"
     ><ion-row>
       <ion-col size="12">
-        <ion-card>
+        <ion-card mode="md">
           <ion-card-header>
             <ion-card-title>CAMPEONATO FUTSAL EMPRESAS</ion-card-title>
             <ion-card-subtitle>ESTAS CONFIRMADO</ion-card-subtitle>
@@ -69,7 +69,7 @@
   </ion-grid>
 
   <div class="style-grid-principal">
-    <ion-segment value="information">
+    <ion-segment value="information" mode="md">
       <ion-segment-button value="information">
         <ion-label class="ion-text-start">INFORMACIÓN</ion-label>
       </ion-segment-button>
@@ -82,7 +82,7 @@
         <h3>ORGANIZA:</h3>
       </ion-col>
       <ion-col size="12">
-        <ion-item lines="none" class="ion-no-padding style-item-div">
+        <ion-item lines="none" class="ion-no-padding style-item-div" mode="md">
           <ion-icon name="calendar-outline" slot="start"></ion-icon>
           <ion-label>
             <h4>Renca juniors</h4>
@@ -94,7 +94,7 @@
         <p class="style-text-col-title">Información principal</p>
       </ion-col>
       <ion-col size="12">
-        <ion-list>
+        <ion-list mode="md">
           <ion-item lines="none">
             <ion-grid class="style-grid-border">
               <ion-row>
@@ -149,7 +149,7 @@
         <p class="style-text-col-title">Información adicional</p>
       </ion-col>
       <ion-col size="12">
-        <ion-list>
+        <ion-list  mode="md">
           <ion-item lines="none">
             <ion-grid class="style-grid-border">
               <ion-row>
@@ -198,6 +198,7 @@
         <ion-button
           class="style-user-button"
           expand="block"
+          mode="md"
           (click)="presentModalPlayerAcepted()"
           >CANCELAR POSTULACIÓN
         </ion-button>

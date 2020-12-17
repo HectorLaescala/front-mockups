@@ -11,14 +11,15 @@
 </ion-header>
 
 <ion-content>
+<div class="style-fullheight style-fullheightRow">
   <ion-grid fixed
     ><ion-row>
       <ion-col size="12" class="ion-text-center style-text-title">
         <p>¿Cual fue el resultado</p>
         <p>del partido?</p>
       </ion-col>
-      <ion-col size="12">
-        <ion-list class="ion-padding">
+      <ion-col size="12" >
+        <ion-list class="ion-padding" mode="md">
           <ion-item lines="none" class="ion-no-padding">
             <ion-checkbox mode="ios" slot="end"></ion-checkbox>
             <ion-label>Perdido</ion-label>
@@ -39,9 +40,10 @@
       </ion-col>
     </ion-row></ion-grid
   >
+</div>
 </ion-content>
 
-<ion-footer>
+<ion-footer mode="md">
   <ion-grid fixed>
     <ion-row>
       <ion-col size="4">
