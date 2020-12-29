@@ -12,9 +12,11 @@ import { AgendaDetalleJugadorTwoModalPageModule } from '../agenda-detalle-jugado
 import { AgendaDetalleJugadorTwoModalPage } from '../agenda-detalle-jugador-two-modal/agenda-detalle-jugador-two-modal.page';
 import { AgendaDetalleJugadorThreeModalPageModule } from '../agenda-detalle-jugador-three-modal/agenda-detalle-jugador-three-modal.module';
 import { AgendaDetalleJugadorThreeModalPage } from '../agenda-detalle-jugador-three-modal/agenda-detalle-jugador-three-modal.page';
+import { AgendaModificarModalPageModule } from '../agenda-modificar-modal/agenda-modificar-modal.module';
+import { AgendaModificarModalPage } from '../agenda-modificar-modal/agenda-modificar-modal.page';
 
 @NgModule({
-  entryComponents: [ AgendaDetalleJugadorModalPage, AgendaDetalleJugadorTwoModalPage, AgendaDetalleJugadorThreeModalPage],
+  entryComponents: [ AgendaDetalleJugadorModalPage, AgendaDetalleJugadorTwoModalPage, AgendaDetalleJugadorThreeModalPage, AgendaModificarModalPage],
   imports: [
     CommonModule,
     FormsModule,
@@ -22,7 +24,8 @@ import { AgendaDetalleJugadorThreeModalPage } from '../agenda-detalle-jugador-th
     AgendaPostulacionesPageRoutingModule,
     AgendaDetalleJugadorModalPageModule,
     AgendaDetalleJugadorTwoModalPageModule,
-    AgendaDetalleJugadorThreeModalPageModule
+    AgendaDetalleJugadorThreeModalPageModule,
+    AgendaModificarModalPageModule
   ],
   declarations: [AgendaPostulacionesPage]
 })

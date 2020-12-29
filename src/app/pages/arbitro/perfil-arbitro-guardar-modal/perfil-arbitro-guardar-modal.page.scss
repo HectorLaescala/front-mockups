@@ -1,0 +1,134 @@
+ion-content,
+ion-toolbar {
+  --background: transparent;
+}
+
+ion-button {
+  color: #f9f9f9;
+}
+
+ion-card {
+  margin-left: 25px;
+  margin-right: 25px;
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+ion-icon[name="caret-up-outline"] {
+  color: #333333;
+  font-size: 10px;
+  margin-top: 2.9px;
+  margin-right: 5px;
+}
+
+ion-select::part(icon) {
+  display: none !important;
+}
+
+.style-fullheight {
+  height: 100%;
+}
+
+.style-fullheightRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.style-item-input {
+  ion-item{
+    --highlight-height: 1px;
+  }
+  ion-input {
+    --color: #b9b8b9;
+    font-family: Montserrat-Regular;
+    --padding-start: 0px;
+    --padding-bottom: 0px;
+    --padding-top: 10px;
+    font-size: 10px;
+    letter-spacing: 0;
+
+    .text-input {
+      text-align: start;
+    }
+  }
+
+  div {
+    margin-top: 3px;
+  }
+
+  div > small {
+    color: #707070;
+    font-family: Montserrat-Regular;
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+}
+
+.style-text-theme {
+  font-family: Montserrat-SemiBold;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-top: 0px;
+}
+
+.style-line-item-select {
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.style-row-align {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.style-row-align > ion-button {
+  height: 32px;
+  width: 152px;
+  --background: #c90949;
+  --box-shadow: none;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  font-family: Montserrat-SemiBold;
+  --color: #ffffff;
+}
+
+.style-col-textarea {
+  p {
+    color: #707070;
+    font-family: Montserrat-Regular;
+    font-size: 10px;
+    letter-spacing: 0;
+    margin-left: 5px;
+    margin-bottom: 0px;
+  }
+
+  ion-textarea{
+    --background: #F9F9F9;
+    border: 1px solid #ebebeb;
+    --color: #333333;
+    border-radius: 5px;
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: 4px;
+  }
+
+  div {
+    margin-top: 3px;
+    margin-right: 6px;
+  }
+
+  div > small{
+    color: #707070;
+    font-family: Montserrat-Regular;
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+}

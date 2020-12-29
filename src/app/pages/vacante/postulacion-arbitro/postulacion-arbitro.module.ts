@@ -8,15 +8,18 @@ import { PostulacionArbitroPageRoutingModule } from './postulacion-arbitro-routi
 import { PostulacionArbitroPage } from './postulacion-arbitro.page';
 import { PostulacionJugadorModalPageModule } from '../modals/postulacion-jugador-modal/postulacion-jugador-modal.module';
 import { PostulacionJugadorModalPage } from '../modals/postulacion-jugador-modal/postulacion-jugador-modal.page';
+import { PostulacionArbitroTarifaModalPageModule } from '../modals/postulacion-arbitro-tarifa-modal/postulacion-arbitro-tarifa-modal.module';
+import { PostulacionArbitroTarifaModalPage } from '../modals/postulacion-arbitro-tarifa-modal/postulacion-arbitro-tarifa-modal.page';
 
 @NgModule({
-  entryComponents: [ PostulacionJugadorModalPage ],
+  entryComponents: [ PostulacionJugadorModalPage, PostulacionArbitroTarifaModalPage ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     PostulacionArbitroPageRoutingModule,
-    PostulacionJugadorModalPageModule
+    PostulacionJugadorModalPageModule,
+    PostulacionArbitroTarifaModalPageModule
   ],
   declarations: [PostulacionArbitroPage]
 })

@@ -8,16 +8,19 @@ import { CrearPartidoPersonalPageRoutingModule } from './crear-partido-personal-
 import { CrearPartidoPersonalPage } from './crear-partido-personal.page';
 import { AgregarRecintoModalPageModule } from '../agregar-recinto-modal/agregar-recinto-modal.module';
 import { AgregarRecintoModalPage } from '../agregar-recinto-modal/agregar-recinto-modal.page';
+import { AgendaCalendarioPageModule } from '../agenda-calendario/agenda-calendario.module';
+import { AgendaCalendarioPage } from '../agenda-calendario/agenda-calendario.page';
 
 @NgModule({
-  entryComponents: [ AgregarRecintoModalPage ],
+  entryComponents: [AgregarRecintoModalPage, AgendaCalendarioPage],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     CrearPartidoPersonalPageRoutingModule,
+    AgendaCalendarioPageModule,
     AgregarRecintoModalPageModule
   ],
   declarations: [CrearPartidoPersonalPage]
 })
-export class CrearPartidoPersonalPageModule {}
+export class CrearPartidoPersonalPageModule { }

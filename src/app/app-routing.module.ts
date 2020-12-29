@@ -246,6 +246,54 @@ const routes: Routes = [
   {
     path: 'agenda-detalle-jugador-three-modal',
     loadChildren: () => import('./pages/partido/agenda-detalle-jugador-three-modal/agenda-detalle-jugador-three-modal.module').then( m => m.AgendaDetalleJugadorThreeModalPageModule)
+  },
+  {
+    path: 'filtro-buscador-partido',
+    loadChildren: () => import('./pages/equipo/filtro-buscador-partido/filtro-buscador-partido.module').then( m => m.FiltroBuscadorPartidoPageModule)
+  },
+  {
+    path: 'vacante/equipo-confirmado-convocatoria',
+    loadChildren: () => import('./pages/vacante/equipo-confirmado-convocatoria/equipo-confirmado-convocatoria.module').then( m => m.EquipoConfirmadoConvocatoriaPageModule)
+  },
+  {
+    path: 'vacante/jugador-aceptado-convocatoria',
+    loadChildren: () => import('./pages/vacante/jugador-aceptado-convocatoria/jugador-aceptado-convocatoria.module').then( m => m.JugadorAceptadoConvocatoriaPageModule)
+  },
+  {
+    path: 'arbitro/perfil-arbitro',
+    loadChildren: () => import('./pages/arbitro/perfil-arbitro/perfil-arbitro.module').then( m => m.PerfilArbitroPageModule)
+  },
+  {
+    path: 'perfil-arbitro-agregar-modal',
+    loadChildren: () => import('./pages/arbitro/perfil-arbitro-agregar-modal/perfil-arbitro-agregar-modal.module').then( m => m.PerfilArbitroAgregarModalPageModule)
+  },
+  {
+    path: 'perfil-arbitro-guardar-modal',
+    loadChildren: () => import('./pages/arbitro/perfil-arbitro-guardar-modal/perfil-arbitro-guardar-modal.module').then( m => m.PerfilArbitroGuardarModalPageModule)
+  },
+  {
+    path: 'postulacion-arbitro-tarifa-modal',
+    loadChildren: () => import('./pages/vacante/modals/postulacion-arbitro-tarifa-modal/postulacion-arbitro-tarifa-modal.module').then( m => m.PostulacionArbitroTarifaModalPageModule)
+  },
+  {
+    path: 'partido/agenda-convocatoria-admin',
+    loadChildren: () => import('./pages/partido/agenda-convocatoria-admin/agenda-convocatoria-admin.module').then( m => m.AgendaConvocatoriaAdminPageModule)
+  },
+  {
+    path: 'agenda-jugador-manual-modal',
+    loadChildren: () => import('./pages/partido/agenda-jugador-manual-modal/agenda-jugador-manual-modal.module').then( m => m.AgendaJugadorManualModalPageModule)
+  },
+  {
+    path: 'partido/agenda-partido',
+    loadChildren: () => import('./pages/partido/agenda-partido/agenda-partido.module').then( m => m.AgendaPartidoPageModule)
+  },
+  {
+    path: 'agenda-modificar-modal',
+    loadChildren: () => import('./pages/partido/agenda-modificar-modal/agenda-modificar-modal.module').then( m => m.AgendaModificarModalPageModule)
+  },
+  {
+    path: 'agenda-calendario',
+    loadChildren: () => import('./pages/partido/agenda-calendario/agenda-calendario.module').then( m => m.AgendaCalendarioPageModule)
   }
 ];
 

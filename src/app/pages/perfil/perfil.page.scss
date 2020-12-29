@@ -26,10 +26,6 @@
     border-radius: 9px;
   }
 
-  ion-label {
-    margin-top: 0px;
-  }
-
   h3 {
     color: #333333;
     font-family: Montserrat-SemiBold;
@@ -164,6 +160,12 @@ ion-icon[name="add-outline"] {
   ion-slide {
     width: 180px !important;
     margin-bottom: 20px;
+  }
+
+
+
+  ion-label {
+    margin-top: 0px !important;
   }
 
   h4 {

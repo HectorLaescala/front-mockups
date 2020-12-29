@@ -1,0 +1,356 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button
+        icon="chevron-back-outline"
+        mode="md"
+        defaultHref="login"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title mode="ios">Perfil árbitro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed class="style-background-switch">
+    <ion-row>
+      <ion-col size="6" class="ion-text-center style-card-result">
+        <div class="style-position-first-col">
+          <ion-card mode="md">
+            <ion-card-title>81</ion-card-title>
+            <ion-card-subtitle>PARTIDOS ARBITRADOS</ion-card-subtitle>
+          </ion-card>
+        </div>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center style-card-result">
+        <div class="style-position-last-col">
+          <ion-card mode="md">
+            <ion-card-title>$1.1000.000</ion-card-title>
+            <ion-card-subtitle>GANANCIA TOTAL</ion-card-subtitle>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-segment [(ngModel)]="type" mode="md">
+    <ion-segment-button value="price">
+      <ion-label class="ion-text-start">PRECIOS</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="payment">
+      <ion-label class="ion-text-start">PAGOS</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="statistics">
+      <ion-label class="ion-text-start">ESTADÍSTICAS</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="type">
+    <ion-grid>
+      <ion-row *ngSwitchCase="'price'">
+        <ion-col size="12" class="style-title-text-price ion-text-start">
+          <h3>Tarifas por deporte</h3>
+        </ion-col>
+        <ion-col
+          size="12"
+          class="style-title-text-price-description ion-text-start"
+        >
+          <p>Ingresa la tarifa que cobras por cada</p>
+          <p>deporte, podras modificar esta tarifa</p>
+          <p>cuando quieras</p>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item lines="none" mode="md" class="style-item-button-price">
+            <ion-label>AGREGAR DEPORTE</ion-label>
+            <ion-button
+              slot="end"
+              expand="block"
+              fill="outline"
+              (click)="presentModalRefereeAdd()"
+            >
+              <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+            </ion-button>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-list mode="md" lines="none" class="style-itemlist-button-price">
+            <ion-item>
+              <ion-label>
+                <h3>Fútbol 7</h3>
+                <p>TARIFA · $20.000</p>
+                <span>Descripción complementaria</span>
+              </ion-label>
+              <ion-button
+                slot="end"
+                expand="block"
+                fill="outline"
+                (click)="presentModalRefereeEdit()"
+              >
+                EDITAR
+              </ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                <h3>Fútbol 11</h3>
+                <p>TARIFA · $30.000</p>
+                <span>Descripción complementaria</span>
+              </ion-label>
+              <ion-button
+                slot="end"
+                expand="block"
+                fill="outline"
+                (click)="presentModalRefereeEdit()"
+              >
+                EDITAR
+              </ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                <h3>Fútbol sala</h3>
+                <p>TARIFA · $15.000</p>
+                <span>Descripción complementaria</span>
+              </ion-label>
+              <ion-button
+                slot="end"
+                expand="block"
+                fill="outline"
+                (click)="presentModalRefereeEdit()"
+              >
+                EDITAR
+              </ion-button>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row *ngSwitchCase="'payment'">
+        <ion-col
+          size="12"
+          class="style-row-aling-request ion-margin-top ion-padding-top"
+        >
+          <ion-badge>1</ion-badge>
+          <p>COMISIONES POR PAGAR</p>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card>
+            <ion-card-content>
+              <ion-grid>
+                <ion-row class="style-card-row-charge">
+                  
+                  <ion-col size="10">
+                    <div>
+                      <h3>COBRADO $30.000</h3>
+                      <p>COMISIÓN $2.500</p>
+                     
+                    </div>
+                  </ion-col>
+                  <ion-col size="2">
+                    <div style="
+                    justify-content: flex-end;">
+                      <ion-button expand="block" fill="outline" class="style-button-view">
+                        ANULAR
+                      </ion-button>
+                    </div>
+                  </ion-col>
+                </ion-row>
+                <ion-row class="style-card-row-court">
+                  <ion-col size="4">
+                    <p class="ion-text-start text-color">LOS CONDES</p>
+                  </ion-col>
+                  <ion-col size="8">
+                    <p class="ion-text-end text-color">Canchas Oriente</p>
+                  </ion-col>
+                </ion-row>
+                <ion-row class="style-card-row-sport">
+                  <ion-col size="4">
+                    <p class="ion-text-start text-color">DEPORTE</p>
+                  </ion-col>
+                  <ion-col size="8">
+                    <p class="ion-text-end text-color">Fútbol 7</p>
+                  </ion-col>
+                </ion-row>
+                <ion-row class="style-card-row-date">
+                  <ion-col size="8">
+                    <p class="ion-text-start text-color">
+                      FECHA
+                      <span class="ion-text-start text-date">
+                        DOMINGO, 11 DE OCTUBRE</span
+                      >
+                    </p>
+                  </ion-col>
+                  <ion-col size="4">
+                    <p class="ion-text-end text-color">
+                      HORA
+                      <span class="ion-text-start text-date"> 3:00 A.M</span>
+                    </p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" class="style-col-price ion-text-end">
+          <div>
+            <h3>Total a pagar</h3>
+            <p>$17.500</p>
+          </div>
+        </ion-col>
+        <ion-col
+          size="12"
+          class="style-row-aling-request-payment ion-margin-top ion-padding-top"
+        >
+          <ion-badge>2</ion-badge>
+          <p>PAGADAS</p>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card>
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="6" class="ion-text-start style-col-div-price">
+                    <div>
+                      <h3>COBRADO $30.000</h3>
+                    </div>
+                  </ion-col>
+                  <ion-col size="6" class="ion-text-end style-col-div-price">
+                    <div>
+                      <ion-badge class="style-col-bagde-status-one"
+                        >PAGADO</ion-badge
+                      >
+                    </div>
+                  </ion-col>
+                </ion-row>
+                <ion-row class="style-card-row-court">
+                  <ion-col size="4">
+                    <p class="ion-text-start text-color">LOS CONDES</p>
+                  </ion-col>
+                  <ion-col size="8">
+                    <p class="ion-text-end text-color">Canchas Oriente</p>
+                  </ion-col>
+                </ion-row>
+                <ion-row class="style-card-row-sport">
+                  <ion-col size="4">
+                    <p class="ion-text-start text-color">DEPORTE</p>
+                  </ion-col>
+                  <ion-col size="8">
+                    <p class="ion-text-end text-color">Fútbol 7</p>
+                  </ion-col>
+                </ion-row>
+                <ion-row class="style-card-row-date">
+                  <ion-col size="8">
+                    <p class="ion-text-start text-color">
+                      FECHA
+                      <span class="ion-text-start text-date">
+                        DOMINGO, 11 DE OCTUBRE</span
+                      >
+                    </p>
+                  </ion-col>
+                  <ion-col size="4">
+                    <p class="ion-text-end text-color">
+                      HORA
+                      <span class="ion-text-start text-date"> 3:00 A.M</span>
+                    </p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+          <ion-card>
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="6" class="ion-text-start style-col-div-price">
+                    <div>
+                      <h3>COBRADO $30.000</h3>
+                    </div>
+                  </ion-col>
+                  <ion-col size="6" class="ion-text-end style-col-div-price">
+                    <div>
+                      <ion-badge class="style-col-bagde-status-last"
+                        >CONDONADA</ion-badge
+                      >
+                    </div>
+                  </ion-col>
+                </ion-row>
+                <ion-row class="style-card-row-court">
+                  <ion-col size="4">
+                    <p class="ion-text-start text-color">LOS CONDES</p>
+                  </ion-col>
+                  <ion-col size="8">
+                    <p class="ion-text-end text-color">Canchas Oriente</p>
+                  </ion-col>
+                </ion-row>
+                <ion-row class="style-card-row-sport">
+                  <ion-col size="4">
+                    <p class="ion-text-start text-color">DEPORTE</p>
+                  </ion-col>
+                  <ion-col size="8">
+                    <p class="ion-text-end text-color">Fútbol 7</p>
+                  </ion-col>
+                </ion-row>
+                <ion-row class="style-card-row-date">
+                  <ion-col size="8">
+                    <p class="ion-text-start text-color">
+                      FECHA
+                      <span class="ion-text-start text-date">
+                        DOMINGO, 11 DE OCTUBRE</span
+                      >
+                    </p>
+                  </ion-col>
+                  <ion-col size="4">
+                    <p class="ion-text-end text-color">
+                      HORA
+                      <span class="ion-text-start text-date"> 3:00 A.M</span>
+                    </p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row *ngSwitchCase="'statistics'">
+        <ion-col size="6" class="style-col-border-select">
+          <ion-item lines="none" mode="md">
+            <ion-label>CATEGORIAS</ion-label>
+            <ion-select>
+              <ion-select-option>15</ion-select-option>
+              <ion-select-option>16</ion-select-option>
+            </ion-select>
+            <ion-icon name="caret-up-outline" slot="end"></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6" class="style-col-border-select">
+          <ion-item lines="none" mode="md">
+            <ion-label>SUB-CATEGORIAS</ion-label>
+            <ion-select>
+              <ion-select-option>15</ion-select-option>
+              <ion-select-option>16</ion-select-option>
+            </ion-select>
+            <ion-icon name="caret-up-outline" slot="end"></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" class="ion-text-center">
+          <div class="style-col-div-content">
+            <p>El 75% de usuarios volvería a solicitar el</p>
+            <p>servicio.</p>
+          </div>
+        </ion-col>
+        <ion-col size="12" class="style-col-border-item">
+          <ion-item lines="none">
+            <ion-label>Cancelaciones</ion-label>
+            <ion-badge slot="end">0</ion-badge>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label>Inasistencias</ion-label>
+            <ion-badge slot="end">1</ion-badge>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding style-col-text-item">
+          <p>*estos datos corresponden a un periodo de 6 meses.</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

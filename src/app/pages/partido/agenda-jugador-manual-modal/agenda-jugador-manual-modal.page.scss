@@ -1,0 +1,121 @@
+ion-content,
+ion-toolbar {
+  --background: transparent;
+}
+
+.style-grid {
+  background: #ffffff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.style-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    height: 8px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: #ffffff;
+  }
+}
+.style-line-item-select {
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  height: 56px;
+  margin: 20px 20px 10px 20px;
+
+  ion-label {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    letter-spacing: 0;
+    margin-top: 15px;
+  }
+
+  ion-icon[name="caret-up-outline"] {
+    color: #333333;
+    font-size: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+  }
+
+  ion-select::part(icon) {
+    display: none !important;
+  }
+}
+
+.style-col-text {
+  ion-text {
+    color: #333333;
+    font-family: Montserrat-Bold;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin-left: 20px;
+  }
+
+  div {
+    margin-top: 12px;
+    margin-bottom: 5px;
+  }
+
+  div > p {
+    color: #c90949;
+    font-family: Montserrat-Italic;
+    font-size: 10px;
+    font-style: italic;
+    letter-spacing: 0;
+    margin: 0px 0px 3px 20px;
+  }
+}
+
+.style-item-input {
+  ion-item {
+    --highlight-height: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  ion-input {
+    --color: #b9b8b9;
+    font-family: Montserrat-Regular;
+    --padding-start: 8px;
+    --padding-bottom: 0px;
+    --padding-top: 0px;
+    font-size: 14px;
+    letter-spacing: 0;
+
+    .text-input {
+      text-align: start;
+    }
+  }
+
+  div {
+    margin-top: 3px;
+    margin-bottom: 40px;
+  }
+
+  div > small {
+    color: #707070;
+    font-family: Montserrat-Regular;
+    font-size: 8px;
+    letter-spacing: 0;
+    margin-left: 20px;
+  }
+}
+
+.style-col-button {
+    --border-color: #c90949;
+    --border-radius: 41.5px;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 56px;
+    --background: #c90949;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 18px;
+    font-family: Montserrat-SemiBold;
+    margin-bottom: 30px;
+  }

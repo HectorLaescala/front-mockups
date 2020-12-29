@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { AgregarRecintoModalPage } from '../agregar-recinto-modal/agregar-recinto-modal.page';
+import { AgendaCalendarioPage } from '../agenda-calendario/agenda-calendario.page';
 
 @Component({
   selector: 'app-crear-partido-personal',
@@ -17,6 +18,14 @@ export class CrearPartidoPersonalPage implements OnInit {
   async presentModalAddEnclosure() {
     const modal = await this.modalController.create({
       component: AgregarRecintoModalPage,
+      cssClass: 'custom-modal-add-enclosure'
+    });
+    return await modal.present();
+  }
+
+  async presentModalAddCalendar() {
+    const modal = await this.modalController.create({
+      component: AgendaCalendarioPage,
       cssClass: 'custom-modal-add-enclosure'
     });
     return await modal.present();

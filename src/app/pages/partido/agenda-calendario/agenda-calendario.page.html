@@ -1,0 +1,25 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="closeModalCalendar()">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="style-fullheight style-fullheightRow">
+    <ion-card mode="md">
+      <ion-card-content>
+        <ion-calendar
+          [(ngModel)]="date"
+          (onChange)="onChange($event)"
+          [type]="type"
+          [format]="'YYYY-MM-DD'"
+        >
+        </ion-calendar>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

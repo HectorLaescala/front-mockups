@@ -1,5 +1,271 @@
-.publicidad{
-    height: 100px;
-    width: 100%;
-   
-   }
+ion-title {
+  color: #ffffff;
+  font-family: Montserrat-SemiBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.style-row-aling-request {
+  padding-bottom: 0px;
+
+  ion-badge {
+    height: 17px;
+    width: 24px;
+    --background: #3c8af4;
+    border-radius: 41.5px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-family: Montserrat-Medium;
+    margin-bottom: 6px;
+    margin-left: 10px;
+    padding-top: 4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  p {
+    color: #333333;
+    font-family: Montserrat-Bold;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin-top: 1px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+ion-card-header {
+  padding: 22px 15px 7px 15px;
+}
+
+ion-card-content {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+ion-card-title,
+ion-card-subtitle {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-family: Montserrat-SemiBold;
+}
+
+ion-card {
+  margin-top: 7px;
+  border-radius: 10px;
+  box-shadow: 0 5px 22px 4px rgba(51, 51, 51, 0.05),
+    0 7px 8px -4px rgba(51, 51, 51, 0.1);
+  margin-bottom: 20px;
+  border: 1px solid #EBEBEB;
+}
+
+ion-card-title {
+  --color: #333333;
+}
+
+ion-card-subtitle {
+  margin-top: 4px;
+  --color: #3c8af4;
+}
+
+.text-first {
+  color: #707070;
+  font-family: Montserrat-SemiBold;
+}
+
+.text-last {
+  color: #333333;
+  font-family: Montserrat-SemiBold;
+}
+
+.text-date {
+  color: #707070;
+  font-family: Montserrat-SemiBold;
+}
+
+.text-date > span {
+  padding-left: 5px;
+  font-family: Montserrat-SemiBold;
+}
+
+.text-first,
+.text-last,
+.text-date {
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 13px;
+}
+
+.style-card-row-sport {
+  background-color: #f9f9f9;
+  border-radius: 5px 5px 0px 0px;
+  padding: 5px 5px 2px 5px;
+  border: 1px solid#FFFFFF;
+}
+
+.style-card-row-enclosure {
+  background-color: #f9f9f9;
+  border-radius: 0px 0px 5px 5px;
+  padding: 5px 5px 2px 5px;
+  margin: 0px 1px;
+}
+
+.style-card-row-date {
+  padding: 10px 0px 5px 0px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.style-col-understood {
+  border: 1px solid #f88a93;
+  border-radius: 5px;
+  background-color: rgb(248, 138, 147, 0.2);
+  padding: 9px 0px 10px 0px;
+  margin-top: 15px;
+  margin-left: 2px;
+
+  ion-icon {
+    font-size: 18px;
+    color: #f43c4b;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 2px;
+  }
+  p {
+    color: #f43c4b;
+    font-family: Montserrat-Regular;
+    font-size: 10px;
+    letter-spacing: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.style-col-check {
+  border: 1px solid #ffc028;
+  border-radius: 5px;
+  background-color: rgb(255, 239, 201, 0.2);
+  padding: 9px 0px 10px 0px;
+  margin-top: 15px;
+  margin-left: 2px;
+
+  ion-icon {
+    font-size: 18px;
+    color: #ff752f;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 2px;
+  }
+  p {
+    color: #ff752f;
+    font-family: Montserrat-Regular;
+    font-size: 10px;
+    letter-spacing: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.style-col-last {
+  display: flex;
+  flex-direction: column;
+}
+
+.style-col-request {
+  border-radius: 5px;
+  background-color: rgb(206, 225, 252, 0.2);
+  padding: 14px 0px 14px 0px;
+  margin-left: 2px;
+  margin-right: 2px;
+
+  p {
+    color: #3c8af4;
+    font-family: Montserrat-Regular;
+    font-size: 10px;
+    letter-spacing: 0;
+    margin-bottom: 0px;
+  }
+}
+
+.style-button-understood {
+  height: 42px;
+  font-size: 10px;
+  --background: #ffffff;
+  --color: #f43c4b;
+  font-family: Montserrat-SemiBold;
+  --box-shadow: none;
+  border: 1px solid #f88a93;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 6px;
+}
+
+.style-button-check-option,
+.style-button-check-option-last,
+.style-button-check {
+  height: 42px;
+  font-size: 10px;
+  --background: #ffffff;
+  --color: #333333;
+  font-family: Montserrat-SemiBold;
+  --box-shadow: none;
+  border: 1px solid #b9b8b9;
+  border-radius: 5px;
+}
+
+.style-button-check, .style-button-check-option {
+  margin-left: 6px;
+  margin-top: 15px;
+}
+
+.style-button-check-option-last{
+    margin-top: 10px;
+}
+
+.style-box-shadow {
+  border: 1px solid #EBEBEB;
+  box-shadow: 0 9px 46px 8px rgba(51, 51, 51, 0.05),
+    0 11px 15px -7px rgba(51, 51, 51, 0.1);
+}
+
+.style-row-align-list ion-avatar > ion-img {
+    border-radius: 5px;
+    margin-top: 0px;
+    height: 48px;
+    width: 48px;
+  }
+  
+  .style-row-align-list ion-avatar,
+  .style-row-align-list ion-label {
+    margin: 9px 22px 22px 0px;
+  }
+  
+  .style-row-align-list ion-item {
+    --inner-padding-top: 10px;
+    --inner-padding-bottom: 0px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+  .style-row-align-list ion-item ion-label > p {
+    color: #707070;
+    font-family: Montserrat-Regular;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  
+  .style-row-align-list ion-item ion-label > h4 {
+    color: #333333;
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    font-weight: 600;
+  }

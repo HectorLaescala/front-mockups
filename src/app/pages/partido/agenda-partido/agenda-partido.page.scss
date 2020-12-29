@@ -1,0 +1,171 @@
+ion-title {
+  color: #ffffff;
+  font-family: Montserrat-SemiBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.style-col-title {
+  color: #333333;
+  font-family: Montserrat-Bold;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0;
+  margin: 15px 0px 20px 16px;
+}
+
+.style-background-switch {
+  background-color: #f9f9f9;
+  --ion-grid-padding-sm: 16px;
+  --ion-grid-padding-xs: 6px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 10px;
+}
+
+.style-card-result {
+  ion-button {
+    width: 100% !important;
+    margin: 0 !important;
+    font-family: Montserrat-SemiBold;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0;
+    height: 40px;
+    --border-radius: 5px;
+    --box-shadow: 0 3px 1px -2px rgba(51, 51, 51, 0.05),
+      0 1px 5px 0 rgba(51, 51, 51, 0.1);
+  }
+
+  .style-button-confirmed {
+    color: #ffffff;
+    --background: #3c8af4;
+  }
+
+  .style-button-other {
+    color: #707070;
+    --background: #ffffff;
+  }
+
+  .style-position-first-col,
+  .style-position-last-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .style-position-first-col {
+    align-items: flex-end;
+  }
+
+  .style-position-last-col {
+    align-items: flex-start;
+  }
+}
+
+ion-card-header {
+  padding-left: 24px;
+  padding-bottom: 8px;
+}
+
+ion-card {
+  border-radius: 10px;
+  box-shadow: 0 5px 22px 4px rgba(51, 51, 51, 0.05),
+    0 7px 8px -4px rgba(51, 51, 51, 0.1);
+
+  ion-card-content {
+    padding-bottom: 7px;
+  }
+}
+
+ion-card-title {
+  font-size: 10px;
+  --color: #333333;
+  font-weight: 600;
+  font-family: Montserrat-SemiBold;
+  letter-spacing: 0;
+  line-height: 13px;
+}
+
+.style-subtitle-postulating,
+.style-subtitle-confirmed,
+.style-subtitle-assist,
+.style-subtitle-maybe {
+  font-size: 8px;
+  margin-top: 4px;
+  font-family: Montserrat-Regular;
+  letter-spacing: 0;
+  line-height: 13px;
+}
+
+.style-subtitle-confirmed {
+  --color: #62e041;
+}
+
+.style-subtitle-postulating {
+  --color: #ff752f;
+}
+
+.style-subtitle-assist {
+  --color: #f43c4b;
+}
+
+.style-subtitle-maybe {
+  --color: #ffc028;
+}
+
+.text-first,
+.text-last {
+  font-family: Montserrat-SemiBold;
+  font-weight: 600;
+}
+
+.text-first {
+  color: #707070;
+}
+
+.text-last {
+  color: #333333;
+}
+
+.text-date {
+  color: #707070;
+  font-family: Montserrat-Regular;
+}
+
+.text-date > span {
+  padding-left: 5px;
+}
+
+.text-first,
+.text-last,
+.text-date {
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 13px;
+}
+
+.style-grid {
+  background: #ffffff;
+  border-top: 1px solid #ebebeb;
+}
+
+.style-card-row-sport {
+  background-color: #f9f9f9;
+  border-radius: 5px 5px 0px 0px;
+  padding: 5px 5px 2px 5px;
+  border: 1px solid#FFFFFF;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.style-card-row-enclosure {
+  background-color: #f9f9f9;
+  border-radius: 0px 0px 5px 5px;
+  padding: 5px 5px 2px 5px;
+  margin: 0px 4px;
+}
+
+.style-card-row-date {
+  padding: 10px 0px 0px 0px;
+}

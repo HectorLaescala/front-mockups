@@ -1,0 +1,58 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="closeModallRefereeEdit()">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="style-fullheight style-fullheightRow">
+    <ion-card mode="md">
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12">
+              <ion-item lines="none" mode="md" class="style-line-item-select">
+                <ion-label class="style-text-theme">DEPORTE</ion-label>
+                <ion-select> </ion-select>
+                <ion-icon name="caret-up-outline" slot="end"></ion-icon>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12" class="style-item-input">
+              <ion-item class="ion-no-padding">
+                <ion-input
+                  type="text"
+                  placeholder="Ingresa un valor de tarifa"
+                  required="required"
+                ></ion-input>
+              </ion-item>
+              <div class="ion-text-end">
+                <small>Tarifa mínima $7.000 </small>
+              </div>
+            </ion-col>
+            <ion-col size="12" class="style-col-textarea">
+              <p>Comentario</p>
+              <ion-textarea rows="2" cols="20"></ion-textarea>
+              <div class="ion-text-end">
+                <small class="ion-text-end">25 carácteres</small>
+              </div>
+            </ion-col>
+            <ion-col size="12">
+              <div class="style-row-align">
+                <ion-button
+                  expand="full"
+                  shape="round"
+                  mode="md"
+                  >GUARDAR CAMBIOS
+                </ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

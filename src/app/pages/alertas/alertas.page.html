@@ -1,83 +1,347 @@
-<app-header></app-header>
-
-
-<ion-content class="ion-padding">
-
-
-  <ion-card  >
-    <ion-card-header>
-      <ion-item >
-        
-        <ion-card-subtitle><h5>Alerta 1</h5></ion-card-subtitle>
-      </ion-item>
-    </ion-card-header>
-    <br>
-    <ion-card-content class="background"> 
-     <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id at expedita architecto veritatis, autem quidem doloremque maxime deleniti aliquam eaque sequi atque cumque assumenda voluptates earum totam tenetur ea sapiente.</h2>
-      
-      <br><br>
-      <ion-button color="danger" size="small">Eliminar</ion-button>
-      
-    </ion-card-content>
-  </ion-card>
-
-<br>
-
-<ion-card  >
-  <ion-card-header>
-    <ion-item >
-      
-      <ion-card-subtitle><h5>Mensaje 1</h5></ion-card-subtitle>
-    </ion-item>
-  </ion-card-header>
-  <br>
-  <ion-card-content class="background"> 
-   <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id at expedita architecto veritatis, autem quidem doloremque maxime deleniti aliquam eaque sequi atque cumque assumenda voluptates earum totam tenetur ea sapiente.</h2>
-    
-    <br><br>
-    <ion-button color="danger" size="small">Eliminar</ion-button>
-    
-  </ion-card-content>
-</ion-card>
-
-<ion-card  >
-  <ion-card-header>
-    <ion-item >
-      
-      <ion-card-subtitle><h5>Alerta 55</h5></ion-card-subtitle>
-    </ion-item>
-  </ion-card-header>
-  <br>
-  <ion-card-content class="background"> 
-   <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id at expedita architecto veritatis, autem quidem doloremque maxime deleniti aliquam eaque sequi atque cumque assumenda voluptates earum totam tenetur ea sapiente.</h2>
-    
-    <br><br>
-    <ion-button color="danger" size="small">Eliminar</ion-button>
-    
-  </ion-card-content>
-</ion-card>
-
-<ion-card  >
-  <ion-card-header>
-    <ion-item >
-      
-      <ion-card-subtitle><h5>Alerta 67</h5></ion-card-subtitle>
-    </ion-item>
-  </ion-card-header>
-  <br>
-  <ion-card-content class="background"> 
-   <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id at expedita architecto veritatis, autem quidem doloremque maxime deleniti aliquam eaque sequi atque cumque assumenda voluptates earum totam tenetur ea sapiente.</h2>
-    
-    <br><br>
-    <ion-button color="danger" size="small">Eliminar</ion-button>
-    
-  </ion-card-content>
-</ion-card>
-</ion-content>
-<ion-footer>
-  <ion-toolbar>
-    <img class="publicidad" src="https://static.wixstatic.com/media/295a2a_c2b14bedb41a4a8d85bef34b62df9496~mv2_d_4000_2250_s_2.jpg/v1/fill/w_889,h_500,al_c,q_85,usm_0.66_1.00_0.01/295a2a_c2b14bedb41a4a8d85bef34b62df9496~mv2_d_4000_2250_s_2.webp">
-  
-
+<ion-header class="ion-no-border">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button
+        icon="chevron-back-outline"
+        mode="md"
+        defaultHref="login"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title mode="ios">Alertas</ion-title>
   </ion-toolbar>
-</ion-footer>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="style-row-aling-request ion-margin-top">
+        <p>ACTUALIZACIONES DE PARTIDOS</p>
+        <ion-badge>1</ion-badge>
+      </ion-col>
+      <ion-col size="12">
+        <ion-card mode="md">
+          <ion-card-header>
+            <ion-card-title>PARTIDOS CON AMIGOS DEL FUTBOL</ion-card-title>
+            <ion-card-subtitle
+              >Organiza: nombre del organizador</ion-card-subtitle
+            >
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row class="style-card-row-sport">
+                <ion-col size="4">
+                  <p class="ion-text-start text-first">DEPORTE</p>
+                </ion-col>
+                <ion-col size="8">
+                  <p class="ion-text-end text-last">Fútbol 11</p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="style-card-row-enclosure">
+                <ion-col size="4">
+                  <p class="ion-text-start text-first">RECINTO</p>
+                </ion-col>
+                <ion-col size="8">
+                  <p class="ion-text-end text-last">
+                    Estadio Santiago Bueras, Maipú
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="style-card-row-date">
+                <ion-col size="8">
+                  <p class="ion-text-start text-date">
+                    FECHA
+                    <span class="ion-text-start text-last">
+                      DOMINGO, 20 DE SEPT</span
+                    >
+                  </p>
+                </ion-col>
+                <ion-col size="4">
+                  <p class="ion-text-end text-date">
+                    HORA <span class="ion-text-start text-last"> 1:00 A.M</span>
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col size="8" class="ion-no-padding">
+                  <div class="style-col-understood ion-text-center">
+                    <ion-icon name="information-circle" mode="md"></ion-icon>
+                    <p>Este partido fue suspendido</p>
+                  </div>
+                </ion-col>
+                <ion-col size="4" class="ion-no-padding">
+                  <div class="style-col-last">
+                    <ion-button class="style-button-understood" mode="md"
+                      >ENTENDIDO</ion-button
+                    >
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+        <ion-card mode="md">
+          <ion-card-header>
+            <ion-card-title>PARTIDOS CON AMIGOS DEL FUTBOL</ion-card-title>
+            <ion-card-subtitle
+              >Organiza: nombre del organizador</ion-card-subtitle
+            >
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row class="style-card-row-sport">
+                <ion-col size="4">
+                  <p class="ion-text-start text-first">DEPORTE</p>
+                </ion-col>
+                <ion-col size="8">
+                  <p class="ion-text-end text-last">Fútbol 11</p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="style-card-row-enclosure">
+                <ion-col size="4">
+                  <p class="ion-text-start text-first">RECINTO</p>
+                </ion-col>
+                <ion-col size="8">
+                  <p class="ion-text-end text-last">
+                    Estadio Santiago Bueras, Maipú
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="style-card-row-date">
+                <ion-col size="8">
+                  <p class="ion-text-start text-date">
+                    FECHA
+                    <span class="ion-text-start text-last">
+                      DOMINGO, 20 DE SEPT</span
+                    >
+                  </p>
+                </ion-col>
+                <ion-col size="4">
+                  <p class="ion-text-end text-date">
+                    HORA <span class="ion-text-start text-last"> 1:00 A.M</span>
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col size="8" class="ion-no-padding">
+                  <div class="style-col-check ion-text-center">
+                    <ion-icon name="information-circle" mode="md"></ion-icon>
+                    <p>Este partido cambio horario</p>
+                  </div>
+                </ion-col>
+                <ion-col size="4" class="ion-no-padding">
+                  <div class="style-col-last">
+                    <ion-button class="style-button-check" mode="md"
+                      >REVIZAR</ion-button
+                    >
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" class="style-row-aling-request">
+        <p>PARTIDOS SIN RESPONDER</p>
+        <ion-badge>1</ion-badge>
+      </ion-col>
+      <ion-col>
+        <ion-card mode="md">
+          <ion-card-header>
+            <ion-card-title>PARTIDOS CON AMIGOS DEL FUTBOL</ion-card-title>
+            <ion-card-subtitle
+              >Organiza: nombre del organizador</ion-card-subtitle
+            >
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row class="style-card-row-sport">
+                <ion-col size="4">
+                  <p class="ion-text-start text-first">DEPORTE</p>
+                </ion-col>
+                <ion-col size="8">
+                  <p class="ion-text-end text-last">Fútbol 11</p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="style-card-row-enclosure">
+                <ion-col size="4">
+                  <p class="ion-text-start text-first">RECINTO</p>
+                </ion-col>
+                <ion-col size="8">
+                  <p class="ion-text-end text-last">
+                    Estadio Santiago Bueras, Maipú
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="style-card-row-date">
+                <ion-col size="8">
+                  <p class="ion-text-start text-date">
+                    FECHA
+                    <span class="ion-text-start text-last">
+                      DOMINGO, 20 DE SEPT</span
+                    >
+                  </p>
+                </ion-col>
+                <ion-col size="4">
+                  <p class="ion-text-end text-date">
+                    HORA <span class="ion-text-start text-last"> 1:00 A.M</span>
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col size="4" class="ion-no-padding">
+                  <div class="style-col-last">
+                    <ion-button class="style-button-check-option" mode="md"
+                      >NO ASISTIRÉ</ion-button
+                    >
+                  </div>
+                </ion-col>
+                <ion-col size="4" class="ion-no-padding">
+                  <div class="style-col-last">
+                    <ion-button class="style-button-check-option" mode="md"
+                      >TAL VEZ</ion-button
+                    >
+                  </div>
+                </ion-col>
+                <ion-col size="4" class="ion-no-padding">
+                  <div class="style-col-last">
+                    <ion-button class="style-button-check-option" mode="md"
+                      >ASISTIRÉ</ion-button
+                    >
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" class="style-row-aling-request">
+        <p>EVALUACIONES PENDIENTES</p>
+        <ion-badge>1</ion-badge>
+      </ion-col>
+      <ion-col>
+        <ion-card mode="md">
+          <ion-card-header>
+            <ion-card-title>PARTIDOS CON AMIGOS DEL FUTBOL</ion-card-title>
+            <ion-card-subtitle
+              >Organiza: nombre del organizador</ion-card-subtitle
+            >
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row class="style-card-row-sport">
+                <ion-col size="4">
+                  <p class="ion-text-start text-first">DEPORTE</p>
+                </ion-col>
+                <ion-col size="8">
+                  <p class="ion-text-end text-last">Fútbol 11</p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="style-card-row-enclosure">
+                <ion-col size="4">
+                  <p class="ion-text-start text-first">RECINTO</p>
+                </ion-col>
+                <ion-col size="8">
+                  <p class="ion-text-end text-last">
+                    Estadio Santiago Bueras, Maipú
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="style-card-row-date">
+                <ion-col size="8">
+                  <p class="ion-text-start text-date">
+                    FECHA
+                    <span class="ion-text-start text-last">
+                      DOMINGO, 20 DE SEPT</span
+                    >
+                  </p>
+                </ion-col>
+                <ion-col size="4">
+                  <p class="ion-text-end text-date">
+                    HORA <span class="ion-text-start text-last"> 1:00 A.M</span>
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="ion-justify-content-end">
+                <ion-col size="4" class="ion-no-padding">
+                  <div class="style-col-last">
+                    <ion-button class="style-button-check-option" mode="md"
+                      >OMITIR</ion-button
+                    >
+                  </div>
+                </ion-col>
+                <ion-col size="4" class="ion-no-padding">
+                  <div class="style-col-last">
+                    <ion-button class="style-button-check-option" mode="md"
+                      >EVALUAR</ion-button
+                    >
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" class="style-row-aling-request">
+        <p>SOLICITUDES GENERALES</p>
+        <ion-badge>1</ion-badge>
+      </ion-col>
+      <ion-col>
+        <ion-card mode="md" class="style-box-shadow">
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col size="12" class="ion-text-center ion-no-padding">
+                  <div class="style-col-request">
+                    <p>Este jugador solicita ser miembro de tu equipo</p>
+                    <p><b>#nombre de tu equipo</b></p>
+                  </div>
+                </ion-col>
+                <ion-col size="12">
+                  <ion-list
+                    class="ion-no-padding style-row-align-list"
+                    mode="md"
+                  >
+                    <ion-item lines="none" class="ion-no-padding">
+                      <ion-avatar slot="start">
+                        <ion-img
+                          src="../../assets/list/avatar-finn.png"
+                        ></ion-img>
+                      </ion-avatar>
+                      <ion-label>
+                        <p>JUGADOR</p>
+                        <h4>Jose Pedro Salvatierra</h4>
+                      </ion-label>
+                    </ion-item>
+                  </ion-list>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col size="4" class="ion-no-padding">
+                  <div class="style-col-last">
+                    <ion-button class="style-button-check-option-last" mode="md"
+                      >VER PERFIL</ion-button
+                    >
+                  </div>
+                </ion-col>
+                <ion-col size="4" class="ion-no-padding">
+                  <div class="style-col-last">
+                    <ion-button class="style-button-check-option-last" mode="md"
+                      >DESCARTAR</ion-button
+                    >
+                  </div>
+                </ion-col>
+                <ion-col size="4" class="ion-no-padding">
+                  <div class="style-col-last">
+                    <ion-button class="style-button-check-option-last" mode="md"
+                      >ACEPTAR</ion-button
+                    >
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

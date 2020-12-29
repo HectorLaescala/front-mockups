@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { PostulacionJugadorModalPage } from '../../vacante/modals/postulacion-jugador-modal/postulacion-jugador-modal.page';
+import { PostulacionArbitroTarifaModalPage } from '../modals/postulacion-arbitro-tarifa-modal/postulacion-arbitro-tarifa-modal.page';
 
 @Component({
   selector: 'app-postulacion-arbitro',
@@ -17,6 +18,14 @@ export class PostulacionArbitroPage implements OnInit {
   async presentModalReferee() {
     const modal = await this.modalController.create({
       component: PostulacionJugadorModalPage,
+      cssClass: 'custom-modal-referee-postulation'
+    });
+    return await modal.present();
+  }
+
+  async presentModalRefereeRate() {
+    const modal = await this.modalController.create({
+      component: PostulacionArbitroTarifaModalPage,
       cssClass: 'custom-modal-referee-postulation'
     });
     return await modal.present();

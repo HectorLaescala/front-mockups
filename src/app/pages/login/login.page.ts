@@ -37,7 +37,7 @@ export class LoginPage implements OnInit {
 
   async login() {
 
-    //this.navCtrl.navigateRoot('/equipo/administrar-equipos');
+    this.navCtrl.navigateRoot('/arbitro/perfil-arbitro');
    
    /* const valido = await this.usuarioService.login(this.email, this.password);
 

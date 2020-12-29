@@ -25,11 +25,17 @@ ion-card {
   margin: 0 !important;
 }
 
+ion-radio-group{
+  display: flex;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
 ion-card-content {
   justify-content: center;
   display: flex;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 17px;
 }
 
 ion-radio {

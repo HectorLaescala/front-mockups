@@ -8,14 +8,18 @@ import { PerfilPageRoutingModule } from './perfil-routing.module';
 
 import { PerfilPage } from './perfil.page';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { FiltroBuscadorPartidoPageModule } from '../equipo/filtro-buscador-partido/filtro-buscador-partido.module';
+import { FiltroBuscadorPartidoPage } from '../equipo/filtro-buscador-partido/filtro-buscador-partido.page';
 
 @NgModule({
+  entryComponents: [ FiltroBuscadorPartidoPage],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     PerfilPageRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    FiltroBuscadorPartidoPageModule
   ],
   declarations: [PerfilPage]
 })

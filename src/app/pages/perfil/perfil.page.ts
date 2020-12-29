@@ -3,6 +3,8 @@ import { MenuController, NavController, AlertController } from '@ionic/angular';
 import { Storage } from '@ionic/storage';
 import { UsuarioService } from 'src/app/services/usuario.service';
 import { HttpClient } from '@angular/common/http';
+import { ModalController } from '@ionic/angular';
+import { FiltroBuscadorPartidoPage } from '../equipo/filtro-buscador-partido/filtro-buscador-partido.page';
 
 @Component({
   selector: 'app-perfil',
@@ -25,17 +27,17 @@ Invitaciones: any;
 
 slideOptsFirst = {
   spaceBetween: 14,
-  slidesPerView: 2
+  slidesPerView: 2,
 }
 
 slideOptsMiddle = {
   spaceBetween: -7,
-  slidesPerView: 2
+  slidesPerView: 2,
 }
 
 slideOptsFinal = {
   spaceBetween: -25,
-  slidesPerView: 1.05
+  slidesPerView: 1.05,
 }
 
   constructor( private menuCtrl: MenuController,
@@ -43,7 +45,8 @@ slideOptsFinal = {
     private usuarioService: UsuarioService,
     public navCtrl: NavController,
     private http: HttpClient,
-    public alertCtrl: AlertController) { }
+    public alertCtrl: AlertController,
+    public modalController: ModalController) { }
     IdUsuario: string;
   ngOnInit() {
 
@@ -67,6 +70,14 @@ slideOptsFinal = {
    });*/
 
    
+  }
+
+  async presentModalFilterMatch() {
+    const modal = await this.modalController.create({
+      component: FiltroBuscadorPartidoPage,
+      cssClass: 'custom-modal-team-all'
+    });
+    return await modal.present();
   }
 
   async  ListaCategorias(){

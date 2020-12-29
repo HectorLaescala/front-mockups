@@ -1,0 +1,347 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button
+        icon="chevron-back-outline"
+        mode="md"
+        defaultHref="login"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon slot="icon-only" name="share-social"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="ios">Detalle de partido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed class="style-grid-principal"
+    ><ion-row>
+      <ion-col size="12">
+        <ion-card mode="md">
+          <ion-card-header>
+            <ion-card-title>CAMPEONATO FUTSAL EMPRESAS</ion-card-title>
+            <ion-card-subtitle>ESTAS CONFIRMADO</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row class="style-card-row-vacant">
+                <ion-col size="8">
+                  <p class="ion-text-start text-first">NÚMERO DE CANCHA</p>
+                </ion-col>
+                <ion-col size="4">
+                  <p class="ion-text-end text-last">5</p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="style-card-row-sport">
+                <ion-col size="4">
+                  <p class="ion-text-start text-first">DEPORTE</p>
+                </ion-col>
+                <ion-col size="8">
+                  <p class="ion-text-end text-last">Fútbol sala</p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="style-card-row-enclosure">
+                <ion-col size="3">
+                  <p class="ion-text-start text-first">RECINTO</p>
+                </ion-col>
+                <ion-col size="9">
+                  <p class="ion-text-end text-last">
+                    Santiago, Estadio Victor Jara
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="style-card-row-date">
+                <ion-col size="8">
+                  <p class="ion-text-start text-date">
+                    FECHA
+                    <span class="ion-text-start text-last">
+                      MARTES, 08 DE SEPT</span
+                    >
+                  </p>
+                </ion-col>
+                <ion-col size="4">
+                  <p class="ion-text-end text-date">
+                    HORA <span class="ion-text-start text-last"> 1:00 A.M</span>
+                  </p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col></ion-row
+    >
+  </ion-grid>
+
+  <div class="style-grid-principal">
+    <ion-segment value="announcement" mode="md">
+      <ion-segment-button value="information">
+        <ion-label class="ion-text-start">INFORMACIÓN</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="applications">
+        <ion-label class="ion-text-start">POSTULACIONES</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="announcement">
+        <ion-label class="ion-text-start">CONVOCATORIA</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <ion-grid fixed class="ion-padding">
+    <ion-row class="ion-padding">
+      <ion-col size="4" class="style-space-card">
+        <ion-card>
+          <ion-card-title class="ion-text-center"
+            ><ion-label>4</ion-label></ion-card-title
+          >
+          <ion-card-subtitle class="ion-text-center">CUPOS</ion-card-subtitle>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4" class="style-space-card">
+        <ion-card>
+          <ion-card-title class="ion-text-center">2</ion-card-title>
+          <ion-card-subtitle class="ion-text-center"
+            >DISPONIBLES</ion-card-subtitle
+          >
+        </ion-card>
+      </ion-col>
+      <ion-col size="4" class="style-space-card">
+        <ion-card>
+          <ion-card-title class="ion-text-center style-title-last"
+            ><ion-label>4</ion-label></ion-card-title
+          >
+          <ion-card-subtitle class="ion-text-center style-subtitle-last"
+            ><p>VACANTES</p>
+            <p>PUBLICADAS</p></ion-card-subtitle
+          >
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-list class="ion-no-padding">
+          <ion-item lines="none" class="style-invite-player" mode="md">
+            <p slot="start">Agregar jugador manual</p>
+            <ion-button slot="end" expand="block" fill="outline" (click)="presentModalAddPlayerManual()">
+              <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+            </ion-button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="12">
+        <ion-list class="ion-no-padding style-assistant-list" mode="md">
+          <ion-list-header>
+            <ion-label class="ion-text-start style-text-title"
+              >Asistentes</ion-label
+            >
+            <ion-label class="ion-text-end style-text-subtitle"
+              >EQUIPO</ion-label
+            ></ion-list-header
+          >
+          <ion-item-sliding>
+            <ion-item lines="none" class="ion-no-padding">
+              <ion-badge color="light" slot="start" class="first-badge"
+                >1</ion-badge
+              >
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/list/avatar-ben.png"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <span>JUGADOR INVITADO</span>
+                <p>Gabriel Suárez</p>
+              </ion-label>
+              <ion-badge color="light" slot="end" class="last-badge-first-color"
+                >1
+                <ion-icon name="caret-up-outline"></ion-icon>
+              </ion-badge>
+            </ion-item>
+            <ion-item-options>
+              <ion-item-option>
+                <ion-icon slot="start" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+                ELIMINAR
+                <ion-icon slot="end" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+              </ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+         
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="light" slot="start" class="first-badge"
+              >2</ion-badge
+            >
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/list/avatar-finn.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <span>MIEMBRO</span>
+              <p>Víctor Arce</p>
+            </ion-label>
+            <ion-badge color="light" slot="end" class="last-badge-first-color"
+              >1
+              <ion-icon name="caret-up-outline"></ion-icon>
+            </ion-badge>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="light" slot="start" class="first-badge"
+              >3</ion-badge
+            >
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/list/avatar-han.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <span>MIEMBRO</span>
+              <p>Raúl ladrón de guevara</p>
+            </ion-label>
+            <ion-badge color="light" slot="end" class="last-badge-first-color"
+              >2
+              <ion-icon name="caret-up-outline"></ion-icon>
+            </ion-badge>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="light" slot="start" class="first-badge"
+              >4</ion-badge
+            >
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/list/avatar-leia.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <span>MIEMBRO</span>
+              <p>Oscar Salazar</p>
+            </ion-label>
+            <ion-badge color="light" slot="end" class="last-badge-first-color"
+              >2
+              <ion-icon name="caret-up-outline"></ion-icon>
+            </ion-badge>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="light" slot="start" class="first-badge"
+              >5</ion-badge
+            >
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/list/avatar-luke.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <span>MIEMBRO</span>
+              <p>Manuel Dominguez</p>
+            </ion-label>
+            <ion-badge color="light" slot="end" class="last-badge-first-color"
+              >3
+              <ion-icon name="caret-up-outline"></ion-icon>
+            </ion-badge>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="light" slot="start" class="first-badge"
+              >6</ion-badge
+            >
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/list/avatar-poe.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <span>MIEMBRO</span>
+              <p>Renato Contreras</p>
+            </ion-label>
+            <ion-badge color="light" slot="end" class="last-badge-last-color"
+              >R1
+              <ion-icon name="caret-up-outline"></ion-icon>
+            </ion-badge>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="light" slot="start" class="first-badge"
+              >7</ion-badge
+            >
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/list/avatar-rey.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <span>MIEMBRO</span>
+              <p>Alonso San Martín</p>
+            </ion-label>
+            <ion-badge color="light" slot="end" class="last-badge-last-color"
+              >R1
+              <ion-icon name="caret-up-outline"></ion-icon>
+            </ion-badge>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="light" slot="start" class="first-badge"
+              >8</ion-badge
+            >
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/list/avatar-yoda.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <span>MIEMBRO</span>
+              <p>Raul Mendoza</p>
+            </ion-label>
+            <ion-badge color="light" slot="end" class="last-badge-last-color"
+              >R2
+              <ion-icon name="caret-up-outline"></ion-icon>
+            </ion-badge>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="light" slot="start" class="first-badge"
+              >9</ion-badge
+            >
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/list/avatar-yoda.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <span>MIEMBRO</span>
+              <p>Raul Mendoza</p>
+            </ion-label>
+            <ion-badge color="light" slot="end" class="last-badge-last-color"
+              >R2
+              <ion-icon name="caret-up-outline"></ion-icon>
+            </ion-badge>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button
+        class="style-col-button-order"
+        expand="full"
+        shape="round"
+        mode="md"
+        >REORGANIZAR
+      </ion-button>
+      </ion-col>
+      <ion-col size="12">
+        <ion-list class="ion-no-padding style-out-list"  mode="md">
+          <ion-list-header>
+            Fuera de nómina</ion-list-header
+          >
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/list/avatar-ben.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <span>MIEMBRO</span>
+              <p>Estevan Jimenez</p>
+              <span>TAL VEZ <small class="style-circle-first"></small></span>
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/list/avatar-finn.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <span>MIEMBRO</span>
+              <p>Pedro Silva</p>
+              <span>PENDIENTE <small class="style-circle-middle"></small></span>
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none" class="ion-no-padding">
+            <ion-avatar slot="start">
+              <ion-img src="../../assets/list/avatar-han.png"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <span>MIEMBRO</span>
+              <p>Marcos Garrido</p>
+              <span>NO VA <small class="style-circle-last"></small></span>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

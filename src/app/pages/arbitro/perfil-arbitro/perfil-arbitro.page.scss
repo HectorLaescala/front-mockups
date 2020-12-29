@@ -1,0 +1,589 @@
+ion-title {
+  color: #ffffff;
+  font-family: Montserrat-SemiBold;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+ion-content {
+  .style-card-result {
+    ion-card {
+      padding: 8px 8px 12px 8px;
+      border: 1px solid #cee1fc;
+      border-radius: 10px;
+      box-shadow: none;
+      width: 100% !important;
+      margin: 25px 0 !important;
+    }
+
+    ion-card-title {
+      border-radius: 5px;
+      background-color: rgba(206, 225, 252, 0.3);
+      color: #3c8af4;
+      font-family: Montserrat-SemiBold;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    ion-card-subtitle {
+      color: #3c8af4;
+      font-family: Montserrat-SemiBold;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0;
+      margin-top: 7px;
+    }
+
+    .style-position-first-col,
+    .style-position-last-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .style-position-first-col {
+      align-items: flex-end;
+    }
+
+    .style-position-last-col {
+      align-items: flex-start;
+    }
+  }
+
+  .style-background-switch {
+    background-color: rgba(206, 225, 252, 0.3);
+    --ion-grid-padding-sm: 16px;
+    --ion-grid-padding-xs: 6px;
+  }
+
+  ion-segment {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  ion-segment ion-segment-button > ion-label {
+    font-size: 10.5px;
+    letter-spacing: 0;
+    line-height: 13px;
+    font-family: Montserrat-Regular;
+    color: #707070;
+  }
+
+  .segment-button-checked {
+    ion-label {
+      color: #333333 !important;
+      font-size: 10px !important;
+      font-family: Montserrat-SemiBold !important;
+    }
+  }
+
+  ion-segment-button {
+    --indicator-height: 1px !important;
+    --padding-top: 8px;
+    --padding-bottom: 8px;
+    --padding-start: 0px;
+    --padding-end: 0px;
+    --background: #ffffff;
+    --background-checked: #ffffff;
+    --color-checked: #c90949;
+  }
+
+  .style-title-text-price {
+    h3 {
+      color: #333333;
+      font-family: Montserrat-SemiBold;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0;
+      margin-left: 20px;
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .style-title-text-price-description {
+    p:first-child {
+      margin-top: 5px;
+    }
+    p {
+      color: #707070;
+      font-family: Montserrat-Regular;
+      font-size: 14px;
+      letter-spacing: 0;
+      margin-top: 8px;
+      margin-left: 20px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .style-item-button-price {
+    border: 1px solid #ebebeb;
+    border-radius: 41.5px;
+    --background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
+    --padding-top: 1px;
+    --padding-bottom: 5px;
+    --padding-start: 22px;
+    max-width: 240px;
+    margin-left: 15px;
+    margin-top: 15px;
+
+    ion-label {
+      color: #707070;
+      font-family: Montserrat-SemiBold;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0;
+      margin-top: 13px;
+    }
+
+    ion-button {
+      --border-color: #707070;
+      --border-radius: 50px;
+      --border-width: 1px;
+      --color: #707070;
+      height: 24px;
+      width: 24px;
+      font-size: 9px;
+      margin: 3px 8px 0px 5px;
+    }
+  }
+
+  .style-itemlist-button-price {
+    margin-top: 8px;
+
+    ion-item {
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      box-shadow: 0 1px 10px 0 rgba(51, 51, 51, 0.05),
+        0 2px 4px -1px rgba(51, 51, 51, 0.1);
+      margin-left: 15px;
+      margin-right: 15px;
+      --padding-bottom: 15px;
+      margin-top: 10px;
+
+      ion-label {
+        margin-bottom: 0px;
+        line-height: 9px;
+      }
+
+      h3 {
+        color: #333333;
+        font-family: Montserrat-SemiBold;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0;
+        margin-bottom: 1px;
+      }
+
+      p,
+      span {
+        font-family: Montserrat-Medium;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0;
+      }
+
+      p {
+        color: #3c8af4;
+        margin-bottom: 0px;
+      }
+      span {
+        color: #b9b8b9;
+      }
+    }
+
+    ion-button {
+      height: 32px;
+      width: 72px;
+      --border-radius: 41.5px;
+      --border-color: #ebebeb;
+      --border-width: 1px;
+      --color: #707070;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0;
+      --background: #ffffff;
+      line-height: 13px;
+      font-family: Montserrat-SemiBold;
+      --box-shadow: none;
+      --padding-top: 1px;
+      margin-top: 20px;
+    }
+  }
+
+  .style-col-border-select {
+    ion-item {
+      border: 1px solid #ebebeb;
+      border-radius: 5px;
+      height: 40px;
+      box-shadow: 0 5px 22px 4px rgba(51, 51, 51, 0.05),
+        0 7px 8px -4px rgba(51, 51, 51, 0.1);
+      margin: 30px 3px 16px 3px;
+
+      ion-select {
+        --padding-top: 3px;
+        --padding-end: 10px;
+      }
+
+      ion-label {
+        color: #333333;
+        font-family: Montserrat-SemiBold;
+        font-size: 8px;
+        font-weight: 600;
+        letter-spacing: 0;
+        margin-top: 0px;
+      }
+
+      ion-icon[name="caret-up-outline"] {
+        color: #333333;
+        font-size: 8px;
+        margin-top: 2px;
+        margin-left: 0px;
+      }
+
+      ion-select::part(icon) {
+        display: none !important;
+      }
+    }
+  }
+
+  .style-col-div-content {
+    border: 1px solid #a1ec8d;
+    border-radius: 5px;
+    background-color: rgba(216, 247, 207, 0.6);
+    padding: 8px 20px 8px 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-weight: bold;
+
+    p {
+      color: #333333;
+      font-size: 10px;
+      letter-spacing: 0;
+      line-height: 4px;
+      font-family: Montserrat-Regular;
+    }
+  }
+
+  .style-col-border-item {
+    margin-top: 15px;
+
+    ion-item:first-child {
+      border: 1px solid #ebebeb;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    ion-item {
+      border-bottom: 1px solid #ebebeb;
+      border-left: 1px solid #ebebeb;
+      border-right: 1px solid #ebebeb;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+
+    ion-item:last-child {
+      border-radius: 0px 0px 10px 10px;
+    }
+
+    ion-label {
+      color: #333333;
+      font-family: Montserrat-Medium;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 22px;
+      font-weight: 500;
+    }
+
+    ion-badge {
+      border-radius: 41.5px;
+      background-color: rgba(206, 225, 252, 0.3);
+      height: 25px;
+      width: 40px;
+      font-family: Montserrat-SemiBold;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 18px;
+      color: #3c8af4;
+    }
+
+    p {
+      color: #333333;
+      font-family: Montserrat-SemiBold;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 11px;
+    }
+  }
+
+  .style-col-text-item {
+    p {
+      color: #333333;
+      font-family: Montserrat-Regular;
+      font-size: 10px;
+      letter-spacing: 0;
+      line-height: 11px;
+      margin-left: 15px;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .style-row-aling-request {
+    ion-badge {
+      height: 17px;
+      width: 24px;
+      --background: #3c8af4;
+      border-radius: 41.5px;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0;
+      font-family: Montserrat-Medium;
+      margin-bottom: 6px;
+      margin-left: 15px;
+      padding-top: 4px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    p {
+      color: #333333;
+      font-family: Montserrat-Bold;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 0;
+      margin-top: 1px;
+      margin-left: 8px;
+      margin-bottom: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .style-row-aling-request-payment {
+    ion-badge {
+      height: 17px;
+      width: 24px;
+      --background: #3c8af4;
+      border-radius: 41.5px;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0;
+      font-family: Montserrat-Medium;
+      margin-bottom: 14px;
+      margin-left: 15px;
+      padding-top: 4px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    p {
+      color: #333333;
+      font-family: Montserrat-Bold;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 0;
+      margin-top: 1px;
+      margin-left: 8px;
+      margin-bottom: 14px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  ion-card {
+    border-radius: 10px;
+    box-shadow: 0 3px 3px -2px rgba(51, 51, 51, 0.05),
+      0 1px 8px 0 rgba(51, 51, 51, 0.1);
+    margin-top: 0px;
+    margin-bottom: 15px;
+
+    ion-card-content {
+      padding: 10px 10px 7px 10px;
+    }
+  }
+
+  .text-color {
+    font-family: Montserrat-SemiBold;
+    font-weight: 600;
+    color: #333333;
+  }
+
+  .text-date {
+    color: #707070;
+    font-family: Montserrat-SemiBold;
+  }
+
+  .text-date > span {
+    padding-left: 5px;
+  }
+
+  .text-color,
+  .text-date {
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: 13px;
+  }
+
+  .style-grid {
+    background: #ffffff;
+    border-top: 1px solid #ebebeb;
+  }
+
+  .style-card-row-charge {
+    border-radius: 5px;
+    padding: 5px 5px 2px 5px;
+    padding-left: 0px;
+
+    ion-col {
+      padding-left: 0px;
+    }
+
+    div {
+      display: flex;
+     // justify-content: flex-start;
+
+      h3 {
+        background-color: rgb(206, 225, 252, 0.3);
+        border-radius: 5px 0px 0px 5px;
+        color: #333333;
+        font-family: Montserrat-SemiBold;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0;
+        padding: 11px 10px;
+       // align-items: flex-start;
+        border-right: 1px solid white;
+      }
+
+      p {
+        background-color: rgb(206, 225, 252, 0.3);
+        color: #3c8af4;
+        border-radius: 0px 5px 5px 0px;
+        font-family: Montserrat-SemiBold;
+        font-size: 8px;
+        font-weight: 600;
+        letter-spacing: 0;
+       // align-self: flex-start;
+        padding: 10.5px 10px;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  .style-button-view {
+    height: 32px;
+    width: 60px;
+    --border-radius: 41.5px;
+    --border-color: #ebebeb;
+    --border-width: 1px;
+    --color: #707070;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0;
+    --background: #ffffff;
+    line-height: 13px;
+    font-family: Montserrat-SemiBold;
+    --box-shadow: none;
+  }
+
+  .style-col-div-price {
+    padding: 0px;
+
+    h3 {
+      background-color: rgb(206, 225, 252, 0.3);
+      border-radius: 5px;
+      color: #333333;
+      font-family: Montserrat-SemiBold;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0;
+      padding: 11px 10px 9px 10px;
+      margin-bottom: 7px;
+      margin-left: 1px;
+    }
+
+    .style-col-bagde-status-one {
+      background-color: rgb(216, 247, 207, 0.6);
+      border-radius: 5px;
+      color: #62e041;
+      font-family: Montserrat-SemiBold;
+      font-size: 8px;
+      letter-spacing: 0;
+      padding: 9px 10px 9px 10px;
+      width: 72px;
+      margin-top: 4px;
+      margin-right: 1px;
+    }
+
+    .style-col-bagde-status-last {
+      background-color: rgb(255, 239, 201, 0.6);
+      border-radius: 5px;
+      color: #ffc028;
+      font-family: Montserrat-SemiBold;
+      font-size: 8px;
+      letter-spacing: 0;
+      padding: 9px 10px 9px 10px;
+      width: 76px;
+      margin-top: 4px;
+      margin-right: 1px;
+    }
+  }
+
+  .style-card-row-sport {
+    background-color: rgb(206, 225, 252, 0.3);
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px 10px 2px 10px;
+    border: 1px solid#FFFFFF;
+  }
+
+  .style-card-row-court {
+    background-color: rgb(206, 225, 252, 0.3);
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 10px 2px 10px;
+    margin: 0px 1px;
+  }
+
+  .style-card-row-date {
+    padding: 10px 0px 0px 0px;
+  }
+
+  .style-col-price {
+    div {
+      border-bottom: 1px solid #ebebeb;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-bottom: 4px;
+    }
+
+    p {
+      color: #f43c4b;
+      font-family: Montserrat-SemiBold;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -1px;
+      margin-right: 10px;
+      margin-top: 8px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    h3 {
+      font-family: Montserrat-SemiBold;
+      color: black;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -1px;
+      margin-right: 8px;
+      margin-top: 0px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
