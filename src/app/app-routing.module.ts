@@ -294,6 +294,14 @@ const routes: Routes = [
   {
     path: 'agenda-calendario',
     loadChildren: () => import('./pages/partido/agenda-calendario/agenda-calendario.module').then( m => m.AgendaCalendarioPageModule)
+  },
+  {
+    path: 'postulacion-evaluacion-modal',
+    loadChildren: () => import('./pages/vacante/modals/postulacion-evaluacion-modal/postulacion-evaluacion-modal.module').then( m => m.PostulacionEvaluacionModalPageModule)
+  },
+  {
+    path: 'postulacion-evaluacion-eliminar-modal',
+    loadChildren: () => import('./pages/vacante/modals/postulacion-evaluacion-eliminar-modal/postulacion-evaluacion-eliminar-modal.module').then( m => m.PostulacionEvaluacionEliminarModalPageModule)
   }
 ];
 

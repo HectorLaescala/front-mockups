@@ -34,7 +34,6 @@ const routes: Routes = [
       path:'CrearPartido',
       loadChildren: '../crearpartido/crearpartido.module#CrearpartidoPageModule'
     }
-    
     ]
   }
 ];
