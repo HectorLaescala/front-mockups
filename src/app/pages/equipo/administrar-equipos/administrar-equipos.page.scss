@@ -443,14 +443,19 @@ ion-content {
 
   .style-ranking-list {
     ion-list-header {
-      color: #333333;
-      font-family: Montserrat-SemiBold;
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0;
       padding-left: 11px;
+      padding-right: 11px;
       margin-top: 25px;
       margin-bottom: -8px;
+    }
+
+    .style-text-title,
+    .style-text-subtitle {
+      color: #333333;
+      font-family: Montserrat-SemiBold;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0;
     }
 
     ion-badge {
@@ -465,6 +470,20 @@ ion-content {
       font-weight: 600;
       letter-spacing: 0;
       line-height: 10px;
+    }
+
+    .style-text-bagde {
+      border-radius: 41.5px;
+      background-color: rgb(206, 225, 252, 0.3);
+      height: 25px;
+      width: 40px;
+      font-family: Montserrat-SemiBold;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 18px;
+      color: #3c8af4;
+      margin-top: 2px;
     }
 
     ion-avatar > ion-img {

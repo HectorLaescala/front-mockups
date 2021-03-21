@@ -5,8 +5,10 @@ import { Route } from '@angular/compiler/src/core';
 import { Router } from '@angular/router';
 import { UsuarioService } from 'src/app/services/usuario.service';
 import { Storage } from '@ionic/storage'
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 
 @Component({
+  providers: [Keyboard],
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
@@ -15,8 +17,9 @@ export class LoginPage implements OnInit {
   email: string;
   password: string;
   IdUsuario: string;
+  isKeyboardHide=true;
 
-  constructor(private http: HttpClient, public alertCtrl: AlertController,
+  constructor(public keyboard:Keyboard,private http: HttpClient, public alertCtrl: AlertController,
     public navCtrl: NavController,
     private router: Router,
     private usuarioService: UsuarioService,
@@ -66,6 +69,16 @@ export class LoginPage implements OnInit {
     });
 
     await alert.present();
+  }
+
+  ionViewWillEnter() {
+    this.keyboard.onKeyboardWillShow().subscribe(()=>{
+      this.isKeyboardHide=false;
+    });
+
+    this.keyboard.onKeyboardWillHide().subscribe(()=>{
+      this.isKeyboardHide=true;
+    });
   }
 
 

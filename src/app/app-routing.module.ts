@@ -302,6 +302,14 @@ const routes: Routes = [
   {
     path: 'postulacion-evaluacion-eliminar-modal',
     loadChildren: () => import('./pages/vacante/modals/postulacion-evaluacion-eliminar-modal/postulacion-evaluacion-eliminar-modal.module').then( m => m.PostulacionEvaluacionEliminarModalPageModule)
+  },
+  {
+    path: 'postulacion-evaluacion-confirmar-modal',
+    loadChildren: () => import('./pages/vacante/modals/postulacion-evaluacion-confirmar-modal/postulacion-evaluacion-confirmar-modal.module').then( m => m.PostulacionEvaluacionConfirmarModalPageModule)
+  },
+  {
+    path: 'postulacion-evaluacion-checked-modal',
+    loadChildren: () => import('./pages/vacante/modals/postulacion-evaluacion-checked-modal/postulacion-evaluacion-checked-modal.module').then( m => m.PostulacionEvaluacionCheckedModalPageModule)
   }
 ];
 

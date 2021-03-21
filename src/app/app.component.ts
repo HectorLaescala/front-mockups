@@ -7,11 +7,13 @@ import { FormControl } from '@angular/forms';
 import { MapsAPILoader } from '@agm/core';
 import { google } from 'google-maps';
 import { OnInit } from '@angular/core';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 
 
 
 
 @Component({
+  providers: [Keyboard],
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss']

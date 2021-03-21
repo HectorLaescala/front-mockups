@@ -10,16 +10,22 @@ import { PostulacionEvaluacionModalPageModule } from '../modals/postulacion-eval
 import { PostulacionEvaluacionModalPage } from '../modals/postulacion-evaluacion-modal/postulacion-evaluacion-modal.page';
 import { PostulacionEvaluacionEliminarModalPageModule } from '../modals/postulacion-evaluacion-eliminar-modal/postulacion-evaluacion-eliminar-modal.module';
 import { PostulacionEvaluacionEliminarModalPage } from '../modals/postulacion-evaluacion-eliminar-modal/postulacion-evaluacion-eliminar-modal.page';
+import { PostulacionEvaluacionConfirmarModalPageModule } from '../modals/postulacion-evaluacion-confirmar-modal/postulacion-evaluacion-confirmar-modal.module';
+import { PostulacionEvaluacionConfirmarModalPage } from '../modals/postulacion-evaluacion-confirmar-modal/postulacion-evaluacion-confirmar-modal.page';
+import { PostulacionEvaluacionCheckedModalPageModule } from '../modals/postulacion-evaluacion-checked-modal/postulacion-evaluacion-checked-modal.module';
+import { PostulacionEvaluacionCheckedModalPage } from '../modals/postulacion-evaluacion-checked-modal/postulacion-evaluacion-checked-modal.page';
 
 @NgModule({
-  entryComponents: [ PostulacionEvaluacionModalPage, PostulacionEvaluacionEliminarModalPage],
+  entryComponents: [ PostulacionEvaluacionModalPage, PostulacionEvaluacionEliminarModalPage, PostulacionEvaluacionConfirmarModalPage, PostulacionEvaluacionCheckedModalPage],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     JugadorAceptadoInformacionPageRoutingModule,
     PostulacionEvaluacionModalPageModule,
-    PostulacionEvaluacionEliminarModalPageModule
+    PostulacionEvaluacionEliminarModalPageModule,
+    PostulacionEvaluacionConfirmarModalPageModule,
+    PostulacionEvaluacionCheckedModalPageModule
   ],
   declarations: [JugadorAceptadoInformacionPage]
 })
